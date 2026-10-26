@@ -1,0 +1,110 @@
+[
+  {
+    "id": "oakley",
+    "title": "A Mind for Numbers · Aprendendo a Aprender",
+    "author": "Barbara Oakley",
+    "theme": "Estratégias de aprendizagem",
+    "idea": "Apresenta formas de enfrentar conteúdos difíceis, especialmente matemática e ciências, com estratégias de estudo e prática.",
+    "connection": "Relaciona-se à divisão do conteúdo em assuntos, às tentativas e à possibilidade de ajustar o ritmo de estudo.",
+    "edition": "Aprendendo a Aprender é a edição em português de A Mind for Numbers, conforme o site da autora. Uma obra, dois títulos.",
+    "url": "https://barbaraoakley.com/books/a-mind-for-numbers/",
+    "label": "Conhecer no site da autora",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "make-it-stick",
+    "title": "Make It Stick · Fixe o Conhecimento",
+    "author": "Peter C. Brown, Henry L. Roediger III e Mark A. McDaniel",
+    "theme": "Memória e aprendizagem",
+    "idea": "Traduz pesquisa cognitiva para a prática de aprender, discutindo recuperação, espaçamento, intercalação e ilusões de domínio.",
+    "connection": "Dialoga diretamente com responder antes do gabarito, registrar ajuda e retomar o conteúdo em sessões separadas.",
+    "edition": "Fixe o Conhecimento é a edição brasileira publicada pela Penso. As duas versões contam como uma obra.",
+    "url": "https://loja.grupoa.com.br/fixe-o-conhecimento-a-ciencia-da-aprend-bem9788584291243-p1003777",
+    "label": "Conhecer na editora",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "mentes-geniais",
+    "title": "Mentes Geniais",
+    "author": "Alberto Dell’Isola",
+    "theme": "Técnicas de memória",
+    "idea": "Leitura indicada para explorar técnicas e exercícios de memorização.",
+    "connection": "Amplia a discussão sobre estratégias para recordar; o Studio não implementa um treinamento completo de mnemônicas.",
+    "edition": "Obra indicada pelo criador. Há diferentes edições no catálogo; a edição específica a utilizar ainda precisa ser definida.",
+    "url": "https://www.touchelivros.com.br/edicoes/mentes-geniais-dell-isola-alberto-cfbb21df11d1/",
+    "label": "Consultar catálogo bibliográfico",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "dehaene",
+    "title": "É Assim Que Aprendemos",
+    "author": "Stanislas Dehaene",
+    "theme": "Ciência da aprendizagem",
+    "idea": "Discute a aprendizagem pelo encontro entre psicologia cognitiva, neurobiologia e computação.",
+    "connection": "Oferece contexto para atenção, participação ativa, correção e consolidação, sem validar automaticamente as regras do aplicativo.",
+    "edition": "Edição em português publicada pela Contexto.",
+    "url": "https://www.editoracontexto.com.br/e-assim-que-aprendemos--por-que-o-cerebro-funciona-melhor-do-que-qualquer-maquina-ainda/p",
+    "label": "Conhecer na editora",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "atomic-habits",
+    "title": "Hábitos Atômicos · Atomic Habits",
+    "author": "James Clear",
+    "theme": "Hábitos e constância",
+    "idea": "Propõe organizar sistemas e o ambiente para facilitar a repetição de comportamentos desejados.",
+    "connection": "Inspiração prática para manter registros simples e uma rotina ajustável. Constância de uso não equivale, por si só, a retenção.",
+    "edition": "Livro de orientação prática; não é um ensaio de eficácia do EstudaMente.",
+    "url": "https://jamesclear.com/atomic-habits",
+    "label": "Conhecer no site do autor",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "carey",
+    "title": "Como Aprendemos · How We Learn",
+    "author": "Benedict Carey",
+    "theme": "Divulgação sobre aprendizagem",
+    "idea": "Apresenta pesquisas sobre como aprendemos e lembramos, incluindo variações de rotina, espaçamento e contexto de prática.",
+    "connection": "Ajuda a interpretar por que repetir exposições não é o mesmo que testar o que conseguimos lembrar.",
+    "edition": "Link para a edição original e apresentação da editora.",
+    "url": "https://www.penguinrandomhouse.com/books/221559/how-we-learn-by-benedict-carey/",
+    "label": "Conhecer na editora",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "ultralearning",
+    "title": "Ultralearning",
+    "author": "Scott H. Young",
+    "theme": "Aprendizagem autodirigida",
+    "idea": "Discute projetos de aprendizagem autodirigida, prática, foco e feedback a partir de princípios e relatos.",
+    "connection": "Relaciona-se à autonomia para editar metas, escolher assuntos e comparar resultados. O Studio não promete reproduzir os resultados dos relatos do livro.",
+    "edition": "Apresentação e recursos do autor.",
+    "url": "https://www.scotthyoung.com/blog/ultralearning/",
+    "label": "Conhecer no site do autor",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "chaves",
+    "title": "Você Não Sabe Estudar!",
+    "author": "José Mário Chaves",
+    "theme": "Organização e técnicas de estudo",
+    "idea": "Guia de estudo dirigido a estudantes e candidatos a provas, apresentado pelo autor como uma discussão de memória e aprendizagem.",
+    "connection": "Entra como leitura complementar. Os intervalos do Studio permanecem configuráveis e não são identificados como uma implementação do método do livro.",
+    "edition": "Apresentação autoral consultada; edição específica a definir para aprofundamento.",
+    "url": "https://josemariochaves.com.br/pt_BR/livro/",
+    "label": "Conhecer no site do autor",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  },
+  {
+    "id": "comfort-crisis",
+    "title": "A Crise do Conforto · The Comfort Crisis",
+    "author": "Michael Easter",
+    "theme": "Rotina e desafios",
+    "idea": "Aborda a relação entre conforto, desafios e hábitos em uma narrativa de desenvolvimento pessoal.",
+    "connection": "Leitura de contexto para refletir sobre rotina. Não fundamenta intervalos de revisão nem metas cognitivas ou de saúde no Studio.",
+    "edition": "Link para a edição original e apresentação da editora.",
+    "url": "https://www.penguinrandomhouse.com/books/634446/the-comfort-crisis-by-michael-easter/9780593138779/",
+    "label": "Conhecer na editora",
+    "implementationStatus": "Leitura complementar · protocolo completo não verificado no aplicativo"
+  }
+]

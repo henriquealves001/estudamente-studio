@@ -1,0 +1,122 @@
+[
+  {
+    "id": "retrieval",
+    "title": "Resposta antes do gabarito",
+    "status": "Aplicado com condições",
+    "behavior": "A prática solicita uma resposta ou “Não sei” antes de revelar o gabarito e registra o uso de dica.",
+    "limit": "Perguntas abertas são autoavaliadas. O aplicativo não confere sozinho se a resposta é conceitualmente correta; um acerto não comprova retenção futura.",
+    "refs": [
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "35"
+    ]
+  },
+  {
+    "id": "spacing",
+    "title": "Revisões distribuídas no tempo",
+    "status": "Aplicação parcial",
+    "behavior": "As próximas revisões usam datas, resultados e parâmetros que você pode editar. Atraso não vira erro automaticamente.",
+    "limit": "Os multiplicadores são heurísticas do projeto. Não há evidência de que estes valores sejam ideais para você nem de que expansão seja sempre melhor que intervalos uniformes.",
+    "refs": [
+      "05",
+      "06",
+      "10",
+      "12"
+    ]
+  },
+  {
+    "id": "feedback",
+    "title": "Feedback e autoexplicação",
+    "status": "Aplicação parcial",
+    "behavior": "O gabarito aparece após a tentativa. Há campos para explicação, correção e reflexão sobre o erro.",
+    "limit": "A explicação é opcional e depende de quem cadastrou a pergunta; o aplicativo não valida o gabarito nem a qualidade da reflexão.",
+    "refs": [
+      "31",
+      "34",
+      "35"
+    ]
+  },
+  {
+    "id": "examples",
+    "title": "Exemplos e retirada do apoio",
+    "status": "Aplicação parcial",
+    "behavior": "Podem ser cadastrados exemplo análogo e exercício guiado antes da tentativa principal.",
+    "limit": "Não há retirada adaptativa de etapas por proficiência. Se o exemplo revelar a resposta da pergunta principal, isso não constitui uma medição independente de retenção.",
+    "refs": [
+      "32",
+      "33"
+    ]
+  },
+  {
+    "id": "confidence",
+    "title": "Confiança e desempenho",
+    "status": "Aplicação parcial",
+    "behavior": "Confiança, resposta inicial, ajuda e resultado ficam no histórico.",
+    "limit": "Não existe cálculo de calibração da confiança nem diagnóstico automático de domínio. Horas e checklist mostram atividade, não retenção medida.",
+    "refs": [
+      "37"
+    ]
+  },
+  {
+    "id": "relearning",
+    "title": "Reaprendizagem sucessiva",
+    "status": "Protocolo não implementado",
+    "behavior": "É possível voltar a uma pergunta em outra sessão e as tentativas ficam registradas.",
+    "limit": "A sessão não exige alcançar um critério de recuperação nem o manter em várias sessões. Portanto não reproduz um protocolo completo de reaprendizagem sucessiva.",
+    "refs": [
+      "25",
+      "26",
+      "27"
+    ]
+  },
+  {
+    "id": "interleaving",
+    "title": "Intercalação de problemas relacionados",
+    "status": "Não implementada na fila",
+    "behavior": "A fila prioriza vencimento e perguntas novas; o ciclo distribui tempo entre disciplinas.",
+    "limit": "Não há classificação nem alternância controlada de tipos de problema relacionados. Alternar disciplinas no cronograma não equivale a esse procedimento.",
+    "refs": [
+      "29",
+      "30"
+    ]
+  },
+  {
+    "id": "planning",
+    "title": "Ciclo, horas e cronograma",
+    "status": "Escolhas de organização",
+    "behavior": "Disponibilidade, pesos de prova, dificuldade informada e metas manuais orientam a distribuição.",
+    "limit": "A fórmula de pesos, os blocos de conteúdo de até 30 min, a revisão de 15 min no cronograma e a estimativa inicial de 2 h por assunto nos modelos são escolhas configuráveis ou operacionais do projeto, não doses científicas demonstradas.",
+    "refs": [
+      "36"
+    ]
+  },
+  {
+    "id": "models",
+    "title": "Modelo treinado de memória",
+    "status": "Não implementado",
+    "behavior": "O aplicativo registra resultados individuais e aplica regras explícitas de intervalo.",
+    "limit": "Não estima parâmetros de memória com dados, não implementa HLR ou otimização por custo e não prevê probabilidade calibrada de lembrança. Esses estudos são contexto para evolução.",
+    "refs": [
+      "38",
+      "39",
+      "40",
+      "41",
+      "42"
+    ]
+  },
+  {
+    "id": "validation",
+    "title": "Eficácia do próprio EstudaMente",
+    "status": "Não demonstrada",
+    "behavior": "Testes técnicos verificam cálculos, preservação dos dados e coerência das regras.",
+    "limit": "Não foi conduzido estudo controlado de retenção tardia e tempo de aprendizagem. Testes de software não comprovam ganho de aprendizagem, nota ou aprovação.",
+    "refs": [
+      "12",
+      "42",
+      "48"
+    ]
+  }
+]

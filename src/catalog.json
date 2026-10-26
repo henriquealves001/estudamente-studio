@@ -1,0 +1,2090 @@
+[
+  {
+    "id": "gcm-firmino-2026",
+    "name": "GCM · Firmino Alves",
+    "edition": "Edital 001/2026",
+    "description": "O plano que já construímos, com 122 unidades do conteúdo e métricas do arquivo de edital disponível.",
+    "source": {
+      "label": "Edital 001/2026 · item 10.1 e Anexo II",
+      "url": "/references/gcm-firmino-001-2026.pdf",
+      "pdf": "/references/gcm-firmino-001-2026.pdf",
+      "note": "Base no arquivo fornecido. O quadro de nível médio traz 10 questões por disciplina, com pesos 4/3/3. As 122 unidades são desdobramentos pedagógicos do programa."
+    },
+    "examDate": "2027-01-24",
+    "allocationNote": "Métricas de prova: 10 × 4, 10 × 3, 10 × 3. Tempos por assunto são estimativas editáveis.",
+    "subjects": [
+      {
+        "name": "Português",
+        "questions": 10,
+        "points": 4,
+        "weight": 40,
+        "topics": [
+          {
+            "title": "Compreensão de textos de gêneros variados",
+            "detail": "Compreensão de textos de gêneros variados",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: compreensão/interpretação; tipos e gêneros"
+          },
+          {
+            "title": "Interpretação: informações explícitas e inferências",
+            "detail": "Interpretação: informações explícitas e inferências",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: compreensão/interpretação; tipos e gêneros"
+          },
+          {
+            "title": "Reconhecimento de tipos textuais",
+            "detail": "Reconhecimento de tipos textuais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: compreensão/interpretação; tipos e gêneros"
+          },
+          {
+            "title": "Reconhecimento de gêneros textuais",
+            "detail": "Reconhecimento de gêneros textuais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: compreensão/interpretação; tipos e gêneros"
+          },
+          {
+            "title": "Domínio da ortografia oficial: emprego de letras",
+            "detail": "Domínio da ortografia oficial: emprego de letras",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: domínio da ortografia oficial"
+          },
+          {
+            "title": "Acentuação gráfica e hífen (desdobramento da ortografia)",
+            "detail": "Acentuação gráfica e hífen (desdobramento da ortografia)",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: domínio da ortografia oficial"
+          },
+          {
+            "title": "Substantivos: emprego e flexões",
+            "detail": "Substantivos: emprego e flexões",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Artigos e numerais: emprego",
+            "detail": "Artigos e numerais: emprego",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Adjetivos: emprego e flexões",
+            "detail": "Adjetivos: emprego e flexões",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Pronomes: pessoais, possessivos, demonstrativos e indefinidos",
+            "detail": "Pronomes: pessoais, possessivos, demonstrativos e indefinidos",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Pronomes relativos e interrogativos",
+            "detail": "Pronomes relativos e interrogativos",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Verbos: flexões, formas nominais e locuções",
+            "detail": "Verbos: flexões, formas nominais e locuções",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Emprego de tempos e modos verbais",
+            "detail": "Emprego de tempos e modos verbais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Advérbios e locuções adverbiais",
+            "detail": "Advérbios e locuções adverbiais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Preposições e locuções prepositivas",
+            "detail": "Preposições e locuções prepositivas",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Conjunções e locuções conjuntivas",
+            "detail": "Conjunções e locuções conjuntivas",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Interjeições e reconhecimento contextual das classes",
+            "detail": "Interjeições e reconhecimento contextual das classes",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: classes de palavras; tempos e modos verbais"
+          },
+          {
+            "title": "Frase, oração e período; identificação dos núcleos",
+            "detail": "Frase, oração e período; identificação dos núcleos",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Sujeito e predicado",
+            "detail": "Sujeito e predicado",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Predicação e complementos verbais",
+            "detail": "Predicação e complementos verbais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Complemento nominal e adjunto adnominal",
+            "detail": "Complemento nominal e adjunto adnominal",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Predicativos, adjuntos adverbiais, aposto e vocativo",
+            "detail": "Predicativos, adjuntos adverbiais, aposto e vocativo",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Coordenação entre termos e orações",
+            "detail": "Coordenação entre termos e orações",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Subordinação substantiva",
+            "detail": "Subordinação substantiva",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Subordinação adjetiva",
+            "detail": "Subordinação adjetiva",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Subordinação adverbial e orações reduzidas",
+            "detail": "Subordinação adverbial e orações reduzidas",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Concordância nominal",
+            "detail": "Concordância nominal",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Concordância verbal",
+            "detail": "Concordância verbal",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Regência nominal",
+            "detail": "Regência nominal",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Regência verbal",
+            "detail": "Regência verbal",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Emprego do sinal indicativo de crase",
+            "detail": "Emprego do sinal indicativo de crase",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Colocação dos pronomes átonos: próclise, mesóclise e ênclise",
+            "detail": "Colocação dos pronomes átonos: próclise, mesóclise e ênclise",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Pontuação no período simples",
+            "detail": "Pontuação no período simples",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Pontuação no período composto e efeitos de sentido",
+            "detail": "Pontuação no período composto e efeitos de sentido",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: estrutura morfossintática e tópicos sintáticos expressos"
+          },
+          {
+            "title": "Mecanismos de coesão textual",
+            "detail": "Mecanismos de coesão textual",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Referenciação, substituição e repetição",
+            "detail": "Referenciação, substituição e repetição",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Conectores e elementos de sequenciação textual",
+            "detail": "Conectores e elementos de sequenciação textual",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Significação das palavras em contexto",
+            "detail": "Significação das palavras em contexto",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Reescrita de frases e parágrafos",
+            "detail": "Reescrita de frases e parágrafos",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Substituição de palavras e trechos de texto",
+            "detail": "Substituição de palavras e trechos de texto",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Reorganização de orações e períodos",
+            "detail": "Reorganização de orações e períodos",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Reescrita de diferentes gêneros e níveis de formalidade",
+            "detail": "Reescrita de diferentes gêneros e níveis de formalidade",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: coesão; significação; reescrita"
+          },
+          {
+            "title": "Aspectos gerais da redação oficial (Manual da Presidência)",
+            "detail": "Aspectos gerais da redação oficial (Manual da Presidência)",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: correspondência oficial; faz parte de Português, não é redação dissertativa"
+          },
+          {
+            "title": "Finalidade dos expedientes oficiais",
+            "detail": "Finalidade dos expedientes oficiais",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: correspondência oficial; faz parte de Português, não é redação dissertativa"
+          },
+          {
+            "title": "Adequação da linguagem ao tipo de documento",
+            "detail": "Adequação da linguagem ao tipo de documento",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: correspondência oficial; faz parte de Português, não é redação dissertativa"
+          },
+          {
+            "title": "Adequação do formato do texto ao gênero",
+            "detail": "Adequação do formato do texto ao gênero",
+            "area": "Português",
+            "origin": "Anexo II, p. 27: correspondência oficial; faz parte de Português, não é redação dissertativa"
+          }
+        ]
+      },
+      {
+        "name": "Matemática",
+        "questions": 10,
+        "points": 3,
+        "weight": 30,
+        "topics": [
+          {
+            "title": "Números naturais",
+            "detail": "Números naturais",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Adição e subtração; situações-problema",
+            "detail": "Adição e subtração; situações-problema",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Multiplicação e divisão; situações-problema",
+            "detail": "Multiplicação e divisão; situações-problema",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Multiplicação/divisão com 2 e 3 números no divisor (redação do edital)",
+            "detail": "Multiplicação/divisão com 2 e 3 números no divisor (redação do edital)",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números inteiros: operações e propriedades",
+            "detail": "Números inteiros: operações e propriedades",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números primos e divisibilidade",
+            "detail": "Números primos e divisibilidade",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Mínimo múltiplo comum e máximo divisor comum",
+            "detail": "Mínimo múltiplo comum e máximo divisor comum",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números fracionários: operações e propriedades",
+            "detail": "Números fracionários: operações e propriedades",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números decimais: operações e propriedades",
+            "detail": "Números decimais: operações e propriedades",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números racionais: representação fracionária e decimal",
+            "detail": "Números racionais: representação fracionária e decimal",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Números reais e suas operações",
+            "detail": "Números reais e suas operações",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Situações-problema de nível alfabetizado e fundamental",
+            "detail": "Situações-problema de nível alfabetizado e fundamental",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: números, operações e problemas"
+          },
+          {
+            "title": "Proporcionalidade direta e inversa",
+            "detail": "Proporcionalidade direta e inversa",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Regra de três simples",
+            "detail": "Regra de três simples",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Porcentagem",
+            "detail": "Porcentagem",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Juros (simples e compostos como desdobramento)",
+            "detail": "Juros (simples e compostos como desdobramento)",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Sistema monetário brasileiro",
+            "detail": "Sistema monetário brasileiro",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Unidades de medida e sistema métrico decimal",
+            "detail": "Unidades de medida e sistema métrico decimal",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Medidas de comprimento, massa e capacidade",
+            "detail": "Medidas de comprimento, massa e capacidade",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Medidas de tempo",
+            "detail": "Medidas de tempo",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Medidas de área e volume",
+            "detail": "Medidas de área e volume",
+            "area": "Matemática",
+            "origin": "Anexo II, pp. 27–28: proporcionalidade, juros, medidas"
+          },
+          {
+            "title": "Proposições e conectivos",
+            "detail": "Proposições e conectivos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: lógica; conjuntos"
+          },
+          {
+            "title": "Equivalências lógicas",
+            "detail": "Equivalências lógicas",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: lógica; conjuntos"
+          },
+          {
+            "title": "Quantificadores e predicados",
+            "detail": "Quantificadores e predicados",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: lógica; conjuntos"
+          },
+          {
+            "title": "Conjuntos e operações",
+            "detail": "Conjuntos e operações",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: lógica; conjuntos"
+          },
+          {
+            "title": "Diagramas de conjuntos",
+            "detail": "Diagramas de conjuntos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: lógica; conjuntos"
+          },
+          {
+            "title": "Relações arbitrárias entre pessoas, lugares, objetos e eventos",
+            "detail": "Relações arbitrárias entre pessoas, lugares, objetos e eventos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Dedução de informações e avaliação de condições",
+            "detail": "Dedução de informações e avaliação de condições",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Raciocínio verbal",
+            "detail": "Raciocínio verbal",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Raciocínio matemático e sequencial",
+            "detail": "Raciocínio matemático e sequencial",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Orientação espacial e temporal",
+            "detail": "Orientação espacial e temporal",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Formação de conceitos e discriminação de elementos",
+            "detail": "Formação de conceitos e discriminação de elementos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Problemas aritméticos, geométricos e matriciais",
+            "detail": "Problemas aritméticos, geométricos e matriciais",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Problemas de lógica e raciocínio",
+            "detail": "Problemas de lógica e raciocínio",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: estruturas lógicas e raciocínios"
+          },
+          {
+            "title": "Ângulos",
+            "detail": "Ângulos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Triângulos",
+            "detail": "Triângulos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Polígonos",
+            "detail": "Polígonos",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Distâncias e proporcionalidade geométrica",
+            "detail": "Distâncias e proporcionalidade geométrica",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Relações métricas no triângulo retângulo",
+            "detail": "Relações métricas no triângulo retângulo",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Perímetro e área",
+            "detail": "Perímetro e área",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Plano cartesiano: sistema de coordenadas",
+            "detail": "Plano cartesiano: sistema de coordenadas",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Plano cartesiano: distância",
+            "detail": "Plano cartesiano: distância",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: geometria e plano cartesiano"
+          },
+          {
+            "title": "Leitura e compreensão de gráficos e tabelas",
+            "detail": "Leitura e compreensão de gráficos e tabelas",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          },
+          {
+            "title": "Problemas de contagem",
+            "detail": "Problemas de contagem",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          },
+          {
+            "title": "Noções de probabilidade",
+            "detail": "Noções de probabilidade",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          },
+          {
+            "title": "Estatística: média",
+            "detail": "Estatística: média",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          },
+          {
+            "title": "Estatística: moda e mediana",
+            "detail": "Estatística: moda e mediana",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          },
+          {
+            "title": "Estatística: desvio padrão",
+            "detail": "Estatística: desvio padrão",
+            "area": "Matemática",
+            "origin": "Anexo II, p. 28: dados, contagem, probabilidade e estatística"
+          }
+        ]
+      },
+      {
+        "name": "Conhecimentos Gerais",
+        "questions": 10,
+        "points": 3,
+        "weight": 30,
+        "topics": [
+          {
+            "title": "Aspectos históricos do Brasil",
+            "detail": "Aspectos históricos do Brasil",
+            "area": "História do Brasil",
+            "origin": "Anexo II, p. 28: aspectos históricos do Brasil, estado e município"
+          },
+          {
+            "title": "Aspectos históricos da Bahia",
+            "detail": "Aspectos históricos da Bahia",
+            "area": "História do Brasil",
+            "origin": "Anexo II, p. 28: aspectos históricos do Brasil, estado e município"
+          },
+          {
+            "title": "Aspectos históricos de Firmino Alves",
+            "detail": "Aspectos históricos de Firmino Alves",
+            "area": "História do Brasil",
+            "origin": "Anexo II, p. 28: aspectos históricos do Brasil, estado e município"
+          },
+          {
+            "title": "Aspectos geográficos e físicos do Brasil",
+            "detail": "Aspectos geográficos e físicos do Brasil",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos geográficos e físicos da Bahia",
+            "detail": "Aspectos geográficos e físicos da Bahia",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos geográficos e físicos de Firmino Alves",
+            "detail": "Aspectos geográficos e físicos de Firmino Alves",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos econômicos do Brasil, Bahia e município",
+            "detail": "Aspectos econômicos do Brasil, Bahia e município",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos sociais do Brasil, Bahia e município",
+            "detail": "Aspectos sociais do Brasil, Bahia e município",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos estatísticos do Brasil, Bahia e município",
+            "detail": "Aspectos estatísticos do Brasil, Bahia e município",
+            "area": "Geografia do Brasil",
+            "origin": "Anexo II, p. 28: aspectos geográficos, físicos, econômicos, sociais e estatísticos"
+          },
+          {
+            "title": "Aspectos políticos do Brasil, Bahia e município",
+            "detail": "Aspectos políticos do Brasil, Bahia e município",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Conhecimentos sobre o Município de Firmino Alves",
+            "detail": "Conhecimentos sobre o Município de Firmino Alves",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Símbolos nacionais",
+            "detail": "Símbolos nacionais",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Símbolos estaduais da Bahia",
+            "detail": "Símbolos estaduais da Bahia",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Símbolos municipais de Firmino Alves",
+            "detail": "Símbolos municipais de Firmino Alves",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Cultura Brasileira",
+            "detail": "Cultura Brasileira",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Ecologia e Meio Ambiente",
+            "detail": "Ecologia e Meio Ambiente",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Tecnologia",
+            "detail": "Tecnologia",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Cidadania e consciência ecológica",
+            "detail": "Cidadania e consciência ecológica",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Desenvolvimento sustentável",
+            "detail": "Desenvolvimento sustentável",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Racismo e Discriminação Social",
+            "detail": "Racismo e Discriminação Social",
+            "area": "Conhecimentos locais",
+            "origin": "Anexo II, p. 28: conhecimentos gerais; desdobramentos por escala territorial"
+          },
+          {
+            "title": "Economia: Brasil, Bahia e município",
+            "detail": "Economia: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "História e política: Brasil, Bahia e município",
+            "detail": "História e política: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Meio ambiente: Brasil, Bahia e município",
+            "detail": "Meio ambiente: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Justiça e segurança pública: Brasil, Bahia e município",
+            "detail": "Justiça e segurança pública: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Saúde: Brasil, Bahia e município",
+            "detail": "Saúde: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Cultura e religião: Brasil, Bahia e município",
+            "detail": "Cultura e religião: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Esportes: Brasil, Bahia e município",
+            "detail": "Esportes: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          },
+          {
+            "title": "Inovações tecnológicas e científicas: Brasil, Bahia e município",
+            "detail": "Inovações tecnológicas e científicas: Brasil, Bahia e município",
+            "area": "Atualidades",
+            "origin": "Anexo II, p. 28: fatos de 2020 até os dias atuais, mídia local e/ou nacional"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pmba-soldado-2022",
+    "name": "PMBA · Soldado",
+    "edition": "Referência histórica · SAEB/05/2022",
+    "description": "Programa da Polícia Militar, separado do programa dos Bombeiros. Doze disciplinas e roteiro de conteúdo pronto.",
+    "source": {
+      "label": "Governo da Bahia · SAEB/05/2022 · item 7.3 e Anexo II",
+      "url": "https://www.ba.gov.br/bombeiros/concursos/curso-de-formacao-de-soldado-cfsd-2022",
+      "pdf": "/references/pmba-soldado-2022.pdf",
+      "note": "Referência de preparação, sem data de nova prova. 50 questões gerais e 30 específicas; o edital não fixa a contagem individual de cada disciplina."
+    },
+    "examDate": "",
+    "allocationNote": "Horas sugeridas: 62,5% para gerais e 37,5% para específicas, com prioridade pedagógica a Português e Matemática. Não são quantidades oficiais de questões por disciplina.",
+    "subjects": [
+      {
+        "name": "Português",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 18,
+        "topics": [
+          {
+            "title": "Compreensão e interpretação de textos",
+            "detail": "1. Compreensão e interpretação de textos.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Tipologia textual e gêneros textuais",
+            "detail": "2. Tipologia textual e gêneros textuais.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Ortografia oficial",
+            "detail": "3. Ortografia oficial.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Acentuação gráfica",
+            "detail": "4. Acentuação gráfica.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Classes de palavras",
+            "detail": "5. Classes de palavras.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Uso do sinal indicativo de crase",
+            "detail": "6. Uso do sinal indicativo de crase.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Sintaxe da oração e do período",
+            "detail": "7. Sintaxe da oração e do período.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          },
+          {
+            "title": "Pontuação",
+            "detail": "8. Pontuação.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 8"
+          },
+          {
+            "title": "Concordância nominal e verbal",
+            "detail": "9. Concordância nominal e verbal.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 9"
+          },
+          {
+            "title": "Regência nominal e verbal",
+            "detail": "10. Regência nominal e verbal.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 10"
+          },
+          {
+            "title": "Significação das palavras",
+            "detail": "11. Significação das palavras.",
+            "area": "Português",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 11"
+          }
+        ]
+      },
+      {
+        "name": "História do Brasil",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 8,
+        "topics": [
+          {
+            "title": "Descobrimento do Brasil (1500)",
+            "detail": "1. Descobrimento do Brasil (1500).",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Brasil Colônia (1530-1815): Capitanias Hereditárias, Economia, Extrativismo Vegetal, Extrativismo Mineral, Pecuária, Escravidão, Organização Po-  EXECUTIVO 23.511 lítico-Adm",
+            "detail": "2. Brasil Colônia (1530-1815): Capitanias Hereditárias, Economia, Extrativismo Vegetal, Extrativismo Mineral, Pecuária, Escravidão, Organização Po-  EXECUTIVO 23.511 lítico-Administrativa, Expansão Territorial.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Independência do Brasil (1822): a Nomeação do Príncipe Regente D",
+            "detail": "3. Independência do Brasil (1822): a Nomeação do Príncipe Regente D. Pedro I, Dia do Fico, Reconhecimento da Independência do Brasil.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Primeiro Reinado (1822-1831)",
+            "detail": "4. Primeiro Reinado (1822-1831).",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Segundo Reinado (1831-1840)",
+            "detail": "5. Segundo Reinado (1831-1840).",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Primeira República (1889-1930): o Primeiro Governo Provisório, Assembleia Constituinte, Presidência de Deodoro da Fonseca, a Política dos Governadores, o Coronelismo, Moviment",
+            "detail": "6. Primeira República (1889-1930): o Primeiro Governo Provisório, Assembleia Constituinte, Presidência de Deodoro da Fonseca, a Política dos Governadores, o Coronelismo, Movimentos Tenentistas, Coluna Prestes, Revolta da Armada.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Revolução de 1930",
+            "detail": "7. Revolução de 1930.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          },
+          {
+            "title": "Era Vargas (1930-1945)",
+            "detail": "8. Era Vargas (1930-1945).",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 8"
+          },
+          {
+            "title": "Os Presidentes do Brasil de 1964 à atualidade",
+            "detail": "9. Os Presidentes do Brasil de 1964 à atualidade.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 9"
+          },
+          {
+            "title": "História da Bahia",
+            "detail": "10. História da Bahia.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 10"
+          },
+          {
+            "title": "Independência da Bahia",
+            "detail": "11. Independência da Bahia.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 11"
+          },
+          {
+            "title": "Revolta de Canudos",
+            "detail": "12. Revolta de Canudos.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 12"
+          },
+          {
+            "title": "Revolta dos Malês",
+            "detail": "13. Revolta dos Malês.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 13"
+          },
+          {
+            "title": "Conjuração Baiana",
+            "detail": "14. Conjuração Baiana.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 14"
+          },
+          {
+            "title": "Sabinada",
+            "detail": "15. Sabinada.",
+            "area": "História do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 15"
+          }
+        ]
+      },
+      {
+        "name": "Geografia do Brasil",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 8,
+        "topics": [
+          {
+            "title": "Relevo brasileiro",
+            "detail": "1. Relevo brasileiro.",
+            "area": "Geografia do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Urbanização: crescimento urbano, problemas estruturais, contingente populacional brasileiro",
+            "detail": "2. Urbanização: crescimento urbano, problemas estruturais, contingente populacional brasileiro. 3.Tiposdefontesdeenergia queparticipamdamatrizenergética brasileira: eólica, hidráulica, biomassa, solar e a das marés.",
+            "area": "Geografia do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Problemas Ambientais",
+            "detail": "4. Problemas Ambientais.",
+            "area": "Geografia do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Clima: pressão atmosférica, umidade, temperatura, fatores que determinam o clima, mudanças climáticas e as suas consequências",
+            "detail": "5. Clima: pressão atmosférica, umidade, temperatura, fatores que determinam o clima, mudanças climáticas e as suas consequências.",
+            "area": "Geografia do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Geografia da Bahia: aspectos políticos, físicos, econômicos, sociais e culturais",
+            "detail": "6. Geografia da Bahia: aspectos políticos, físicos, econômicos, sociais e culturais.",
+            "area": "Geografia do Brasil",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          }
+        ]
+      },
+      {
+        "name": "Matemática",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 15,
+        "topics": [
+          {
+            "title": "Conjuntos numéricos: Números Naturais, Inteiros, Racionais, Reais e Complexos (forma algébrica e forma trigonométrica)",
+            "detail": "1. Conjuntos numéricos: Números Naturais, Inteiros, Racionais, Reais e Complexos (forma algébrica e forma trigonométrica). Operações, propriedades e aplicações. Sequências numéricas, progressão aritmética e progressão geométrica.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Álgebra: Expressões algébricas",
+            "detail": "2. Álgebra: Expressões algébricas. Polinômios: operações e propriedades. Equações polinomiais e inequações relacionadas.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Funções: generalidades",
+            "detail": "3. Funções: generalidades. Funções elementares: 1º grau, 2º grau, modular, exponencial e logarítmica, gráficos. Propriedades.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Sistemas lineares, Matrizes e Determinantes: Propriedades, aplicações",
+            "detail": "4. Sistemas lineares, Matrizes e Determinantes: Propriedades, aplicações.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Análise Combinatória: Arranjos, Permutações e Combinações simples, Binômio de Newton e Probabilidade em espaços amostrais finitos",
+            "detail": "5. Análise Combinatória: Arranjos, Permutações e Combinações simples, Binômio de Newton e Probabilidade em espaços amostrais finitos.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Geometria e Medidas: Geometria plana: figuras geométricas, congruência, semelhança, perímetro e área",
+            "detail": "6. Geometria e Medidas: Geometria plana: figuras geométricas, congruência, semelhança, perímetro e área. Geometria espacial: paralelismo, perpendicularismo entre retas e planos, áreas e volumes dos sólidos geométricos: prisma, pirâmide, cilindro, cone e esfera. Geometria analítica no plano: retas, circunferência e distâncias.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Trigonometria: razões trigonométricas, funções, fórmulas de transformações trigonométricas, equações e triângulos",
+            "detail": "7. Trigonometria: razões trigonométricas, funções, fórmulas de transformações trigonométricas, equações e triângulos.",
+            "area": "Matemática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          }
+        ]
+      },
+      {
+        "name": "Atualidades",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 5,
+        "topics": [
+          {
+            "title": "Globalização: conceitos, efeitos e implicações sociais, econômicas, políticas e culturais",
+            "detail": "1. Globalização: conceitos, efeitos e implicações sociais, econômicas, políticas e culturais.",
+            "area": "Atualidades",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Mul- ticulturalidade, Pluralidade e Diversidade Cultural",
+            "detail": "2. Mul- ticulturalidade, Pluralidade e Diversidade Cultural.",
+            "area": "Atualidades",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Tecnologias de Informação e Comunicação: conceitos, efeitos e implicações sociais, econômicas, políticas e culturais",
+            "detail": "3. Tecnologias de Informação e Comunicação: conceitos, efeitos e implicações sociais, econômicas, políticas e culturais.",
+            "area": "Atualidades",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          }
+        ]
+      },
+      {
+        "name": "Informática",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 8.5,
+        "topics": [
+          {
+            "title": "Conceitos e modos de utilização de aplicativos para edição de textos (Word, Writer), planilhas (Excel, Calc), apresentações (PowerPoint, Impress); Microsoft Office (versão 200",
+            "detail": "1. Conceitos e modos de utilização de aplicativos para edição de textos (Word, Writer), planilhas (Excel, Calc), apresentações (PowerPoint, Impress); Microsoft Office (versão 2007 e superiores), LibreOffice (versão 5.0 e superiores).",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Sistemas operacionais Windows 7, Windows 10 e Linux",
+            "detail": "2. Sistemas operacionais Windows 7, Windows 10 e Linux.",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Organização e gerenciamento de informações, arquivos, pastas e programas",
+            "detail": "3. Organização e gerenciamento de informações, arquivos, pastas e programas.",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Atalhos de teclado, ícones, área de trabalho e lixeira",
+            "detail": "4. Atalhos de teclado, ícones, área de trabalho e lixeira.",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados à Internet e intranet",
+            "detail": "5. Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados à Internet e intranet.",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Correio eletrônico",
+            "detail": "6. Correio eletrônico.",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Computação em nuvem",
+            "detail": "7. Computação em nuvem. CONHECIMENTOS ESPECÍFICOS",
+            "area": "Informática",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          }
+        ]
+      },
+      {
+        "name": "Direito Constitucional",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 8,
+        "topics": [
+          {
+            "title": "Constituição do Estado da Bahia",
+            "detail": "2. Constituição do Estado da Bahia. 2.1. Dos princípios fundamentais. 2.2. Direitos e garantias fundamentais. 2.3. Dos Servidores Públicos Militares. 2.4. Da Segurança Pública.",
+            "area": "Direito Constitucional",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          }
+        ]
+      },
+      {
+        "name": "Direitos Humanos",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 5.5,
+        "topics": [
+          {
+            "title": "A Declaração Universal dos Direitos Humanos/1948",
+            "detail": "1. A Declaração Universal dos Direitos Humanos/1948.",
+            "area": "Direitos Humanos",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Convenção Americana sobre Direitos Humanos/1969 (Pacto de São José da Costa Rica) (art",
+            "detail": "2. Convenção Americana sobre Direitos Humanos/1969 (Pacto de São José da Costa Rica) (art. 1° ao 32).",
+            "area": "Direitos Humanos",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Pacto Internacional dos Direitos Econômicos, Sociais e Culturais (art",
+            "detail": "3. Pacto Internacional dos Direitos Econômicos, Sociais e Culturais (art. 1° ao 15).",
+            "area": "Direitos Humanos",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Declaração de Pequim Adotada pela Quarta Conferência Mundial sobre as Mulheres: Ação para Igualdade, Desenvolvimento e Paz",
+            "detail": "4. Declaração de Pequim Adotada pela Quarta Conferência Mundial sobre as Mulheres: Ação para Igualdade, Desenvolvimento e Paz.",
+            "area": "Direitos Humanos",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          }
+        ]
+      },
+      {
+        "name": "Direito Administrativo",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 6.5,
+        "topics": [
+          {
+            "title": "Administração Pública",
+            "detail": "1. Administração Pública.",
+            "area": "Direito Administrativo",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Princípios fundamentais da administração pública",
+            "detail": "2. Princípios fundamentais da administração pública.",
+            "area": "Direito Administrativo",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Poderes e deveres dos administradores públicos: uso e abuso do poder, poderes vinculado, discricionário, hierárquico, disciplinar e regulamentar, poder de polícia, deveres dos",
+            "detail": "3. Poderes e deveres dos administradores públicos: uso e abuso do poder, poderes vinculado, discricionário, hierárquico, disciplinar e regulamentar, poder de polícia, deveres dos administradores públicos.",
+            "area": "Direito Administrativo",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Servidores públicos: cargo, emprego e função públicos",
+            "detail": "4. Servidores públicos: cargo, emprego e função públicos.",
+            "area": "Direito Administrativo",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Regime jurídico do militar estadual: Estatuto dos Policiais Militares do Estado da Bahia (Lei estadual nº 7.990, de 27 de dezembro de 2001 - arts 1º ao 59)",
+            "detail": "5. Regime jurídico do militar estadual: Estatuto dos Policiais Militares do Estado da Bahia (Lei estadual nº 7.990, de 27 de dezembro de 2001 - arts 1º ao 59).",
+            "area": "Direito Administrativo",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          }
+        ]
+      },
+      {
+        "name": "Direito Penal",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 7.5,
+        "topics": [
+          {
+            "title": "Do crime",
+            "detail": "1. Do crime. 2.1. Elementos. 2.2. Consumação e tentativa. 2.3. Desistência voluntária e arrependimento eficaz. 2.4. Arrependimento posterior. 2.5. Crime impossível. 2.6. Causas de exclusão de ilicitude e culpabilidade.",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Contravenção",
+            "detail": "3. Contravenção.",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Dos crimes contra a vida (homicídio, lesão corporal, rixa)",
+            "detail": "4. Dos crimes contra a vida (homicídio, lesão corporal, rixa).",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Dos crimes contra a liberdade pessoal (constrangimento ilegal, ameaça, perseguição, sequestro e cárcere privado)",
+            "detail": "5. Dos crimes contra a liberdade pessoal (constrangimento ilegal, ameaça, perseguição, sequestro e cárcere privado).",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Dos crimes contra o patrimônio (furto, roubo, extorsão, apropriação indébita, receptação)",
+            "detail": "6. Dos crimes contra o patrimônio (furto, roubo, extorsão, apropriação indébita, receptação).",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Dos crimes contra a dignidade sexual (estupro, importunação sexual, assédio sexual)",
+            "detail": "7. Dos crimes contra a dignidade sexual (estupro, importunação sexual, assédio sexual).",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          },
+          {
+            "title": "Corrupção ativa",
+            "detail": "8. Corrupção ativa.",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 8"
+          },
+          {
+            "title": "Corrupção passiva",
+            "detail": "9. Corrupção passiva.",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 9"
+          },
+          {
+            "title": "Lei n° 9.455, de 07 de abril de 1997 (Crimes de tortura)",
+            "detail": "10. Lei n° 9.455, de 07 de abril de 1997 (Crimes de tortura).",
+            "area": "Direito Penal",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 10"
+          }
+        ]
+      },
+      {
+        "name": "Igualdade Racial e de Gênero",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 3.5,
+        "topics": [
+          {
+            "title": "Lei n° 12.288, de 20 de julho de 2010 (Estatuto da Igualdade Racial)",
+            "detail": "3. Lei n° 12.288, de 20 de julho de 2010 (Estatuto da Igualdade Racial).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Lei nº 7.716, de 5 de janeiro de 1989 (Define os crimes resultantes de preconceito de raça ou de cor) e Lei n° 9.459, de 13 de maio de 1997 (Tipificação dos crimes resultantes",
+            "detail": "4. Lei nº 7.716, de 5 de janeiro de 1989 (Define os crimes resultantes de preconceito de raça ou de cor) e Lei n° 9.459, de 13 de maio de 1997 (Tipificação dos crimes resultantes de preconceito de raça ou de cor).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Decreto n° 65.810, de 08 de dezembro de 1969 (Convenção internacional sobre a eliminação de todas as formas de discriminação racial)",
+            "detail": "5. Decreto n° 65.810, de 08 de dezembro de 1969 (Convenção internacional sobre a eliminação de todas as formas de discriminação racial).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Decreto n° 4.377, de 13 de setembro de 2002 (Convenção sobre a eliminação de todas as formas de discriminação contra a mulher)",
+            "detail": "6. Decreto n° 4.377, de 13 de setembro de 2002 (Convenção sobre a eliminação de todas as formas de discriminação contra a mulher).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha)",
+            "detail": "7. Lei nº 11.340, de 7 de agosto de 2006 (Lei Maria da Penha).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          },
+          {
+            "title": "Código Penal Brasileiro (art",
+            "detail": "8. Código Penal Brasileiro (art. 140).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 8"
+          },
+          {
+            "title": "Lei n° 9.455, de 7 de abril de 1997 (Crime de Tortura)",
+            "detail": "9. Lei n° 9.455, de 7 de abril de 1997 (Crime de Tortura).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 9"
+          },
+          {
+            "title": "Lei nº 7.437, de 20 de dezembro de 1985 (Lei Caó)",
+            "detail": "11. Lei nº 7.437, de 20 de dezembro de 1985 (Lei Caó).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 11"
+          },
+          {
+            "title": "Lei Estadual n° 10.549, de 28 de dezembro de 2006 (Secretaria de Promoção da Igualdade Racial)",
+            "detail": "12. Lei Estadual n° 10.549, de 28 de dezembro de 2006 (Secretaria de Promoção da Igualdade Racial).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 12"
+          },
+          {
+            "title": "Lei nº 10.678, de 23 de maio de 2003 (Secretaria de Políticas de Promoção da Igualdade Racial da Presidência da República)",
+            "detail": "13. Lei nº 10.678, de 23 de maio de 2003 (Secretaria de Políticas de Promoção da Igualdade Racial da Presidência da República).",
+            "area": "Igualdade Racial e de Gênero",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 13"
+          }
+        ]
+      },
+      {
+        "name": "Direito Penal Militar",
+        "questions": 0,
+        "points": 1.25,
+        "weight": 6.5,
+        "topics": [
+          {
+            "title": "Dos crimes contra a autoridade ou disciplina militar: motim, revolta, conspiração, aliciação para motim ou revolta",
+            "detail": "1. Dos crimes contra a autoridade ou disciplina militar: motim, revolta, conspiração, aliciação para motim ou revolta.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 1"
+          },
+          {
+            "title": "Da violência contra superior ou militar de serviço",
+            "detail": "2. Da violência contra superior ou militar de serviço.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 2"
+          },
+          {
+            "title": "Desrespeito a superior",
+            "detail": "3. Desrespeito a superior.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 3"
+          },
+          {
+            "title": "Recusa de obediência",
+            "detail": "4. Recusa de obediência.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 4"
+          },
+          {
+            "title": "Reunião ilícita",
+            "detail": "5. Reunião ilícita.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 5"
+          },
+          {
+            "title": "Publicação ou crítica indevida",
+            "detail": "6. Publicação ou crítica indevida.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 6"
+          },
+          {
+            "title": "Resistência mediante ameaça ou violência",
+            "detail": "7. Resistência mediante ameaça ou violência.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 7"
+          },
+          {
+            "title": "Dos crimes contra o serviço militar e o dever militar: deserção, abandono de posto, descumprimento de missão, embriaguez em serviço, dormir em serviço",
+            "detail": "8. Dos crimes contra o serviço militar e o dever militar: deserção, abandono de posto, descumprimento de missão, embriaguez em serviço, dormir em serviço.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 8"
+          },
+          {
+            "title": "Crimes contra a Administração Militar: desacato a superior, desacato a militar, desobediência, peculato, peculato-furto, concussão",
+            "detail": "9. Crimes contra a Administração Militar: desacato a superior, desacato a militar, desobediência, peculato, peculato-furto, concussão.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 9"
+          },
+          {
+            "title": "Dos crimes contra o dever funcional: prevaricação",
+            "detail": "10. Dos crimes contra o dever funcional: prevaricação.",
+            "area": "Direito Penal Militar",
+            "origin": "SAEB/05/2022 · Anexo II · PMBA · item 10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "pmba-oficial-2025",
+    "name": "PMBA · Oficial (CFO)",
+    "edition": "Referência histórica · PM/BM 001-CG/2024 · prova 2025",
+    "description": "As seis disciplinas do CFOPM, com Ciências Humanas e os sete ramos de Direito detalhados no checklist.",
+    "source": {
+      "label": "UNEB · Edital PM/BM 001-CG/2024 · quadro 03 e Anexo II",
+      "url": "https://cfopmbm2024.uneb.br/documentos/Edital_CFOPM-BM-2025-DOE.pdf",
+      "pdf": "/references/pmba-oficial-2025.pdf",
+      "note": "Somente o programa da Polícia Militar. A edição de referência teve prova em 2025; as datas de uma próxima seleção ficam em branco."
+    },
+    "examDate": "",
+    "allocationNote": "Métricas da edição: Português 20, Inglês 5, Humanas 20, Matemática 10, Informática 5, Direito 20; 1,25 ponto por questão.",
+    "subjects": [
+      {
+        "name": "Português",
+        "questions": 20,
+        "points": 1.25,
+        "weight": 20,
+        "topics": [
+          {
+            "title": "Leitura e interpretação de textos: 1.1 verbais extraídos de livros e periódicos contemporâneos; 1.2 mistos (verbais/não verbais) e não verbais; 1.3 textos publicitários (propa",
+            "detail": "1. Leitura e interpretação de textos: 1.1 verbais extraídos de livros e periódicos contemporâneos; 1.2 mistos (verbais/não verbais) e não verbais; 1.3 textos publicitários (propagandas, mensagens publicitárias, outdoors, etc).",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 1"
+          },
+          {
+            "title": "Nomes e verbo",
+            "detail": "2. Nomes e verbo. Flexões nominais e verbais.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 2"
+          },
+          {
+            "title": "Advérbio e suas circunstâncias de tempo, lugar, meio, intensidade, negação, afirmação, dúvida, etc",
+            "detail": "3. Advérbio e suas circunstâncias de tempo, lugar, meio, intensidade, negação, afirmação, dúvida, etc.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 3"
+          },
+          {
+            "title": "Palavras de relação intervocabular e interoracional: preposições e conjunções",
+            "detail": "4. Palavras de relação intervocabular e interoracional: preposições e conjunções.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 4"
+          },
+          {
+            "title": "Frase, oração, período",
+            "detail": "5. Frase, oração, período. Elementos constituintes da oração: termos essenciais, integrantes e acessórios. Coordenação e Subordinação.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 5"
+          },
+          {
+            "title": "Sintaxe de colocação, concordância e regência",
+            "detail": "6. Sintaxe de colocação, concordância e regência. Crase.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 6"
+          },
+          {
+            "title": "Formas de discurso: direto, indireto e indireto livre",
+            "detail": "7. Formas de discurso: direto, indireto e indireto livre.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 7"
+          },
+          {
+            "title": "Semântica: sinonímia, antonímia e heteronímia",
+            "detail": "8. Semântica: sinonímia, antonímia e heteronímia.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 8"
+          },
+          {
+            "title": "Pontuação e seus recursos sintático-semânticos",
+            "detail": "9. Pontuação e seus recursos sintático-semânticos.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 9"
+          },
+          {
+            "title": "Acentuação e ortografia",
+            "detail": "10. Acentuação e ortografia.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 10"
+          },
+          {
+            "title": "Diferença entre redação técnica (oficial) e redação estilística e suas respectivas características",
+            "detail": "11. Diferença entre redação técnica (oficial) e redação estilística e suas respectivas características.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 11"
+          },
+          {
+            "title": "Correspondência oficial: conceito e tipos de documentos",
+            "detail": "12. Correspondência oficial: conceito e tipos de documentos.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 12"
+          },
+          {
+            "title": "Diferença entre ofício e memorando",
+            "detail": "13. Diferença entre ofício e memorando.",
+            "area": "Português",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 13"
+          }
+        ]
+      },
+      {
+        "name": "Inglês",
+        "questions": 5,
+        "points": 1.25,
+        "weight": 5,
+        "topics": [
+          {
+            "title": "Compreensão de textos verbais e não-verbais",
+            "detail": "1. Compreensão de textos verbais e não-verbais.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 1"
+          },
+          {
+            "title": "Substantivos: Formação do plural: regular, irregular e casos especiais",
+            "detail": "2. Substantivos: Formação do plural: regular, irregular e casos especiais.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 2"
+          },
+          {
+            "title": "Gênero",
+            "detail": "3. Gênero. Contáveis e não-contáveis.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 3"
+          },
+          {
+            "title": "Formas possessivas dos nomes",
+            "detail": "4. Formas possessivas dos nomes. Modificadores do nome.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 4"
+          },
+          {
+            "title": "Artigos e Demonstrativos: Definidos, indefinidos e outros determinantes",
+            "detail": "5. Artigos e Demonstrativos: Definidos, indefinidos e outros determinantes. Demonstrativo de acordo com a posição, singular e plural.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 5"
+          },
+          {
+            "title": "Adjetivos: Grau comparativo e superlativo: regulares e irregulares",
+            "detail": "6. Adjetivos: Grau comparativo e superlativo: regulares e irregulares. Indefinidos.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 6"
+          },
+          {
+            "title": "Numerais Cardinais e Ordinais",
+            "detail": "7. Numerais Cardinais e Ordinais.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 7"
+          },
+          {
+            "title": "Pronomes: Pessoais: sujeito e objeto",
+            "detail": "8. Pronomes: Pessoais: sujeito e objeto.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 8"
+          },
+          {
+            "title": "Possessivos: substantivos e adjetivos",
+            "detail": "9. Possessivos: substantivos e adjetivos. Reflexivos. Indefinidos. Interrogativos. Relativos.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 9"
+          },
+          {
+            "title": "Verbos (Modos, tempos e formas): Regulares e irregulares",
+            "detail": "10. Verbos (Modos, tempos e formas): Regulares e irregulares. Auxiliares e impessoais. Modais. Two-word verbs. Voz ativa e voz passiva. O gerúndio e seu uso específico.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 10"
+          },
+          {
+            "title": "Discurso direto e indireto",
+            "detail": "11. Discurso direto e indireto. Sentenças condicionais.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 11"
+          },
+          {
+            "title": "Advérbios: Tipos: frequência, modo, lugar, tempo, intensidade, dúvida, afirmação",
+            "detail": "12. Advérbios: Tipos: frequência, modo, lugar, tempo, intensidade, dúvida, afirmação.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 12"
+          },
+          {
+            "title": "Expressões adverbiais",
+            "detail": "13. Expressões adverbiais.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 13"
+          },
+          {
+            "title": "Palavras de relação: Preposições",
+            "detail": "14. Palavras de relação: Preposições. Conjunções.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 14"
+          },
+          {
+            "title": "Derivação de palavras pelos processos de prefixação e sufixação",
+            "detail": "15. Derivação de palavras pelos processos de prefixação e sufixação. Semântica / sinonímia e antonímia.",
+            "area": "Inglês",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 15"
+          }
+        ]
+      },
+      {
+        "name": "Matemática",
+        "questions": 10,
+        "points": 1.25,
+        "weight": 10,
+        "topics": [
+          {
+            "title": "Conjuntos numéricos: Números Naturais, Inteiros, Racionais, Reais e Complexos (forma algébrica e forma trigonométrica)",
+            "detail": "1. Conjuntos numéricos: Números Naturais, Inteiros, Racionais, Reais e Complexos (forma algébrica e forma trigonométrica). Operações, propriedades e aplicações. Sequências numéricas, progressão aritmética e progressão geométrica.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 1"
+          },
+          {
+            "title": "Álgebra: Expressões algébricas",
+            "detail": "2. Álgebra: Expressões algébricas. Polinômios: operações e propriedades. Equações polinomiais e inequações relacionadas.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 2"
+          },
+          {
+            "title": "Funções: generalidades",
+            "detail": "3. Funções: generalidades. Funções elementares: 1º grau, 2º grau, modular, exponencial e logarítmica, gráficos. Propriedades.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 3"
+          },
+          {
+            "title": "Sistemas lineares, Matrizes e Determinantes: Propriedades, aplicações",
+            "detail": "4. Sistemas lineares, Matrizes e Determinantes: Propriedades, aplicações.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 4"
+          },
+          {
+            "title": "Análise Combinatória: Arranjos, Permutações e Combinações simples, Binômio de Newton e Probabilidade em espaços amostrais finitos",
+            "detail": "5. Análise Combinatória: Arranjos, Permutações e Combinações simples, Binômio de Newton e Probabilidade em espaços amostrais finitos.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 5"
+          },
+          {
+            "title": "Geometria e Medidas: Geometria plana: figuras geométricas, congruência, semelhança, perímetro e área",
+            "detail": "6. Geometria e Medidas: Geometria plana: figuras geométricas, congruência, semelhança, perímetro e área. Geometria espacial: paralelismo, perpendicularismo entre retas e planos, áreas e volumes dos sólidos geométricos: prisma, pirâmide, cilindro, cone e esfera. Geometria analítica no plano: retas, circunferência e distâncias.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 6"
+          },
+          {
+            "title": "Trigonometria: razões trigonométricas, funções, fórmulas de transformações trigonométricas, equações e triângulos",
+            "detail": "7. Trigonometria: razões trigonométricas, funções, fórmulas de transformações trigonométricas, equações e triângulos.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 7"
+          },
+          {
+            "title": "Proporcionalidade e Finanças: Grandezas proporcionais: Porcentagem",
+            "detail": "8. Proporcionalidade e Finanças: Grandezas proporcionais: Porcentagem. Acréscimos e descontos. Juros: Capitalização simples e Capitalização composta.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 8"
+          },
+          {
+            "title": "Tratamento da Informação: Estatística: Estatística descritiva, resolução de problemas, tabelas, medidas de tendência central e medidas de dispersão",
+            "detail": "9. Tratamento da Informação: Estatística: Estatística descritiva, resolução de problemas, tabelas, medidas de tendência central e medidas de dispersão. Gráficos estatísticos usuais.",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 9"
+          },
+          {
+            "title": "Resolução de problemas envolvendo frações, conjuntos, porcentagens, sequências (com números, com figuras, de palavras)",
+            "detail": "10. Resolução de problemas envolvendo frações, conjuntos, porcentagens, sequências (com números, com figuras, de palavras).",
+            "area": "Matemática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 10"
+          }
+        ]
+      },
+      {
+        "name": "Informática",
+        "questions": 5,
+        "points": 1.25,
+        "weight": 5,
+        "topics": [
+          {
+            "title": "Conceitos e modos de utilização de aplicativos para edição de textos (Word, Writer), planilhas (Excel, Calc) e apresentações (PowerPoint, Impress); Microsoft Office (versão 20",
+            "detail": "1. Conceitos e modos de utilização de aplicativos para edição de textos (Word, Writer), planilhas (Excel, Calc) e apresentações (PowerPoint, Impress); Microsoft Office (versão 2007 e superiores) e LibreOffice (versão 5.0 e superiores).",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 1"
+          },
+          {
+            "title": "Sistemas operacionais Windows 7, Windows 10 e Linux",
+            "detail": "2. Sistemas operacionais Windows 7, Windows 10 e Linux.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 2"
+          },
+          {
+            "title": "Organização e gerenciamento de informações, arquivos, pastas e programas",
+            "detail": "3. Organização e gerenciamento de informações, arquivos, pastas e programas.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 3"
+          },
+          {
+            "title": "Atalhos de teclado, ícones, área de trabalho e lixeira",
+            "detail": "4. Atalhos de teclado, ícones, área de trabalho e lixeira.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 4"
+          },
+          {
+            "title": "Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados à Internet e intranet",
+            "detail": "5. Conceitos básicos e modos de utilização de tecnologias, ferramentas, aplicativos e procedimentos associados à Internet e intranet.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 5"
+          },
+          {
+            "title": "Correio eletrônico",
+            "detail": "6. Correio eletrônico.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 6"
+          },
+          {
+            "title": "Computação em nuvem",
+            "detail": "7. Computação em nuvem.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 7"
+          },
+          {
+            "title": "Certificação e assinatura digital",
+            "detail": "8. Certificação e assinatura digital.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 8"
+          },
+          {
+            "title": "Segurança da Informação",
+            "detail": "9. Segurança da Informação. 10.Componentes de um computador.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 9"
+          },
+          {
+            "title": "Dispositivos de armazenamento, processadores, memórias e periféricos",
+            "detail": "11. Dispositivos de armazenamento, processadores, memórias e periféricos.",
+            "area": "Informática",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · item 11"
+          }
+        ]
+      },
+      {
+        "name": "Ciências Humanas",
+        "questions": 20,
+        "points": 1.25,
+        "weight": 20,
+        "topics": [
+          {
+            "title": "Antiguidade",
+            "detail": "1. Antiguidade.",
+            "area": "História Geral",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 1"
+          },
+          {
+            "title": "Mundo Medieval",
+            "detail": "2. Mundo Medieval.",
+            "area": "História Geral",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 2"
+          },
+          {
+            "title": "Mundo Moderno",
+            "detail": "3. Mundo Moderno.",
+            "area": "História Geral",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 3"
+          },
+          {
+            "title": "Mundo Contemporâneo",
+            "detail": "4. Mundo Contemporâneo.",
+            "area": "História Geral",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 4"
+          },
+          {
+            "title": "Brasil Colônia",
+            "detail": "5. Brasil Colônia.",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 5"
+          },
+          {
+            "title": "Brasil Império",
+            "detail": "6. Brasil Império.",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 6"
+          },
+          {
+            "title": "Brasil República (de 1889 aos dias atuais)",
+            "detail": "7. Brasil República (de 1889 aos dias atuais).",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 7"
+          },
+          {
+            "title": "Aspectos do desenvolvimento cultural e científico do Brasil no século XX",
+            "detail": "8. Aspectos do desenvolvimento cultural e científico do Brasil no século XX.",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 8"
+          },
+          {
+            "title": "A globalização e as questões ambientais",
+            "detail": "9. A globalização e as questões ambientais.",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 9"
+          },
+          {
+            "title": "História da Bahia",
+            "detail": "10. História da Bahia. 10.1. Independência da Bahia. 10.2. Revolta de Canudos. 10.3. Revolta dos Malês. 10.4. Conjuração Baiana. 10.5. Sabinada.",
+            "area": "História do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 10"
+          },
+          {
+            "title": "Atualidades",
+            "detail": "11. Atualidades",
+            "area": "Atualidades",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · História · item 11"
+          },
+          {
+            "title": "A relação sociedade-natureza 1.1",
+            "detail": "1. A relação sociedade-natureza 1.1. Os mecanismos da natureza. 1.2. Os recursos naturais e a sobrevivência do homem. 1.2.1. As desigualdades na distribuição e na apropriação dos recursos naturais no mundo. 1.2.2. O uso dos recursos naturais e a preservação do meio ambiente.",
+            "area": "Geografia do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Geografia · item 1"
+          },
+          {
+            "title": "Estruturação econômica, social e política do espaço mundial 2.1",
+            "detail": "2. Estruturação econômica, social e política do espaço mundial 2.1. Capitalismo, industrialização e transnacionalização do capital. 2.1.1. Economias industriais e não industriais: articulação e desigualdades. 2.1.2. As transformações na relação cidade-campo. 2.2. Industrialização e desenvolvimento tecnológico: dominação/subordinação político- econômica. 2.3. O papel do Estado e as organizações político-econômicas na produção do espaço. 2.4. Fundamentos econômicos, sociais e políticos da mobilidade espacial e do crescimento demográfico. 2.5. A divisão internacional e territorial do trabalho. 2.6. O fim da Guerra Fria. A desagregação da URSS. A nova ordem econômica mundial.",
+            "area": "Geografia do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Geografia · item 2"
+          },
+          {
+            "title": "O Processo De Ocupação E Produção Do Espaço Brasileiro 3.1",
+            "detail": "3. O Processo De Ocupação E Produção Do Espaço Brasileiro 3.1. A formação territorial do Brasil e sua relação com a natureza. 3.2. O processo de industrialização brasileira e a internacionalização do capital. 3.2.1. Urbanização, metropolização e qualidade de vida. 3.2.2. Estrutura e produção agrária e impactos ambientais. 3.2.3. População: crescimento, estrutura e migrações, condições de vida e de trabalho. 3.3. O papel do Estado e as políticas territoriais. 3.4. A regionalização do Brasil: desenvolvimento desigual e combinado.",
+            "area": "Geografia do Brasil",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Geografia · item 3"
+          }
+        ]
+      },
+      {
+        "name": "Direito",
+        "questions": 20,
+        "points": 1.25,
+        "weight": 20,
+        "topics": [
+          {
+            "title": "Da organização do Estado",
+            "detail": "3. Da organização do Estado. 3.1 Da Administração Pública. 3.1 Dos militares dos Estados, do Distrito Federal e dos Territórios.",
+            "area": "Direito Constitucional",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Constitucional · item 3"
+          },
+          {
+            "title": "Da Defesa do Estado e das Instituições Democráticas",
+            "detail": "4. Da Defesa do Estado e das Instituições Democráticas. 4.1 Das Forças Armadas. 4.2 Da segurança pública.",
+            "area": "Direito Constitucional",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Constitucional · item 4"
+          },
+          {
+            "title": "Constituição do Estado da Bahia: 5.1 Dos servidores públicos militares",
+            "detail": "5. Constituição do Estado da Bahia: 5.1 Dos servidores públicos militares. 5.2 Do Poder Executivo. 5.2.1 Das Disposições Gerais. 5.2.2 Das atribuições do Governador do Estado. 5.3 Da Justiça Militar. 5.4 Da Segurança Pública. 5.5 Da Família. 5.6 Dos Direitos Específicos da Mulher. 5.7 Da Criança e do Adolescente. 5.8 Do Idoso. 5.9 Do Deficiente. 5.10 Do Negro. 5.11 Do Índio.",
+            "area": "Direito Constitucional",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Constitucional · item 5"
+          },
+          {
+            "title": "A Declaração Universal dos Direitos Humanos/1948",
+            "detail": "1. A Declaração Universal dos Direitos Humanos/1948.",
+            "area": "Direitos Humanos",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direitos Humanos · item 1"
+          },
+          {
+            "title": "Convenção Americana sobre Direitos Humanos/1969 (Pacto de São José da Costa Rica) (arts",
+            "detail": "2. Convenção Americana sobre Direitos Humanos/1969 (Pacto de São José da Costa Rica) (arts. 1º ao 32).",
+            "area": "Direitos Humanos",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direitos Humanos · item 2"
+          },
+          {
+            "title": "Convenção Internacional Sobre a Eliminação de Todas as Formas de Discriminação Racial (Decreto nº 65.810/69)",
+            "detail": "3. Convenção Internacional Sobre a Eliminação de Todas as Formas de Discriminação Racial (Decreto nº 65.810/69).",
+            "area": "Direitos Humanos",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direitos Humanos · item 3"
+          },
+          {
+            "title": "Convenção Sobre Eliminação de Todas as Formas de Discriminação Contra a Mulher (Decreto nº 4.377/02)",
+            "detail": "4. Convenção Sobre Eliminação de Todas as Formas de Discriminação Contra a Mulher (Decreto nº 4.377/02).",
+            "area": "Direitos Humanos",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direitos Humanos · item 4"
+          },
+          {
+            "title": "Estatuto da Igualdade Racial e de Combate a Intolerância Religiosa (Lei Estadual nº 13.182/14)",
+            "detail": "5. Estatuto da Igualdade Racial e de Combate a Intolerância Religiosa (Lei Estadual nº 13.182/14).",
+            "area": "Direitos Humanos",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direitos Humanos · item 5"
+          },
+          {
+            "title": "Princípios fundamentais da administração pública",
+            "detail": "1. Princípios fundamentais da administração pública.",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 1"
+          },
+          {
+            "title": "Poderes administrativos: poder vinculado; poder discricionário; poder hierárquico; poder disciplinar; poder regulamentar; poder de polícia; uso e abuso do poder",
+            "detail": "2. Poderes administrativos: poder vinculado; poder discricionário; poder hierárquico; poder disciplinar; poder regulamentar; poder de polícia; uso e abuso do poder.",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 2"
+          },
+          {
+            "title": "Atos administrativos",
+            "detail": "3. Atos administrativos. 3.1 Conceito. 3.2 Atributos. 3.3 Requisitos. 3.4 Classificação. 3.5 Extinção.",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 3"
+          },
+          {
+            "title": "Organização administrativa",
+            "detail": "4. Organização administrativa. 4.1 Órgãos públicos: conceito e classificação. 4.2 Entidades administrativas: conceito e espécies.",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 4"
+          },
+          {
+            "title": "Agentes públicos: classificação",
+            "detail": "5. Agentes públicos: classificação.",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 5"
+          },
+          {
+            "title": "Regime jurídico do militar estadual: 6.1 Estatuto dos Policiais Militares do Estado da Bahia (Lei Estadual n.º 7.990/01 - arts 1º ao 92)",
+            "detail": "6. Regime jurídico do militar estadual: 6.1 Estatuto dos Policiais Militares do Estado da Bahia (Lei Estadual n.º 7.990/01 - arts 1º ao 92).",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 6"
+          },
+          {
+            "title": "Lei Geral de Proteção de Dados Pessoais – LGPD (Lei n.º 13.709/2018 – arts 1º ao 32)",
+            "detail": "7. Lei Geral de Proteção de Dados Pessoais – LGPD (Lei n.º 13.709/2018 – arts 1º ao 32).",
+            "area": "Direito Administrativo",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Administrativo · item 7"
+          },
+          {
+            "title": "Da aplicação da lei penal",
+            "detail": "1. Da aplicação da lei penal. 1.1 Lei penal no tempo. 1.2 Lei penal no espaço.",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 1"
+          },
+          {
+            "title": "Do crime",
+            "detail": "2. Do crime. 2.1 Elementos. 2.2 Consumação e tentativa. 2.3 Desistência voluntária e arrependimento eficaz. 2.4 Arrependimento posterior. 2.5 Crime impossível. 2.6 Causas de exclusão de ilicitude e culpabilidade.",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 2"
+          },
+          {
+            "title": "Dos crimes contra a pessoa (homicídio, feminicídio, lesão corporal, calúnia, difamação e injúria)",
+            "detail": "3. Dos crimes contra a pessoa (homicídio, feminicídio, lesão corporal, calúnia, difamação e injúria).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 3"
+          },
+          {
+            "title": "Dos crimes contra a liberdade pessoal (constrangimento ilegal, ameaça, sequestro e cárcere privado)",
+            "detail": "4. Dos crimes contra a liberdade pessoal (constrangimento ilegal, ameaça, sequestro e cárcere privado).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 4"
+          },
+          {
+            "title": "Dos crimes contra o patrimônio (furto, roubo, extorsão, apropriação indébita, receptação)",
+            "detail": "5. Dos crimes contra o patrimônio (furto, roubo, extorsão, apropriação indébita, receptação).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 5"
+          },
+          {
+            "title": "Dos crimes contra a dignidade sexual (estupro, importunação sexual, assédio sexual, estupro de vulnerável, corrupção de menores)",
+            "detail": "6. Dos crimes contra a dignidade sexual (estupro, importunação sexual, assédio sexual, estupro de vulnerável, corrupção de menores).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 6"
+          },
+          {
+            "title": "Dos crimes contra a paz pública (incitação ao crime, apologia de crime ou criminoso)",
+            "detail": "7. Dos crimes contra a paz pública (incitação ao crime, apologia de crime ou criminoso).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 7"
+          },
+          {
+            "title": "Dos crimes contra a administração pública (peculato e suas formas, concussão, corrupção passiva, prevaricação, condescendência criminosa, resistência, desobediência, desacato,",
+            "detail": "8. Dos crimes contra a administração pública (peculato e suas formas, concussão, corrupção passiva, prevaricação, condescendência criminosa, resistência, desobediência, desacato, corrupção ativa, contrabando).",
+            "area": "Direito Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal · item 8"
+          },
+          {
+            "title": "Princípios do Processo Penal",
+            "detail": "1. Princípios do Processo Penal.",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 1"
+          },
+          {
+            "title": "Inquérito Policial",
+            "detail": "2. Inquérito Policial",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 2"
+          },
+          {
+            "title": "Da Prova: conceito, finalidade e obrigatoriedade; do exame de corpo de delito",
+            "detail": "3. Da Prova: conceito, finalidade e obrigatoriedade; do exame de corpo de delito.",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 3"
+          },
+          {
+            "title": "Da Prisão (arts 283 a 309 do CPP)",
+            "detail": "4. Da Prisão (arts 283 a 309 do CPP)",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 4"
+          },
+          {
+            "title": "Lei das Contravenções Penais (Decreto- Lei n.º 3.688/41)",
+            "detail": "5. Lei das Contravenções Penais (Decreto- Lei n.º 3.688/41).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 5"
+          },
+          {
+            "title": "Contravenções penais a prática de atos resultantes de preconceito de raça, de cor, de sexo ou de estado civil (Lei nº 7.437/85)",
+            "detail": "5. Contravenções penais a prática de atos resultantes de preconceito de raça, de cor, de sexo ou de estado civil (Lei nº 7.437/85)",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 5"
+          },
+          {
+            "title": "Lei nº 13.869/19 (Das sanções de natureza civil e administrativa; Dos crimes e das penas)",
+            "detail": "6. Lei nº 13.869/19 (Das sanções de natureza civil e administrativa; Dos crimes e das penas).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 6"
+          },
+          {
+            "title": "Estatuto da Criança e do Adolescente (Lei n.º 8.069/90 – arts",
+            "detail": "7. Estatuto da Criança e do Adolescente (Lei n.º 8.069/90 – arts. 1º ao 6º; 15 a 18- B; 98 a 130; 225 a 258).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 7"
+          },
+          {
+            "title": "Lei que define os crimes resultantes de preconceito de raça ou de cor (Lei nº 7.716/89)",
+            "detail": "8. Lei que define os crimes resultantes de preconceito de raça ou de cor (Lei nº 7.716/89).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 8"
+          },
+          {
+            "title": "Estatuto da Pessoa com Deficiência (Lei nº 13.146/15 – arts 1º a 13; 88 a 91)",
+            "detail": "9. Estatuto da Pessoa com Deficiência (Lei nº 13.146/15 – arts 1º a 13; 88 a 91)",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 9"
+          },
+          {
+            "title": "Crimes de Tortura (Lei n.º 9.455/97)",
+            "detail": "10. Crimes de Tortura (Lei n.º 9.455/97).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 10"
+          },
+          {
+            "title": "Estatuto do Idoso (Lei n.º 10.741/03 – arts 1º ao 10)",
+            "detail": "11. Estatuto do Idoso (Lei n.º 10.741/03 – arts 1º ao 10).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 11"
+          },
+          {
+            "title": "Lei Maria da Penha (Lei n.º 11.340/06)",
+            "detail": "12. Lei Maria da Penha (Lei n.º 11.340/06).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 12"
+          },
+          {
+            "title": "Lei que institui o sistema nacional de políticas públicas sobre drogas (Lei n.º 11.343/06 – arts 1º ao 4º, 33 ao 39)",
+            "detail": "13. Lei que institui o sistema nacional de políticas públicas sobre drogas (Lei n.º 11.343/06 – arts 1º ao 4º, 33 ao 39).",
+            "area": "Direito Processual Penal",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal · item 13"
+          },
+          {
+            "title": "Dos crimes militares em tempo de paz",
+            "detail": "1. Dos crimes militares em tempo de paz. 1.1 Dos crimes contra a autoridade ou disciplina militar (Do motim e da revolta; Da aliciação e do incitamento; Da violência contra superior ou militar de serviço; do desrespeito a superior e a símbolo nacional ou a farda; Da insubordinação, Da resistência). 1.2. Dos crimes contra o serviço militar e o dever militar (Insubmissão, Criação ou simulação de incapacidade física; Da deserção – arts 187 a 194; Abandono de posto; Descumprimento de missão, Embriaguez em serviço, Dormir em serviço). 1.3. Dos crimes contra a Administração Militar (Do desacato e da desobediência).",
+            "area": "Direito Penal Militar",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Penal Militar · item 1"
+          },
+          {
+            "title": "Do Inquérito Policial Militar",
+            "detail": "1. Do Inquérito Policial Militar.",
+            "area": "Direito Processual Penal Militar",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal Militar · item 1"
+          },
+          {
+            "title": "Da prisão em flagrante",
+            "detail": "2. Da prisão em flagrante.",
+            "area": "Direito Processual Penal Militar",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal Militar · item 2"
+          },
+          {
+            "title": "Da deserção em geral",
+            "detail": "3. Da deserção em geral. 3.1 Do processo de deserção do oficial. 3.2 Do processo de deserção de praça com ou sem graduação e de praça especial.",
+            "area": "Direito Processual Penal Militar",
+            "origin": "PM/BM 001-CG/2024 · Anexo II · Direito Processual Penal Militar · item 3"
+          }
+        ]
+      }
+    ]
+  }
+]
