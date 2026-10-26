@@ -1,3 +1,48 @@
+# EstudaMente Studio 6.3
+
+React + TypeScript, com servidor Vinext/Cloudflare Workers, D1 e R2 para os recursos da comunidade. O estudo completo continua no navegador; a comunidade recebe perfis, editais publicados, grupos e totais enviados voluntariamente.
+
+## Começar nesta versão
+
+Use Node.js 24. Clone o repositório, abra a pasta e execute:
+
+```sh
+npm ci
+npm run build
+```
+
+Prepare o banco local com a migração descrita em [COMUNIDADE.md](COMUNIDADE.md) e inicie `npm run dev`. O manifesto local é criado a partir de `hosting.example.json`, sem credenciais ou vínculo automático com o Site de produção. Na prévia loopback, Entrar com ChatGPT simula um usuário de teste. A produção usa a identidade da hospedagem.
+
+Para continuar com os dados que já existem no navegador, mantenha protocolo, domínio e porta ou importe seu backup JSON. **Não apague a chave de armazenamento para atualizar.** A chave e o formato do banco de estudo permanecem versão 6.
+
+## Comunidade e rankings
+
+- Editais da comunidade: publicação de PDF e plano, fonte oficial, busca, compartilhamento por link e adoção em novo concurso.
+- Perfil: apelido, bio e foto personalizada, identificado pela conta ChatGPT.
+- Rankings: horas e questões em listas separadas, com filtros de dia, semana e mês, no fuso de Brasília. Participação opcional; o envio dos totais é manual e substitutivo.
+- Grupos: convites, entrada explícita, ranking restrito a membros, renovação de convite e saída.
+- Preservação: o plano publicado usa uma lista de campos permitidos e exclui notas, respostas, disponibilidade e histórico. A cópia começa sem conclusões.
+
+Consulte [COMUNIDADE.md](COMUNIDADE.md) para fluxos, armazenamento, regras de contagem e limites. Não há antifraude, moderação administrativa completa, extração automática de assuntos do PDF ou sincronização do histórico completo entre dispositivos nesta entrega. Quantidade de horas/questões não mede aprendizagem.
+
+## Verificação e colaboração
+
+```sh
+npm run lint
+npm test
+npm run build
+```
+
+72 testes passaram, incluindo 10 cenários da comunidade. Build e lint também foram verificados. A auditoria de dependências ficou sem achados altos ou críticos; permanecem 8 achados moderados em dependências transitivas, documentados em VALIDACAO.md. Não há dados pessoais, credenciais nem registros de demonstração incluídos no código.
+
+[CONTRIBUTING.md](CONTRIBUTING.md) orienta a colaboração; [ROADMAP.md](ROADMAP.md) registra os próximos trabalhos. Mudanças no GitHub não publicam automaticamente na hospedagem Sites.
+
+---
+
+# Histórico e documentação das versões 6.0–6.2
+
+As seções abaixo descrevem entregas anteriores. Para instalação e armazenamento atuais, prevalecem as instruções 6.3 acima.
+
 # EstudaMente Studio 6.2
 
 Para colaboração: consulte **CONTRIBUTING.md**, **ROADMAP.md** e **GUIA_GITHUB.md**. O pacote para GitHub contém código e documentação; estudos pessoais continuam no armazenamento de cada navegador.
@@ -6,7 +51,7 @@ Aplicativo local de estudos em React + TypeScript + Vite, com Recharts e interfa
 
 ## Começar
 
-1. Clone o repositório ou extraia o ZIP em uma **pasta nova**. Mantenha sua pasta e seu HTML antigos guardados.
+1. Extraia o ZIP em uma **pasta nova**. Mantenha sua pasta e seu HTML antigos guardados.
 2. Use Node.js **22.18 ou superior** (Node 24 também funciona).
 3. No terminal, dentro da pasta `estudamente-studio-6`, execute:
 
@@ -24,7 +69,7 @@ npm run build
 npm run preview
 ```
 
-O diretório `dist/` é gerado por `npm run build` e não acompanha o repositório. Sirva-o por HTTP; não abra `dist/index.html` por duplo clique. A aplicação usa caminhos na raiz do servidor. Para hospedar em uma subpasta, ajuste o `base` do Vite e os links de compatibilidade.
+O diretório `dist/` já contém a compilação validada. Sirva-o por HTTP; não abra `dist/index.html` por duplo clique. A aplicação usa caminhos na raiz do servidor. Para hospedar em uma subpasta, ajuste o `base` do Vite e os links de compatibilidade.
 
 Se já usa a prévia desta conversa em `127.0.0.1:5175`, mantenha esse endereço para continuar com os mesmos dados. Para iniciar o projeto extraído nessa porta, encerre primeiro o servidor que a estiver usando e execute:
 
@@ -182,7 +227,7 @@ npm test
 npm run lint
 ```
 
-Os 62 testes automatizados cobrem os cálculos e a migração anteriores, além de edição/arquivamento de perguntas, correção objetiva, ajuda, filas de prática, revisão por pergunta, snapshots históricos, duplicação de tentativas/tempo e atualização aditiva dos bancos 6.0. Também cobrem mínimos, metas manuais, cronograma, catálogo, cópias independentes, fusos, ICS e API Google com respostas simuladas. Veja `VALIDACAO.md` para os resultados desta entrega.
+Os 56 testes automatizados cobrem os cálculos e a migração anteriores, além de edição/arquivamento de perguntas, correção objetiva, ajuda, filas de prática, revisão por pergunta, snapshots históricos, duplicação de tentativas/tempo e atualização aditiva dos bancos 6.0. Também cobrem mínimos, metas manuais, cronograma, catálogo, cópias independentes, fusos, ICS e API Google com respostas simuladas. Veja `VALIDACAO.md` para os resultados desta entrega.
 
 ## Estrutura
 
@@ -196,11 +241,11 @@ Os 62 testes automatizados cobrem os cálculos e a migração anteriores, além 
 - `src/plans.ts`, `src/catalog.json`, `src/Plans.tsx`: modelos e base comum.
 - `src/calendar.ts`, `src/CalendarPanel.tsx`: agenda e integração Google.
 - `src/ThemeToggle.tsx`: preferência de aparência.
-- `tests/`: 62 testes automatizados, com execução por `all.test.ts`.
+- `tests/`: 56 testes automatizados, com execução por `all.test.ts`.
 - `GOOGLE_AGENDA.md` e `.env.example`: ativação da conexão direta.
 - `public/references/`: editais usados nos modelos.
 - `public/legacy/`: HTML original e cópia isolada.
-- `dist/`: compilação de produção gerada localmente (ignorada pelo Git).
+- `dist/`: compilação de produção.
 
 Nenhum histórico pessoal foi embutido no ZIP. Os registros usados para conferir a interface foram sintéticos, em uma origem local separada.
 

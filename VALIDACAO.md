@@ -68,3 +68,12 @@ Conferência visual: tema escuro, busca por Cepeda (3 resultados), combinação 
 Quatro cenários novos falharam antes das correções e passaram após os ajustes. Dois testes adicionais conferem resposta literal em tradução e ida/volta de backup com marcador opcional. Total: 62 testes aprovados. O relatório de aderência distingue os 10 critérios do produto e as lacunas não implementadas. Isso verifica coerência técnica e comunicação; não é validação educacional.
 
 Conferência da interface com dados sintéticos em origem separada: o botão Não sei resultou em 0 acertos sem ajuda e 1 tentativa para reaprender, sem opção de reclassificação positiva; revisão marcada Fácil com 0/10 foi salva como Reaprender, com aviso e intervalo inicial. Não houve criação de eventos Google ou alteração de estudos pessoais nesses cenários.
+
+
+## 6.3 — comunidade
+
+72 testes aprovados (62 anteriores + 10 novos). Verificação de autorização entre usuários, origem/CSRF, publicação explícita, arquivos, retirada por autor, substituição de totais, saída do ranking, empates, períodos de Brasília, entrada/saída de grupos e renovação de convite. SQLite em memória executa o SQL gerado. Build inclui verificação TypeScript do cliente e servidor.
+
+Conferência local no navegador: login simulado, perfil público com opt-in, publicação de plano e PDF, adoção em novo concurso com 7,5 horas, ranking de horas/questões e criação de grupo. Todos os dados dessa conferência são sintéticos e separados da produção.
+
+Dependências do starter foram atualizadas para remover achados altos/críticos. A auditoria npm ainda indica 8 moderados em ferramentas de desenvolvimento e cadeias transitivas de geração de imagens/esbuild. Não houve uso de npm audit fix --force ou downgrade automático. Os achados moderados não equivalem a falha comprovada dos fluxos testados, mas permanecem pendentes de revisão/atualização compatível.

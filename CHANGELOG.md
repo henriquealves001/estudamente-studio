@@ -17,3 +17,12 @@
 - 36 testes automatizados aprovados; build e lint aprovados.
 
 Simulados completos antigos, módulos específicos de redação e bem-estar ainda contam com o espaço de compatibilidade 5.0. Não há sincronização automática com esse espaço nem entre dispositivos.
+
+## 6.3 — comunidade e competição voluntária (26/10/2026)
+
+- Editais da comunidade: PDF, fonte oficial, plano sem histórico, busca, link e cópia independente.
+- Perfil por conta ChatGPT, apelido, bio e foto personalizada.
+- Rankings separados de horas e questões por dia, semana e mês, com adesão explícita e envio de totais substitutivo.
+- Grupos com convite, entrada explícita, ranking exclusivo de membros, renovação do convite e saída.
+- Servidor Vinext/Workers com D1/R2 e migração aditiva, sem alterar o banco local dos estudos.
+- Testes de isolamento, consentimento, duplicação, empate, datas, arquivos e preservação dos planos.

@@ -6,7 +6,7 @@ import tseslint from 'typescript-eslint'
 import { defineConfig, globalIgnores } from 'eslint/config'
 
 export default defineConfig([
-  globalIgnores(['dist']),
+  globalIgnores(['dist', 'scripts', 'lib', 'worker', 'db', 'drizzle', '.wrangler', '.vinext', '.sites-runtime', '.next']),
   {
     files: ['**/*.{ts,tsx}'],
     extends: [
@@ -19,4 +19,5 @@ export default defineConfig([
       globals: globals.browser,
     },
   },
+  { files: ['app/**/*.{ts,tsx}'], rules: { 'react-refresh/only-export-components': 'off' } },
 ])

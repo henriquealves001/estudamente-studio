@@ -47,3 +47,10 @@ Acesse o relatório em `public/references/auditoria-metodo.md`. O aplicativo apl
 ## Publicação atual
 
 O site atual está hospedado em Sites. O repositório GitHub pode ser a área de colaboração; enviar um commit ao GitHub não atualiza essa hospedagem por si só. O pacote para GitHub exclui os metadados e credenciais internos da hospedagem.
+
+
+## Comunidade 6.3
+
+Leia COMUNIDADE.md antes de alterar identidade, contagem ou publicação. `server/community-api.ts` autoriza operações pelo usuário de servidor; nunca aceite um owner/userId vindo do navegador. Não exponha as chaves da hospedagem. `db/schema.ts` define as tabelas e `drizzle/` contém migrações: nunca altere uma migração já aplicada. Verifique `npm test`, `npm run lint` e `npm run build`. Os testes usam SQLite em memória e o SQL real, além do ambiente local para conferir telas.
+
+O build agora inclui servidor e assets; não publique somente dist/index.html. O login local é uma simulação em loopback; o servidor público depende dos cabeçalhos confiáveis de identidade da hospedagem.

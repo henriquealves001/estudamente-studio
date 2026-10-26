@@ -6,7 +6,12 @@ node_modules/
 .env*
 !.env.example
 
-# Artefatos e metadados de publicação
+.wrangler/
+.vinext/
+.sites-runtime/
+.next/
+.dev.vars*
+
 dist/
 .openai/
 *.log
