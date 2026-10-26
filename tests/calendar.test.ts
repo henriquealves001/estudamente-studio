@@ -1,0 +1,35 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { emptyContest } from '../src/domain.ts';
+import { defaultCalendarOptions as options, zonedTime, revisionEvents, eventId, calendarICS, googleCalendarLink, googleEvent, ensureAppCalendar, syncRevisionEvents, CalendarApiError, validateCalendarOptions, GOOGLE_SCOPE } from '../src/calendar.ts';
+import type { CalendarRequest, RevisionEvent } from '../src/calendar.ts';
+const event: RevisionEvent = { key: 'c|t', contestId: 'c', topicId: 't', summary: 'Revisar: Constituição, direitos; deveres', description: 'Português\nAção ' + 'á'.repeat(100), start: '2026-10-26T22:00:00.000Z', end: '2026-10-26T22:15:00.000Z', zone: 'America/Sao_Paulo', reminder: 15, originalDate: '2026-10-25', date: '2026-10-26' };
+const response = (status: number, data: unknown = {}) => ({ ok: status >= 200 && status < 300, status, json: async () => data });
+test('fuso converte horário local para UTC e recusa horário inexistente', () => { assert.equal(zonedTime('2026-10-26', '19:00', 'America/Sao_Paulo'), event.start); assert.equal(zonedTime('2026-10-26', '19:00', 'UTC'), '2026-10-26T19:00:00.000Z'); assert.throws(() => zonedTime('2026-03-08', '02:30', 'America/New_York')); assert.throws(() => validateCalendarOptions({ ...options, zone: 'Inexistente' })); assert.throws(() => validateCalendarOptions({ ...options, time: '25:00' })); });
+test('prévia reagenda atrasos sem sobrepor assuntos, ignora arquivados e para antes da prova', () => { const c = emptyContest(); c.examDate = '2026-10-28'; c.subjects = [{ id: 's', name: 'Português', color: '#777777', questions: 1, points: 1, difficulty: 3, active: true }]; c.topics = ['a', 'b', 'c'].map(id => ({ id, subjectId: 's', title: id, hours: 1, done: false, started: '2026-10-20', notes: '' })); const p = revisionEvents(c, options, new Date('2026-10-26T23:00:00Z')); assert.equal(p.events.length, 3); assert.equal(p.events[0].date, '2026-10-27'); assert.equal(p.events[1].start, p.events[0].end); assert.equal(p.events[2].start, p.events[1].end); assert.equal(c.reviews.length, 0); c.examDate = '2026-10-27'; assert.equal(revisionEvents(c, options, new Date('2026-10-26T23:00:00Z')).events.length, 0); c.subjects[0].active = false; assert.equal(revisionEvents(c, options).events.length, 0); });
+test('ICS inclui UTC, alarme, escapes e linhas UTF-8 de até 75 bytes', async () => { const text = await calendarICS([event], new Date('2026-10-26T00:00:00Z')); assert.ok(text.includes('DTSTART:20261026T220000Z')); assert.ok(text.includes('TRIGGER:-PT15M')); assert.ok(text.includes('Constituição\\, direitos\\; deveres')); assert.ok(text.includes('Português\\n')); assert.ok(text.split('\r\n').every(l => Buffer.byteLength(l) <= 75)); assert.equal(await eventId(event.key), await eventId({ ...event, start: '2026-11-01T00:00:00Z' }.key)); assert.match(await eventId(event.key), /^[0-9a-v]{5,1024}$/); });
+test('link Google preserva horário e integração usa somente agenda criada pelo app', () => { const u = new URL(googleCalendarLink(event)); assert.equal(u.searchParams.get('ctz'), event.zone); assert.equal(u.searchParams.get('dates'), '20261026T220000Z/20261026T221500Z'); const payload = googleEvent(event); assert.deepEqual(payload.reminders.overrides, [{ method: 'popup', minutes: 15 }]); assert.equal(payload.extendedProperties.private.contestId, 'c'); assert.ok(!('attendees' in payload)); assert.equal(GOOGLE_SCOPE, 'https://www.googleapis.com/auth/calendar.app.created'); });
+test('agenda reutiliza identificador acessível sem CalendarList nem recriação', async () => { const calls: string[] = []; const request: CalendarRequest = async (url) => { calls.push(url); return response(url.endsWith('/invalid') ? 403 : 200); }; assert.equal(await ensureAppCalendar('token', ['invalid', 'saved'], 'UTC', request), 'saved'); assert.equal(calls.length, 2); assert.ok(calls.every(u => !u.includes('calendarList'))); });
+test('primeira conexão cria agenda secundária com fuso escolhido', async () => { const request: CalendarRequest = async (url, init) => { assert.ok(url.endsWith('/calendars')); assert.equal(init.method, 'POST'); assert.equal(JSON.parse(String(init.body)).timeZone, 'America/Sao_Paulo'); return response(200, { id: 'new' }); }; assert.equal(await ensureAppCalendar('token', '', event.zone, request), 'new'); });
+test('sincronização faz upsert estável e cancela somente eventos do próprio concurso', async () => { const calls: {
+    url: string;
+    method: string;
+    body: Record<string, unknown>;
+}[] = []; let created = false; const request: CalendarRequest = async (url, init) => { const body = init.body ? JSON.parse(String(init.body)) : {}; calls.push({ url, method: init.method!, body }); if (init.method === 'GET')
+    return response(200, { items: [{ id: 'old', extendedProperties: { private: { estudamente: 'studio6', contestId: 'c' } } }, { id: 'other', extendedProperties: { private: { estudamente: 'studio6', contestId: 'other' } } }, { id: 'personal' }] }); if (init.method === 'PATCH' && body.status !== 'cancelled' && !created)
+    return response(404); if (init.method === 'POST') {
+    created = true;
+    assert.equal(body.id, await eventId(event.key));
+    return response(200);
+} return response(200); }; assert.deepEqual(await syncRevisionEvents('token', 'calendar', 'c', [event], request), { completed: 1, cancelled: 1 }); assert.ok(calls.some(c => c.url.includes('/old?') && c.body.status === 'cancelled')); assert.ok(!calls.some(c => c.url.includes('/other?') || c.url.includes('/personal?'))); const n = calls.length; await syncRevisionEvents('token', 'calendar', 'c', [event], request); assert.ok(!calls.slice(n).some(c => c.method === 'POST')); });
+test('falha parcial informa progresso e não cancela antigos após erro', async () => { let writes = 0, cancelled = 0; const request: CalendarRequest = async (_url, init) => { if (init.method === 'GET')
+    return response(200, { items: [{ id: 'old', extendedProperties: { private: { estudamente: 'studio6', contestId: 'c' } } }] }); const body = JSON.parse(String(init.body)); if (body.status === 'cancelled')
+    cancelled++; return response(++writes === 2 ? 401 : 200); }; await assert.rejects(() => syncRevisionEvents('token', 'cal', 'c', [event, { ...event, key: 'c|t2', topicId: 't2' }], request), (e: unknown) => e instanceof CalendarApiError && e.status === 401 && e.completed === 1); assert.equal(cancelled, 0); });
+test('conflito na criação repete atualização sem novo identificador e pagina leitura', async () => { let reads = 0, patches = 0; const request: CalendarRequest = async (url, init) => { if (init.method === 'GET') {
+    reads++;
+    if (reads === 1)
+        return response(200, { items: [], nextPageToken: 'page2' });
+    assert.ok(url.includes('pageToken=page2'));
+    return response(200, { items: [] });
+} if (init.method === 'PATCH')
+    return response(++patches === 1 ? 404 : 200); return response(409); }; assert.deepEqual(await syncRevisionEvents('token', 'cal', 'c', [event], request), { completed: 1, cancelled: 0 }); assert.equal(reads, 2); assert.equal(patches, 2); });
