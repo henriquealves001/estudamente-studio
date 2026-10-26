@@ -1,0 +1,233 @@
+ESTUDAMENTE — BIBLIOGRAFIA E ESTADO DE APLICAÇÃO
+Auditoria de 26/10/2026: aplicação parcial. Uma referência na lista não indica reprodução integral do seu protocolo nem validação do aplicativo.
+
+[01] Ruch, T. C. (1928). Factors influencing the relative economy of massed and distributed practice in learning. Psychological Review, 35, 19–45. DOI 10.1037/h0074423
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/h0074423
+
+[02] Spitzer, H. F. (1939). Studies in retention. Journal of Educational Psychology, 30, 641–657. DOI 10.1037/h0063404
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/h0063404
+
+[03] Melton, A. W. (1970). The situation with respect to the spacing of repetitions and memory. Journal of Verbal Learning and Verbal Behavior, 9, 596–606. DOI 10.1016/S0022-5371(70)80107-4
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1016/S0022-5371(70)80107-4
+
+[04] Bahrick, H. P., Bahrick, L. E., Bahrick, A. S., & Bahrick, P. E. (1993). Maintenance of Foreign Language Vocabulary and the Spacing Effect. Psychological Science, 4, 316–321. DOI 10.1111/j.1467-9280.1993.tb00571.x
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1111/j.1467-9280.1993.tb00571.x
+
+[05] Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., & Rohrer, D. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132, 354–380. DOI 10.1037/0033-2909.132.3.354
+Papel: Princípio relacionado em uso
+https://doi.org/10.1037/0033-2909.132.3.354
+
+[06] Cepeda, N. J., Vul, E., Rohrer, D., Wixted, J. T., & Pashler, H. (2008). Spacing effects in learning: A temporal ridgeline of optimal retention. Psychological Science, 19, 1095–1102. DOI 10.1111/j.1467-9280.2008.02209.x
+Papel: Princípio relacionado em uso
+https://doi.org/10.1111/j.1467-9280.2008.02209.x
+
+[07] Cepeda, N. J., Coburn, N., Rohrer, D., Wixted, J. T., Mozer, M. C., & Pashler, H. (2009). Optimizing distributed practice: Theoretical analysis and practical implications. Experimental Psychology, 56, 236–246. DOI 10.1027/1618-3169.56.4.236
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1027/1618-3169.56.4.236
+
+[08] Karpicke, J. D., & Bauernschmidt, A. (2011). Spaced retrieval: Absolute spacing enhances learning regardless of relative spacing. Journal of Experimental Psychology Learning Memory and Cognition, 37, 1250–1257. DOI 10.1037/a0023436
+Papel: Princípio relacionado em uso
+https://doi.org/10.1037/a0023436
+
+[09] Kang, S. H. K., Lindsey, R. V., Mozer, M. C., & Pashler, H. (2014). Retrieval practice over the long term: Should spacing be expanding or equal-interval? Psychonomic Bulletin and Review, 21, 1544–1550. DOI 10.3758/s13423-014-0636-z
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.3758/s13423-014-0636-z
+
+[10] Latimier, A., Peyre, H., & Ramus, F. (2021; online 2020). A Meta-Analytic Review of the Benefit of Spacing out Retrieval Practice Episodes on Retention. Educational Psychology Review, 33, 959–987. DOI 10.1007/s10648-020-09572-8
+Papel: Princípio relacionado em uso
+https://doi.org/10.1007/s10648-020-09572-8
+
+[11] Smith, C. D., & Scarf, D. (2017). Spacing Repetitions Over Long Timescales: A Review and a Reconsolidation Explanation. Frontiers in Psychology, 8, 962. DOI 10.3389/fpsyg.2017.00962
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.3389/fpsyg.2017.00962
+
+[12] Carpenter, S. K., Pan, S. C., & Butler, A. C. (2022). The science of effective learning with spacing and retrieval practice. Nature Reviews Psychology, 1, 496–511. DOI 10.1038/s44159-022-00089-1
+Papel: Princípio relacionado em uso
+https://doi.org/10.1038/s44159-022-00089-1
+
+[13] Mawson, R. D., & Kang, S. H. K. (2025). The Distributed Practice Effect on Classroom Learning: A Meta-Analytic Review of Applied Research. Behavioral Sciences, 15, 771. DOI 10.3390/bs15060771
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.3390/bs15060771
+
+[14] Murray, E., Horner, A. J., & Göbel, S. M. (2025). A Meta-analytic Review of the Effectiveness of Spacing and Retrieval Practice for Mathematics Learning. Educational Psychology Review, 37, 75. DOI 10.1007/s10648-025-10035-1
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1007/s10648-025-10035-1
+
+[15] Bego, C. R., Lyle, K. B., Ralston, P. A. S., Immekus, J. C., et al. (2024). Single-paper meta-analyses of the effects of spaced retrieval practice in nine introductory STEM courses: is the glass half full or half empty? International Journal of STEM Education, 11, 9. DOI 10.1186/s40594-024-00468-5
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1186/s40594-024-00468-5
+
+[16] Kim, S. K., & Webb, S. (2022). The Effects of Spaced Practice on Second Language Learning: A Meta-Analysis. Language Learning, 72, 269–319. DOI 10.1111/lang.12479
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1111/lang.12479
+
+[17] Maye, J. A., & Hurley, F. (2026). The Effectiveness of Spaced Repetition in Medical Education: A Systematic Review and Meta-Analysis. The Clinical Teacher, 23, e70353. DOI 10.1111/tct.70353
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1111/tct.70353
+
+[18] Murre, J. M. J., & Dros, J. (2015). Replication and Analysis of Ebbinghaus’ Forgetting Curve. PLOS ONE, 10, e0120644. DOI 10.1371/journal.pone.0120644
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1371/journal.pone.0120644
+
+[19] Roediger, H. L., & Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17, 249–255. DOI 10.1111/j.1467-9280.2006.01693.x
+Papel: Princípio relacionado em uso
+https://doi.org/10.1111/j.1467-9280.2006.01693.x
+
+[20] Karpicke, J. D., & Roediger, H. L. (2008). The critical importance of retrieval for learning. Science, 319, 966–968. DOI 10.1126/science.1152408
+Papel: Princípio relacionado em uso
+https://doi.org/10.1126/science.1152408
+
+[21] Rowland, C. A. (2014). The effect of testing versus restudy on retention: A meta-analytic review of the testing effect. Psychological Bulletin, 140, 1432–1463. DOI 10.1037/a0037559
+Papel: Princípio relacionado em uso
+https://doi.org/10.1037/a0037559
+
+[22] Yang, C., Luo, L., Vadillo, M. A., Yu, R., & Shanks, D. R. (2021). Testing (quizzing) boosts classroom learning: A systematic and meta-analytic review. Psychological Bulletin, 147, 399–435. DOI 10.1037/bul0000309
+Papel: Princípio relacionado em uso
+https://doi.org/10.1037/bul0000309
+
+[23] Agarwal, P. K., Nunes, L. D., & Blunt, J. R. (2021). Retrieval Practice Consistently Benefits Student Learning: A Systematic Review of Applied Research in Schools and Classrooms. Educational Psychology Review, 33, 1409–1453. DOI 10.1007/s10648-021-09595-9
+Papel: Princípio relacionado em uso
+https://doi.org/10.1007/s10648-021-09595-9
+
+[24] Pan, S. C., & Rickard, T. C. (2018). Transfer of test-enhanced learning: Meta-analytic review and synthesis. Psychological Bulletin, 144, 710–756. DOI 10.1037/bul0000151
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/bul0000151
+
+[25] Rawson, K. A., & Dunlosky, J. (2011). Optimizing schedules of retrieval practice for durable and efficient learning: How much is enough? Journal of Experimental Psychology General, 140, 283–302. DOI 10.1037/a0023956
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1037/a0023956
+
+[26] Rawson, K. A., Dunlosky, J., & Sciartelli, S. M. (2013). The Power of Successive Relearning: Improving Performance on Course Exams and Long-Term Retention. Educational Psychology Review, 25, 523–548. DOI 10.1007/s10648-013-9240-4
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1007/s10648-013-9240-4
+
+[27] Rawson, K. A., & Dunlosky, J. (2022). Successive Relearning: An Underexplored but Potent Technique for Obtaining and Maintaining Knowledge. Current Directions in Psychological Science, 31, 362–368. DOI 10.1177/09637214221100484
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1177/09637214221100484
+
+[28] Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J., & Willingham, D. T. (2013). Improving Students’ Learning With Effective Learning Techniques: Promising Directions From Cognitive and Educational Psychology. Psychological Science in the Public Interest, 14, 4–58. DOI 10.1177/1529100612453266
+Papel: Princípio relacionado em uso
+https://doi.org/10.1177/1529100612453266
+
+[29] Brunmair, M., & Richter, T. (2019). Similarity matters: A meta-analysis of interleaved learning and its moderators. Psychological Bulletin, 145, 1029–1052. DOI 10.1037/bul0000209
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/bul0000209
+
+[30] Rohrer, D., Dedrick, R. F., Hartwig, M. K., & Cheung, C. N. (2020; online 2019). A randomized controlled trial of interleaved mathematics practice. Journal of Educational Psychology, 112. DOI 10.1037/edu0000367
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/edu0000367
+
+[31] Bisra, K., Liu, Q., Nesbit, J. C., Salimi, F., & Winne, P. H. (2018). Inducing Self-Explanation: A Meta-Analysis. Educational Psychology Review, 30, 703–725. DOI 10.1007/s10648-018-9434-x
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1007/s10648-018-9434-x
+
+[32] Barbieri, C. A., Miller-Cotto, D., Clerjuste, S. N., & Chawla, K. (2023). A Meta-analysis of the Worked Examples Effect on Mathematics Performance. Educational Psychology Review, 35, 11. DOI 10.1007/s10648-023-09745-1
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1007/s10648-023-09745-1
+
+[33] Atkinson, R. K., Renkl, A., & Merrill, M. M. (2003). Transitioning From Studying Examples to Solving Problems: Effects of Self-Explanation Prompts and Fading Worked-Out Steps. Journal of Educational Psychology, 95, 774–783. DOI 10.1037/0022-0663.95.4.774
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1037/0022-0663.95.4.774
+
+[34] Wisniewski, B., Zierer, K., & Hattie, J. (2020). The Power of Feedback Revisited: A Meta-Analysis of Educational Feedback Research. Frontiers in Psychology, 10, 3087. DOI 10.3389/fpsyg.2019.03087
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.3389/fpsyg.2019.03087
+
+[35] Kang, S. H. K., McDermott, K. B., & Roediger, H. L. (2007). Test format and corrective feedback modify the effect of testing on long-term retention. European Journal of Cognitive Psychology, 19, 528–558. DOI 10.1080/09541440601056620
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1080/09541440601056620
+
+[36] Donker, A. S., de Boer, H., Kostons, D., van Ewijk, C. D., & van der Werf, M. P. C. (2014). Effectiveness of learning strategy instruction on academic performance: A meta-analysis. Educational Research Review, 11, 1–26. DOI 10.1016/j.edurev.2013.11.002
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1016/j.edurev.2013.11.002
+
+[37] Dunlosky, J., & Rawson, K. A. (2012). Overconfidence produces underachievement: Inaccurate self evaluations undermine students’ learning and retention. Learning and Instruction, 22, 271–280. DOI 10.1016/j.learninstruc.2011.08.003
+Papel: Relação parcial / limites na auditoria
+https://doi.org/10.1016/j.learninstruc.2011.08.003
+
+[38] Pavlik, P. I., & Anderson, J. R. (2008). Using a Model to Compute the Optimal Schedule of Practice. Journal of Experimental Psychology Applied, 14, 101–117. DOI 10.1037/1076-898X.14.2.101
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1037/1076-898X.14.2.101
+
+[39] Lindsey, R. V., Shroyer, J. D., Pashler, H., & Mozer, M. C. (2014). Improving Students’ Long-Term Knowledge Retention Through Personalized Review. Psychological Science, 25, 639–647. DOI 10.1177/0956797613504302
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1177/0956797613504302
+
+[40] Settles, B., & Meeder, B. (2016). A Trainable Spaced Repetition Model for Language Learning. Proceedings of ACL, 1848–1858. DOI 10.18653/v1/P16-1174
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.18653/v1/P16-1174
+
+[41] Tabibian, B., Upadhyay, U., De, A., Zarezade, A., Schölkopf, B., & Gomez-Rodriguez, M. (2019). Enhancing human learning via spaced repetition optimization. PNAS, 116, 3988–3993. DOI 10.1073/pnas.1815156116
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1073/pnas.1815156116
+
+[42] Eglington, L. G., & Pavlik, P. I., Jr. (2020). Optimizing practice scheduling requires quantitative tracking of individual item performance. npj Science of Learning, 5, 15. DOI 10.1038/s41539-020-00074-4
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1038/s41539-020-00074-4
+
+[43] Mazza, S., Gerbier, E., Gustin, M. P., Kasikci, Z., Koenig, O., Toppino, T. C., & Magnin, M. (2016). Relearn Faster and Retain Longer: Along With Practice, Sleep Makes Perfect. Psychological Science, 27. DOI 10.1177/0956797616659930
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1177/0956797616659930
+
+[44] Ekuni, R., & Pompeia, S. (2020). Prática de lembrar: a quais fatores os educadores devem se atentar? Psicologia Escolar e Educacional, 24, e220284. DOI 10.1590/2175-35392020220284
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1590/2175-35392020220284
+
+[45] Kanayama, K., & Kasahara, K. (2016). The Effects of Expanding and Equally-Spaced Retrieval Practice on Long-Term L2 Vocabulary Retention. ARELE, 27, 217–232. DOI 10.20581/arele.27.0_217
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.20581/arele.27.0_217
+
+[46] Ma, X., Li, Z., & Zhou, A. (2022). A recuperação pode promover a aprendizagem de conhecimento procedimental? Evidência com pistas de recuperação. Journal of Psychological Science, 45, 849–855. Título traduzido do chinês. Artigo
+Papel: Contexto / sem protocolo específico
+https://jps.ecnu.edu.cn/CN/Y2022/V45/I4/849
+
+[47] Roelle, J., & Richter, T. (2025). Üben aus Sicht der Lernpsychologie: Wie kann Üben das nachhaltige Lernen fördern? Unterrichtswissenschaft, 53, 179–204. DOI 10.1007/s42010-025-00227-7
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.1007/s42010-025-00227-7
+
+[48] Ebersbach, M., & Barzagar Nazari, K. (2020). No Robust Effect of Distributed Practice on the Short- and Long-Term Retention of Mathematical Procedures. Frontiers in Psychology, 11, 811. DOI 10.3389/fpsyg.2020.00811
+Papel: Contexto / sem protocolo específico
+https://doi.org/10.3389/fpsyg.2020.00811
+
+LEITURAS COMPLEMENTARES — 9 OBRAS, TRADUÇÕES AGRUPADAS
+Fichas de apresentações autorais/editoriais; não foi declarada leitura integral.
+
+A Mind for Numbers · Aprendendo a Aprender — Barbara Oakley
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://barbaraoakley.com/books/a-mind-for-numbers/
+
+Make It Stick · Fixe o Conhecimento — Peter C. Brown, Henry L. Roediger III e Mark A. McDaniel
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://loja.grupoa.com.br/fixe-o-conhecimento-a-ciencia-da-aprend-bem9788584291243-p1003777
+
+Mentes Geniais — Alberto Dell’Isola
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://www.touchelivros.com.br/edicoes/mentes-geniais-dell-isola-alberto-cfbb21df11d1/
+
+É Assim Que Aprendemos — Stanislas Dehaene
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://www.editoracontexto.com.br/e-assim-que-aprendemos--por-que-o-cerebro-funciona-melhor-do-que-qualquer-maquina-ainda/p
+
+Hábitos Atômicos · Atomic Habits — James Clear
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://jamesclear.com/atomic-habits
+
+Como Aprendemos · How We Learn — Benedict Carey
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://www.penguinrandomhouse.com/books/221559/how-we-learn-by-benedict-carey/
+
+Ultralearning — Scott H. Young
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://www.scotthyoung.com/blog/ultralearning/
+
+Você Não Sabe Estudar! — José Mário Chaves
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://josemariochaves.com.br/pt_BR/livro/
+
+A Crise do Conforto · The Comfort Crisis — Michael Easter
+Leitura complementar · protocolo completo não verificado no aplicativo
+https://www.penguinrandomhouse.com/books/634446/the-comfort-crisis-by-michael-easter/9780593138779/
