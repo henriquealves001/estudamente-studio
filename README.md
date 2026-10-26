@@ -6,7 +6,7 @@ Aplicativo local de estudos em React + TypeScript + Vite, com Recharts e interfa
 
 ## Começar
 
-1. Extraia o ZIP em uma **pasta nova**. Mantenha sua pasta e seu HTML antigos guardados.
+1. Clone o repositório ou extraia o ZIP em uma **pasta nova**. Mantenha sua pasta e seu HTML antigos guardados.
 2. Use Node.js **22.18 ou superior** (Node 24 também funciona).
 3. No terminal, dentro da pasta `estudamente-studio-6`, execute:
 
@@ -24,7 +24,7 @@ npm run build
 npm run preview
 ```
 
-O diretório `dist/` já contém a compilação validada. Sirva-o por HTTP; não abra `dist/index.html` por duplo clique. A aplicação usa caminhos na raiz do servidor. Para hospedar em uma subpasta, ajuste o `base` do Vite e os links de compatibilidade.
+O diretório `dist/` é gerado por `npm run build` e não acompanha o repositório. Sirva-o por HTTP; não abra `dist/index.html` por duplo clique. A aplicação usa caminhos na raiz do servidor. Para hospedar em uma subpasta, ajuste o `base` do Vite e os links de compatibilidade.
 
 Se já usa a prévia desta conversa em `127.0.0.1:5175`, mantenha esse endereço para continuar com os mesmos dados. Para iniciar o projeto extraído nessa porta, encerre primeiro o servidor que a estiver usando e execute:
 
@@ -182,7 +182,7 @@ npm test
 npm run lint
 ```
 
-Os 56 testes automatizados cobrem os cálculos e a migração anteriores, além de edição/arquivamento de perguntas, correção objetiva, ajuda, filas de prática, revisão por pergunta, snapshots históricos, duplicação de tentativas/tempo e atualização aditiva dos bancos 6.0. Também cobrem mínimos, metas manuais, cronograma, catálogo, cópias independentes, fusos, ICS e API Google com respostas simuladas. Veja `VALIDACAO.md` para os resultados desta entrega.
+Os 62 testes automatizados cobrem os cálculos e a migração anteriores, além de edição/arquivamento de perguntas, correção objetiva, ajuda, filas de prática, revisão por pergunta, snapshots históricos, duplicação de tentativas/tempo e atualização aditiva dos bancos 6.0. Também cobrem mínimos, metas manuais, cronograma, catálogo, cópias independentes, fusos, ICS e API Google com respostas simuladas. Veja `VALIDACAO.md` para os resultados desta entrega.
 
 ## Estrutura
 
@@ -196,11 +196,11 @@ Os 56 testes automatizados cobrem os cálculos e a migração anteriores, além 
 - `src/plans.ts`, `src/catalog.json`, `src/Plans.tsx`: modelos e base comum.
 - `src/calendar.ts`, `src/CalendarPanel.tsx`: agenda e integração Google.
 - `src/ThemeToggle.tsx`: preferência de aparência.
-- `tests/`: 56 testes automatizados, com execução por `all.test.ts`.
+- `tests/`: 62 testes automatizados, com execução por `all.test.ts`.
 - `GOOGLE_AGENDA.md` e `.env.example`: ativação da conexão direta.
 - `public/references/`: editais usados nos modelos.
 - `public/legacy/`: HTML original e cópia isolada.
-- `dist/`: compilação de produção.
+- `dist/`: compilação de produção gerada localmente (ignorada pelo Git).
 
 Nenhum histórico pessoal foi embutido no ZIP. Os registros usados para conferir a interface foram sintéticos, em uma origem local separada.
 
