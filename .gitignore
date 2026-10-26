@@ -1,0 +1,12 @@
+node_modules/
+.cache/
+*.tsbuildinfo
+.DS_Store
+
+.env*
+!.env.example
+
+# Artefatos e metadados de publicação
+dist/
+.openai/
+*.log
