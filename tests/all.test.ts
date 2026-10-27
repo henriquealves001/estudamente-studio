@@ -5,3 +5,4 @@ import './science-audit.test.ts';
 import './community.test.ts';
 
 import './planning-integration.test.ts';
+import './adaptive-cycle.test.ts';
