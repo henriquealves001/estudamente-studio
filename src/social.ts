@@ -1,3 +1,4 @@
+import { questionEvents } from './metrics.ts';
 import { colors, emptyContest, uid } from './domain.ts';
 import type { Contest, Database } from './domain.ts';
 
@@ -75,9 +76,7 @@ export function aggregateTotals(db: Database, today=saoPauloDate()): DailyTotal[
     };
     for (const c of db.contests) {
         c.logs.forEach(l=>add('log:',l.id,l.date,l.minutes,0));
-        (c.attempts||[]).forEach(a=>add('attempt:',a.id,a.date,0,1));
-        c.reviews.forEach(r=>add('review:',r.id,r.date,0,r.questions));
-        c.records.filter(r=>['Questões','Simulados'].includes(r.kind)).forEach(r=>add('record:',r.id,r.date,0,r.total));
+        questionEvents(c).forEach(r=>add(r.key,'',r.date,0,r.total));
     }
     // Never silently clamp or hide questionable totals.
     return validateTotals([...rows.values()].sort((a,b)=>a.date.localeCompare(b.date)).map(r=>({...r,minutes:Math.round(r.minutes)})),today);
