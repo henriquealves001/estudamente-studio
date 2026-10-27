@@ -1,3 +1,7 @@
+## Verificação 6.4
+
+80 testes aprovados: oito novos casos em tests/planning-integration.test.ts verificam integração do planejamento e preservação de dados. A primeira entrega está descrita em PLANEJAMENTO_6.4.md. O histórico de verificações anteriores segue abaixo.
+
 # Validação — EstudaMente Studio 6.2
 
 Data: 26/10/2026.

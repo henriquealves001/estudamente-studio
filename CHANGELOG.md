@@ -1,3 +1,11 @@
+## 6.4 — Planejamento integrado
+
+- Cronograma termina antes da prova e mantém revisões após o prazo de conteúdo.
+- Distribuição considera esforço real semanal; revisões e perguntas compartilham limite de data.
+- Acertos objetivos limitam expansão do intervalo; padrões e fontes ficam acessíveis na configuração.
+- Planos novos usam opção automática; ajustes anteriores e históricos são preservados.
+- Roteiro detalhado em PLANO_EVOLUCAO.md; 80 testes.
+
 # Alterações
 
 ## 6.1.0 — 26/10/2026

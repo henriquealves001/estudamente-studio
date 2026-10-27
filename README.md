@@ -1,3 +1,7 @@
+# EstudaMente Studio 6.4
+
+Primeira entrega de integração do planejamento: prazo de conteúdo separado de revisões, limite pela prova, saldo semanal real e configuração automática explicada. Veja [PLANEJAMENTO_6.4.md](PLANEJAMENTO_6.4.md) para regras e limites e [PLANO_EVOLUCAO.md](PLANO_EVOLUCAO.md) para tarefas concluídas e pendentes. A conta social continua funcionando; históricos completos permanecem locais.
+
 # EstudaMente Studio 6.3
 
 React + TypeScript, com servidor Vinext/Cloudflare Workers, D1 e R2 para os recursos da comunidade. O estudo completo continua no navegador; a comunidade recebe perfis, editais publicados, grupos e totais enviados voluntariamente.
