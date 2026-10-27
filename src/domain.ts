@@ -1,3 +1,4 @@
+import { subjectPerformance } from './performance.ts';
 export type Subject = {
     id: string;
     name: string;
@@ -32,6 +33,7 @@ export type Log = {
     notes: string;
 };
 export type Review = {
+    recordedAt?: string;
     id: string;
     topicId: string;
     date: string;
@@ -96,6 +98,7 @@ export type Attempt = {
 };
 export type Contest = {
     cycleMode?: 'automatic' | 'manual';
+    adaptiveCycle?: boolean;
     calendarOptions?: {
         time: string;
         zone: string;
@@ -169,12 +172,13 @@ export function boundedReviewInterval(c: Contest, date: string, proposed: number
     const due = nextReviewDate(c, date, interval);
     return due ? Math.max(1, Math.round((Date.parse(due) - Date.parse(date)) / 86400000)) : interval;
 }
-export function emptyContest(name = 'Meu primeiro concurso'): Contest { return { id: uid(), name, examDate: '', deadline: '', startDate: today(), daily: [60, 60, 60, 60, 60, 0, 0], subjects: [], topics: [], logs: [], reviews: [], records: [], reviewMode: 'automatic', ...defaultReviewSettings, contentShare: .75, questions: [], attempts: [], learningVersion: 1 }; }
+export function emptyContest(name = 'Meu primeiro concurso'): Contest { return { id: uid(), name, examDate: '', deadline: '', startDate: today(), daily: [60, 60, 60, 60, 60, 0, 0], subjects: [], topics: [], logs: [], reviews: [], records: [], reviewMode: 'automatic', adaptiveCycle: true, ...defaultReviewSettings, contentShare: .75, questions: [], attempts: [], learningVersion: 1 }; }
 export function emptyDB(): Database { const c = emptyContest(); return { version: 6, activeId: c.id, contests: [c], archives: [], updatedAt: '' }; }
 export function cycle(c: Contest, now = today()) {
     const week = monday(now), weekly = c.daily.reduce((a, b) => a + b, 0), active = c.subjects.filter(s => s.active);
     const examSubjects = active.filter(s => !s.extra), complete = examSubjects.length > 0 && examSubjects.every(s => s.questions > 0);
-    const raw = active.map(s => s.extra ? 0 : (complete ? s.questions * s.points : (s.provisionalWeight ?? 1)) * s.difficulty);
+    const performance = active.map(s => subjectPerformance(c, s.id, now));
+    const raw = active.map((s, i) => s.extra ? 0 : (complete ? s.questions * s.points : (s.provisionalWeight ?? 1)) * s.difficulty * (c.adaptiveCycle ? performance[i].factor : 1));
     const targets = active.map(s => c.cycleMode === 'manual' ? (s.manualMinutes ?? 0) : (s.minimumMinutes ?? 0));
     if (c.cycleMode !== 'manual') {
         let remaining = weekly, pool = active.map((_, i) => i).filter(i => raw[i] > 0);
@@ -194,10 +198,16 @@ export function cycle(c: Contest, now = today()) {
             pool = pool.filter(i => !fixed.includes(i));
         }
     }
-    return active.map((s, i) => { const target = targets[i], done = c.logs.filter(l => l.subjectId === s.id && l.date >= week && l.date <= plus(week, 6)).reduce((a, l) => a + l.minutes, 0); return { ...s, target, done, balance: target - done, share: weekly ? target / weekly : 0, provisional: c.cycleMode !== 'manual' && !complete && !s.extra }; }).sort((a, b) => b.balance - a.balance);
+    return active.map((s, i) => { const target = targets[i], done = c.logs.filter(l => l.subjectId === s.id && l.date >= week && l.date <= plus(week, 6)).reduce((a, l) => a + l.minutes, 0); return { ...s, performance: performance[i], target, done, balance: target - done, share: weekly ? target / weekly : 0, provisional: c.cycleMode !== 'manual' && !complete && !s.extra }; }).sort((a, b) => b.balance - a.balance);
+}
+function reviewCoversAttempt(r: Review, a: Attempt) {
+    return r.date > a.date || r.date === a.date && !!r.recordedAt && Date.parse(r.recordedAt) >= Date.parse(a.at);
+}
+function lastTopicReview(c: Contest, topicId: string) {
+    return c.reviews.filter(r => r.topicId === topicId).sort((a,b) => a.date.localeCompare(b.date)).at(-1);
 }
 export function reviewDue(c: Contest, t: Topic) {
-    const history = c.reviews.filter(r => r.topicId === t.id).sort((a, b) => a.date.localeCompare(b.date)), manual = history.at(-1);
+    const manual = lastTopicReview(c, t.id);
     const latest = new Map<string, Attempt>();
     for (const a of c.attempts || []) {
         if (a.topicId !== t.id || a.questionId && c.questions?.find(q => q.id === a.questionId)?.archived)
@@ -206,7 +216,7 @@ export function reviewDue(c: Contest, t: Topic) {
         if (!latest.has(key) || latest.get(key)!.at < a.at)
             latest.set(key, a);
     }
-    const practice = [...latest.values()].filter(a => !manual || a.date >= manual.date).map(a => ({ date: plus(a.date, a.interval), interval: a.interval })).sort((a, b) => a.date.localeCompare(b.date));
+    const practice = [...latest.values()].filter(a => !manual || !reviewCoversAttempt(manual, a)).map(a => ({ date: plus(a.date, a.interval), interval: a.interval })).sort((a, b) => a.date.localeCompare(b.date));
     if (t.reviewAnchor === '' && !practice.length && !manual)
         return null;
     const studied = t.reviewAnchor || c.logs.filter(l => l.topicId === t.id).map(l => l.date).sort()[0] || t.started;
@@ -232,7 +242,7 @@ export function registerReview(c: Contest, topicId: string, date: string, rating
     }
     const previous = reviewDue(c, c.topics.find(t => t.id === topicId)!)?.interval || c.reviewDays;
     const interval = boundedReviewInterval(c, date, rating === 0 ? c.reviewDays : previous * (rating === 1 ? 1 : rating === 2 ? c.reviewGrowth : c.reviewGrowth * 1.3));
-    return { id: uid(), topicId, date, rating, interval, questions, correct };
+    return { id: uid(), topicId, date, recordedAt: new Date().toISOString(), rating, interval, questions, correct };
 }
 export function recordStudy(c: Contest, l: Omit<Log, 'id'>): Contest {
     const s = c.subjects.find(s => s.id === l.subjectId && s.active), t = c.topics.find(t => t.id === l.topicId);
@@ -336,6 +346,7 @@ export function validateDB(v: unknown): asserts v is Database {
                 seen.add(x.id);
             }
         }
+        if (c.adaptiveCycle !== undefined && typeof c.adaptiveCycle !== 'boolean') throw Error('Preferência adaptativa inválida.');
         if (c.reviewMode !== undefined && !['automatic', 'custom'].includes(c.reviewMode)) throw Error('Modo de revisão inválido.');
         if (!Number.isFinite(c.contentShare) || c.contentShare < 0 || c.contentShare > 1 || !Number.isFinite(c.reviewDays) || c.reviewDays < 1 || !Number.isFinite(c.reviewGrowth) || c.reviewGrowth < 1 || !Number.isFinite(c.reviewMax) || c.reviewMax < c.reviewDays)
             throw Error('Parâmetros inválidos.');
@@ -369,7 +380,7 @@ export function validateDB(v: unknown): asserts v is Database {
             if (!subject(l.subjectId) || l.topicId && !topic(l.topicId) || !validDate(l.date) || !Number.isFinite(l.minutes) || l.minutes <= 0 || typeof l.method !== 'string' || typeof l.notes !== 'string')
                 throw Error('Histórico de estudo inválido.');
         for (const r of c.reviews)
-            if (!topic(r.topicId) || !validDate(r.date) || ![r.rating, r.interval, r.questions, r.correct].every(Number.isFinite) || r.interval < 1 || r.questions < 0 || r.correct < 0 || r.correct > r.questions)
+            if (r.recordedAt !== undefined && (typeof r.recordedAt !== 'string' || !/^\d{4}-\d{2}-\d{2}T/.test(r.recordedAt) || !Number.isFinite(Date.parse(r.recordedAt))) || !topic(r.topicId) || !validDate(r.date) || ![r.rating, r.interval, r.questions, r.correct].every(Number.isFinite) || r.interval < 1 || r.questions < 0 || r.correct < 0 || r.correct > r.questions)
                 throw Error('Histórico de revisão inválido.');
         for (const r of c.records)
             if (!validDate(r.date) || typeof r.kind !== 'string' || typeof r.title !== 'string' || typeof r.notes !== 'string' || typeof r.url !== 'string' || r.subjectId && !subject(r.subjectId) || ![r.total, r.correct].every(Number.isFinite) || r.total < 0 || r.correct < 0 || r.correct > r.total)
@@ -414,6 +425,7 @@ export function migrate(input: unknown, seed: SeedUnit[] = []): Database {
         const data = active && source.gcm ? obj(source.gcm) : g;
         const config = active && source.gcm ? obj(data.settings) : settings;
         c.reviewMode = 'custom';
+        c.adaptiveCycle = false;
         c.id = `legacy-${hash}-${index}`;
         c.examDate = date(config.examDate) || date(obj(core.profile).deadline);
         c.deadline = date(config.planningDeadline) || c.examDate;
@@ -535,7 +547,14 @@ export function saveQuestion(c: Contest, q: Question) {
     validateQuestion(c, q);
     return { ...c, questions: c.questions.some(x => x.id === q.id) ? c.questions.map(x => x.id === q.id ? q : x) : [...c.questions, q] };
 }
-export function questionDue(c: Contest, q: Question) { const last = c.attempts.filter(a => a.questionId === q.id).sort((a, b) => a.at.localeCompare(b.at)).at(-1); return { last, date: last ? nextReviewDate(c, last.date, last.interval) || '' : '', interval: last?.interval || c.reviewDays }; }
+export function questionDue(c: Contest, q: Question) {
+    const last = c.attempts.filter(a => a.questionId === q.id).sort((a, b) => a.at.localeCompare(b.at)).at(-1);
+    const manual = lastTopicReview(c, q.topicId);
+    const covered = last && manual && reviewCoversAttempt(manual, last);
+    const interval = covered ? manual.interval : last?.interval || c.reviewDays;
+    const anchor = covered ? manual.date : last?.date;
+    return { last, date: anchor ? nextReviewDate(c, anchor, interval) || '' : '', interval };
+}
 export function practiceQueue(c: Contest, { topicId = '', subjectId = '', mode = 'all', limit = 10, now = today() }: {
     topicId?: string;
     subjectId?: string;
@@ -593,7 +612,7 @@ export function applyPractice(c: Contest, input: PracticeInput): Contest {
     const prev = questionDue(c, q).last;
     if (prev && at < prev.at)
         throw Error('A tentativa não pode ser anterior à última desta pergunta.');
-    const previous = prev?.interval || c.reviewDays;
+    const previous = questionDue(c, q).interval;
     const proposed = result === 'wrong' ? c.reviewDays : result === 'assisted' ? Math.round(previous * .75) : prev && prev.date === dateValue ? previous : prev ? Math.round(previous * c.reviewGrowth) : c.reviewDays;
     const interval = boundedReviewInterval(c, dateValue, proposed);
     const a: Attempt = { ...(input.declaredUnknown === undefined ? {} : { declaredUnknown: input.declaredUnknown }), id: input.id, sessionId: input.sessionId, questionId: q.id, topicId: t.id, at, date: dateValue, result, firstResponse: input.response.trim(), choice: input.choice, usedHint: input.usedHint, confidence: input.confidence, correctionMade: input.correctionMade, selfExplanation: input.selfExplanation.trim(), errorTag: result === 'wrong' ? input.errorTag : '', notes: input.notes.trim(), minutes: input.minutes, source: 'Recuperação ativa', origin: 'practice', interval, snapshot: { prompt: q.prompt, answer: q.answer } };
