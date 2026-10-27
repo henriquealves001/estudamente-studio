@@ -1,7 +1,7 @@
 {
   "name": "estudamente-studio",
   "private": true,
-  "version": "6.6.0",
+  "version": "6.7.0",
   "type": "module",
   "scripts": {
     "dev": "node scripts/ensure-hosting.mjs && node scripts/run-framework.mjs dev",

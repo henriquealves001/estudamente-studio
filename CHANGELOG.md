@@ -1,3 +1,10 @@
+## 6.7 — Rotina flexível
+
+- Revisões estimadas de 5–15 minutos, respeitando capacidade e metas manuais.
+- Tempo livre e reserva identificados sem dupla contagem.
+- Janela sem prova acompanha início futuro; prazo vencido oferece prévia de retomada sem alterar datas salvas.
+- Avisos no painel e cronograma; oito testes novos, total 105.
+
 ## 6.6 — Métricas e ritmo de questões
 
 - Centralizar origens de contagem entre progresso e ranking; mostrar registros sem disciplina.

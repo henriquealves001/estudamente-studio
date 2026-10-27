@@ -1,3 +1,7 @@
+## Verificação 6.7
+
+105 testes aprovados; oito novos cenários em tests/routine.test.ts. Comportamento e limites em PLANEJAMENTO_6.7.md.
+
 ## Verificação 6.6
 
 97 testes aprovados, incluindo oito novos casos em tests/metrics.test.ts. Escopo, regras e limites em PLANEJAMENTO_6.6.md.

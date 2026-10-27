@@ -1,3 +1,7 @@
+# EstudaMente Studio 6.7
+
+Revisões para dias curtos, reserva explícita e prévia de retomada quando o prazo venceu. [Regras e limites](PLANEJAMENTO_6.7.md), [roteiro](PLANO_EVOLUCAO.md). Datas e históricos existentes preservados.
+
 # EstudaMente Studio 6.6
 
 Totais de questões com origens compartilhadas entre progresso e ranking, registros sem disciplina visíveis e referência de ritmo por bloco de 30 minutos. [Regras e limites](PLANEJAMENTO_6.6.md), [roteiro](PLANO_EVOLUCAO.md).
