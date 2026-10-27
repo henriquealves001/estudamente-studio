@@ -256,6 +256,8 @@ export type PlanDay = {
     date: string;
     capacity: number;
     used: number;
+    freeMinutes: number;
+    practiceReserve: number;
     tasks: {
         topicId: string;
         title: string;
@@ -265,7 +267,9 @@ export type PlanDay = {
     }[];
 };
 export function schedule(c: Contest, now = today()) {
-    const end = c.examDate ? plus(c.examDate, -1) : c.deadline || plus(now, 27), start = c.startDate > now ? c.startDate : now;
+    const start = c.startDate > now ? c.startDate : now;
+    const recoveryPreview = !!c.deadline && c.deadline < now && (!c.examDate || c.examDate > now);
+    const end = c.examDate ? plus(c.examDate, -1) : !recoveryPreview && c.deadline || plus(start, 27);
     const weights = cycle(c, now), share = new Map(weights.map(s => [s.id, s.share]));
     const remaining = new Map(c.topics.filter(t => !t.done && share.has(t.subjectId)).map(t => [t.id, Math.max(0, t.hours * 60 - c.logs.filter(l => l.topicId === t.id && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))]));
     const due = c.topics.filter(t => share.has(t.subjectId)).map(t => reviewDue(c, t)).filter(x => x !== null).sort((a, b) => a.date.localeCompare(b.date));
@@ -289,14 +293,15 @@ export function schedule(c: Contest, now = today()) {
         let available = Math.max(0, capacity - used);
         const tasks: PlanDay['tasks'] = [];
         for (const r of due) {
-            if (r.date > date || plannedReviews.has(r.topic.id) || available < 15 || allowance(r.topic.subjectId, date) < 15)
+            const minutes = Math.min(15, Math.floor(available), Math.floor(allowance(r.topic.subjectId, date)));
+            if (r.date > date || plannedReviews.has(r.topic.id) || minutes < 5)
                 continue;
-            tasks.push({ topicId: r.topic.id, title: r.topic.title, subjectId: r.topic.subjectId, minutes: 15, review: true });
-            count(r.topic.subjectId, date, 15);
+            tasks.push({ topicId: r.topic.id, title: r.topic.title, subjectId: r.topic.subjectId, minutes, review: true });
+            count(r.topic.subjectId, date, minutes);
             plannedReviews.add(r.topic.id);
-            available -= 15;
+            available -= minutes;
         }
-        let content = c.deadline && date > c.deadline ? 0 : Math.floor(Math.min(available, Math.max(0, capacity * c.contentShare - c.logs.filter(l => l.date === date && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))));
+        let content = !recoveryPreview && c.deadline && date > c.deadline ? 0 : Math.floor(Math.min(available, Math.max(0, capacity * c.contentShare - c.logs.filter(l => l.date === date && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))));
         while (content >= 1) {
             const candidates = c.topics.filter(t => (remaining.get(t.id) || 0) >= 1 && allowance(t.subjectId, date) >= 1).sort((a, b) => (weeklyEffort(a.subjectId, date) / (share.get(a.subjectId) || 1)) - (weeklyEffort(b.subjectId, date) / (share.get(b.subjectId) || 1)));
             const t = candidates[0];
@@ -308,9 +313,13 @@ export function schedule(c: Contest, now = today()) {
             remaining.set(t.id, Math.max(0, (remaining.get(t.id) || 0) - minutes));
             content -= minutes;
         }
-        days.push({ date, capacity, used, tasks });
+        const planned = tasks.reduce((n,t) => n+t.minutes,0);
+        const freeMinutes = Math.round(Math.max(0, capacity-used-planned)*1000)/1000;
+        const practiceUsed = c.logs.filter(l => l.date===date && ['Revisão','Questões','Flashcards'].includes(l.method)).reduce((n,l)=>n+l.minutes,0) + tasks.filter(t=>t.review).reduce((n,t)=>n+t.minutes,0);
+        const practiceReserve = Math.min(freeMinutes, Math.max(0, Math.floor(capacity*(1-c.contentShare))-practiceUsed));
+        days.push({ date, capacity, used, freeMinutes, practiceReserve, tasks });
     }
-    return { days, shortage: [...remaining.values()].reduce((a, b) => a + b, 0), unscheduledReviews: due.filter(r => !plannedReviews.has(r.topic.id)).length, truncated: days.length === 730 && days.at(-1)!.date < end };
+    return { days, recoveryPreview, shortage: [...remaining.values()].reduce((a, b) => a + b, 0), unscheduledReviews: due.filter(r => !plannedReviews.has(r.topic.id)).length, truncated: days.length === 730 && days.at(-1)!.date < end };
 }
 export const obj = (v: unknown): Record<string, unknown> => v !== null && typeof v === 'object' && !Array.isArray(v) ? v as Record<string, unknown> : {};
 export const arr = (v: unknown): Record<string, unknown>[] => Array.isArray(v) ? v.map(obj) : [];

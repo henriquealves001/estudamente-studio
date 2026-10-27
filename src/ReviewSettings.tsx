@@ -19,6 +19,7 @@ export default function ReviewSettings({ c }: { c: Contest }) {
             <p>Distribuir o estudo no tempo e tentar lembrar antes de consultar a resposta são práticas apoiadas por pesquisas. Os valores de 1 dia inicial, crescimento ×2 e teto de 60 dias são pontos de partida do aplicativo, ajustados ao resultado e limitados ao período anterior à prova. Não são uma fórmula universal.</p>
             <p><a href="https://doi.org/10.1177/1529100612453266" target="_blank" rel="noopener noreferrer">Dunlosky e colaboradores (2013) ↗</a> · <a href="https://doi.org/10.1111/j.1467-9280.2008.02209.x" target="_blank" rel="noopener noreferrer">Cepeda e colaboradores (2008) ↗</a></p>
             <p>Com questões informadas, menos de 50% de acertos reinicia o intervalo; de 50% a menos de 80% impede expansão. Estes limites são escolhas do aplicativo. Sua avaliação pode antecipar a retomada.</p>
+            <p>No cronograma, cada revisão recebe uma estimativa de 5 a 15 minutos conforme o tempo disponível. A duração real pode ser ajustada ao registrar. Essa faixa é uma escolha de organização do aplicativo.</p>
             <p>Personalizar muda as próximas sugestões. Revisões e resultados já registrados continuam no histórico.</p>
         </details>
     </section>;
