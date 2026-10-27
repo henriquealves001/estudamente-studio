@@ -1,3 +1,7 @@
+# EstudaMente Studio 6.6
+
+Totais de questões com origens compartilhadas entre progresso e ranking, registros sem disciplina visíveis e referência de ritmo por bloco de 30 minutos. [Regras e limites](PLANEJAMENTO_6.6.md), [roteiro](PLANO_EVOLUCAO.md).
+
 # EstudaMente Studio 6.5
 
 Ciclo com ajuste conservador por desempenho e integração entre revisões manuais e prática no mesmo dia. [Regras e limites](PLANEJAMENTO_6.5.md), [roteiro e pendências](PLANO_EVOLUCAO.md). Históricos e preferências antigas preservados.

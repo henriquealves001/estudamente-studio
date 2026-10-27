@@ -9,7 +9,7 @@ Roteiro aprovado no chat em 26/10/2026. Cada entrega exige preservação dos dad
 - [x] Alinhar limite de datas de revisão de assunto, pergunta e agenda externa.
 - [x] Cobrir preservação dos registros e leitura de backups existentes.
 - [x] Conferir revisão por assunto versus perguntas e avaliação manual no mesmo dia: registros novos têm horário; legado sem horário mantém erro pendente por cautela.
-- [ ] Conferir métricas apresentadas nas demais telas e estimativas de questões.
+- [x] Conferir totais de questões de progresso e ranking; incluir registros sem disciplina e esclarecer contagem de registros versus sessões. Estimativa de ritmo por amostra explícita.
 Aceite: todas as telas relacionadas refletem as mesmas alterações e totais.
 
 ## 2. Consolidar os padrões automáticos — em andamento
@@ -17,7 +17,7 @@ Aceite: todas as telas relacionadas refletem as mesmas alterações e totais.
 - [x] Explicar parâmetros, fontes e limites junto à configuração.
 - [x] Limitar crescimento pela proporção de acertos em revisão manual e pela prova.
 - [x] Distribuição adaptativa com 20 perguntas objetivas diferentes, três dias de prática, janela de 90 dias, suavização e limite de ajuste. Não substitui diagnóstico completo de domínio.
-- [ ] Estimar ritmo de questões usando dados suficientes do próprio aluno e explicar incerteza.
+- [x] Referência de volume por bloco de 30 minutos, com mediana, faixa interquartil e amostra mínima; sem converter a referência em obrigação ou aumentar horas.
 - [ ] Conferir parâmetros de retomada, reserva diária e tratamento de períodos sem prova.
 Aceite: um plano utilizável nasce dos padrões, sem exigir configuração de fórmulas.
 

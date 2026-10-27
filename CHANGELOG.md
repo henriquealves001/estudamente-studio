@@ -1,3 +1,10 @@
+## 6.6 — Métricas e ritmo de questões
+
+- Centralizar origens de contagem entre progresso e ranking; mostrar registros sem disciplina.
+- Corrigir legenda de registros de estudo e esclarecer acertos com ajuda e duplicações manuais.
+- Referência de ritmo por disciplina com mediana, quartis e amostra mínima, sem alterar horas.
+- Esclarecer tempo sugerido da prática; oito testes novos, total 97.
+
 ## 6.5 — Ciclo adaptativo e sequência de revisões
 
 - Ajuste opcional por perguntas objetivas, com amostra mínima, suavização e mesma carga semanal.

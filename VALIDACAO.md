@@ -1,3 +1,7 @@
+## Verificação 6.6
+
+97 testes aprovados, incluindo oito novos casos em tests/metrics.test.ts. Escopo, regras e limites em PLANEJAMENTO_6.6.md.
+
 ## Verificação 6.5
 
 89 testes aprovados; nove novos casos em tests/adaptive-cycle.test.ts. Cobertura de ajuste conservador por desempenho e sequência de revisões no mesmo dia. Ver PLANEJAMENTO_6.5.md para critérios e limitações.
