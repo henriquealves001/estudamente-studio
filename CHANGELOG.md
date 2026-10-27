@@ -54,3 +54,13 @@ Simulados completos antigos, módulos específicos de redação e bem-estar aind
 - Grupos com convite, entrada explícita, ranking exclusivo de membros, renovação do convite e saída.
 - Servidor Vinext/Workers com D1/R2 e migração aditiva, sem alterar o banco local dos estudos.
 - Testes de isolamento, consentimento, duplicação, empate, datas, arquivos e preservação dos planos.
+
+## 6.8 — primeiros passos, cronômetro e prévia de horas (27/10/2026)
+
+- Guia objetivo/disciplinas → horários → conferência, com plano próprio, catálogo ou ajuste do atual.
+- Cronômetro no painel com pausa, retomada, recuperação após recarga e conferência do registro.
+- Identificador estável por sessão evita registro duplicado; proteção contra gravação concorrente preserva histórico.
+- Prévia de metas, diferenças por disciplina, alternativas para excesso de horas, confirmação e desfazer.
+- Adaptação do cabeçalho e formulários responsivos; foco de teclado contido nos novos diálogos.
+- 115 testes, lint e build aprovados; sem mudança de formato do banco, migrações sociais ou dependências.
+- Limites e pendências explícitos em PLANEJAMENTO_6.8.md.

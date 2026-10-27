@@ -29,21 +29,21 @@ Aceite: um plano utilizável nasce dos padrões, sem exigir configuração de f�
 Aceite: uma sessão beneficia os objetivos relacionados e conta uma única vez.
 
 ## 4. Primeiros passos
-- [ ] Fluxo objetivo → disponibilidade → matérias → conferir plano.
-- [ ] Indicador de progresso, retorno às etapas e padrões automáticos.
-- [ ] Final com semana compreensível e ação Começar a estudar.
+- [x] Guia em três etapas: objetivo e disciplinas → disponibilidade → conferir plano (6.8).
+- [x] Indicador de progresso, retorno às etapas e padrões automáticos em planos novos (6.8).
+- [x] Conferência do ciclo semanal e abertura do painel com cronômetro (6.8). Validação com usuários iniciantes continua pendente.
 Aceite: uma pessoa nova monta o plano e encontra a primeira sessão sem ajuda.
 
 ## 5. Experiência diária
-- [ ] Próxima tarefa e cronômetro em destaque, com pausar/continuar/finalizar.
-- [ ] Recuperar sessão após recarregamento e oferecer registro manual.
+- [x] Cronômetro no painel com pausar/retomar/conferir/finalizar (6.8); aproximação da próxima tarefa pode evoluir.
+- [x] Recuperar sessão após recarregamento e oferecer registro manual (6.8).
 - [ ] Salvar tempo, questões e resultado sem duplicação e atualizar tarefas.
 Aceite: iniciar e registrar uma sessão diretamente pelo painel.
 
 ## 6. Recalcular a rotina
 - [ ] Reorganizar atrasos dentro da capacidade real, sem registrar erro por ausência.
-- [ ] Oferecer ajuste da disponibilidade ou redistribuição quando horas manuais não couberem.
-- [ ] Prévia semanal com diferenças por disciplina, confirmação e desfazer.
+- [x] Oferecer ajuste da disponibilidade ou redução proporcional explícita quando horas manuais/mínimos não couberem (6.8).
+- [x] Prévia semanal com diferenças por disciplina, confirmação e desfazer da última distribuição (6.8).
 Aceite: alterações geram plano viável e preservam histórico.
 
 ## 7. Simplificar e personalizar

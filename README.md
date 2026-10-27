@@ -1,4 +1,8 @@
-# EstudaMente Studio 6.7
+# EstudaMente Studio 6.8
+
+Primeiros passos guiados, cronômetro recuperável no painel e prévia de distribuição de horas com confirmação e desfazer. Veja [PLANEJAMENTO_6.8.md](PLANEJAMENTO_6.8.md) para comportamento, validação e limites.
+
+# Histórico da entrega 6.7
 
 Revisões para dias curtos, reserva explícita e prévia de retomada quando o prazo venceu. [Regras e limites](PLANEJAMENTO_6.7.md), [roteiro](PLANO_EVOLUCAO.md). Datas e históricos existentes preservados.
 

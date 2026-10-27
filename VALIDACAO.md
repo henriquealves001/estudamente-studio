@@ -93,3 +93,12 @@ Conferência da interface com dados sintéticos em origem separada: o botão Nã
 Conferência local no navegador: login simulado, perfil público com opt-in, publicação de plano e PDF, adoção em novo concurso com 7,5 horas, ranking de horas/questões e criação de grupo. Todos os dados dessa conferência são sintéticos e separados da produção.
 
 Dependências do starter foram atualizadas para remover achados altos/críticos. A auditoria npm ainda indica 8 moderados em ferramentas de desenvolvimento e cadeias transitivas de geração de imagens/esbuild. Não houve uso de npm audit fix --force ou downgrade automático. Os achados moderados não equivalem a falha comprovada dos fluxos testados, mas permanecem pendentes de revisão/atualização compatível.
+
+## 6.8 — 27/10/2026
+
+- 115 testes aprovados, incluindo dez novos de guia, redistribuição, cronômetro e concorrência.
+- TypeScript, lint e build aprovados.
+- Prévia local: criação de plano próprio com duas disciplinas e cinco horas semanais; iniciar, pausar, recarregar, conferir e salvar um minuto sintético; registro aparece uma única vez.
+- Metas manuais de sete horas numa semana de cinco: aplicação inicialmente bloqueada, alternativas apresentadas, redução explícita com soma exata de 300 minutos, diferenças visíveis e confirmação. Desfazer restaura o ciclo anterior mantendo o registro sintético.
+- Os dados usados na prévia são sintéticos e não foram publicados na comunidade.
+- Sem alteração de dependências, versão do banco de estudo ou migração do banco social.
