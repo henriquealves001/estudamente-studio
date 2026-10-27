@@ -1,4 +1,4 @@
 import type { ReactNode } from "react";
 import "../src/style.css";
-export const metadata = { title: "EstudaMente Studio 6.7", description: "Seu estudo, sua comunidade." };
+export const metadata = { title: "EstudaMente Studio 6.8", description: "Seu estudo, sua comunidade." };
 export default function Layout({children}:{children:ReactNode}) { return <html lang="pt-BR"><body>{children}</body></html>; }
