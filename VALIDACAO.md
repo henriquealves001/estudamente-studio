@@ -1,3 +1,7 @@
+## Verificação 6.5
+
+89 testes aprovados; nove novos casos em tests/adaptive-cycle.test.ts. Cobertura de ajuste conservador por desempenho e sequência de revisões no mesmo dia. Ver PLANEJAMENTO_6.5.md para critérios e limitações.
+
 ## Verificação 6.4
 
 80 testes aprovados: oito novos casos em tests/planning-integration.test.ts verificam integração do planejamento e preservação de dados. A primeira entrega está descrita em PLANEJAMENTO_6.4.md. O histórico de verificações anteriores segue abaixo.

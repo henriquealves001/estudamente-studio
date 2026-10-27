@@ -1,3 +1,7 @@
+# EstudaMente Studio 6.5
+
+Ciclo com ajuste conservador por desempenho e integração entre revisões manuais e prática no mesmo dia. [Regras e limites](PLANEJAMENTO_6.5.md), [roteiro e pendências](PLANO_EVOLUCAO.md). Históricos e preferências antigas preservados.
+
 # EstudaMente Studio 6.4
 
 Primeira entrega de integração do planejamento: prazo de conteúdo separado de revisões, limite pela prova, saldo semanal real e configuração automática explicada. Veja [PLANEJAMENTO_6.4.md](PLANEJAMENTO_6.4.md) para regras e limites e [PLANO_EVOLUCAO.md](PLANO_EVOLUCAO.md) para tarefas concluídas e pendentes. A conta social continua funcionando; históricos completos permanecem locais.

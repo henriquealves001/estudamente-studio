@@ -1,3 +1,9 @@
+## 6.5 — Ciclo adaptativo e sequência de revisões
+
+- Ajuste opcional por perguntas objetivas, com amostra mínima, suavização e mesma carga semanal.
+- Revisões novas registram horário; erros posteriores continuam visíveis na fila.
+- Planos antigos preservam preferência e registros. Nove testes novos, total 89.
+
 ## 6.4 — Planejamento integrado
 
 - Cronograma termina antes da prova e mantém revisões após o prazo de conteúdo.
