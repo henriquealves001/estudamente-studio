@@ -7,3 +7,4 @@ import './community.test.ts';
 import './planning-integration.test.ts';
 import './adaptive-cycle.test.ts';
 import './metrics.test.ts';
+import './routine.test.ts';
