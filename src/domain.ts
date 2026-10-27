@@ -120,6 +120,7 @@ export type Contest = {
     logs: Log[];
     reviews: Review[];
     records: RecordItem[];
+    reviewMode?: 'automatic' | 'custom';
     reviewDays: number;
     reviewGrowth: number;
     reviewMax: number;
@@ -155,7 +156,20 @@ export function validDate(s: string) {
 export function plus(s: string, n: number) { const d = new Date(s + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() + n); return d.toISOString().slice(0, 10); }
 export function monday(s: string) { const day = new Date(s + 'T12:00:00Z').getUTCDay(); return plus(s, -((day + 6) % 7)); }
 export const dayIndex = (s: string) => (new Date(s + 'T12:00:00Z').getUTCDay() + 6) % 7;
-export function emptyContest(name = 'Meu primeiro concurso'): Contest { return { id: uid(), name, examDate: '', deadline: '', startDate: today(), daily: [60, 60, 60, 60, 60, 0, 0], subjects: [], topics: [], logs: [], reviews: [], records: [], reviewDays: 1, reviewGrowth: 2, reviewMax: 60, contentShare: .75, questions: [], attempts: [], learningVersion: 1 }; }
+export const defaultReviewSettings = { reviewDays: 1, reviewGrowth: 2, reviewMax: 60 } as const;
+// Parâmetros de produto, não intervalos universais prescritos pelos estudos.
+export function nextReviewDate(c: Contest, date: string, interval: number) {
+    const due = plus(date, interval);
+    if (!c.examDate) return due;
+    const lastDay = plus(c.examDate, -1);
+    return date >= lastDay ? null : due > lastDay ? lastDay : due;
+}
+export function boundedReviewInterval(c: Contest, date: string, proposed: number) {
+    const interval = Math.min(c.reviewMax, Math.max(c.reviewDays, Math.round(proposed)));
+    const due = nextReviewDate(c, date, interval);
+    return due ? Math.max(1, Math.round((Date.parse(due) - Date.parse(date)) / 86400000)) : interval;
+}
+export function emptyContest(name = 'Meu primeiro concurso'): Contest { return { id: uid(), name, examDate: '', deadline: '', startDate: today(), daily: [60, 60, 60, 60, 60, 0, 0], subjects: [], topics: [], logs: [], reviews: [], records: [], reviewMode: 'automatic', ...defaultReviewSettings, contentShare: .75, questions: [], attempts: [], learningVersion: 1 }; }
 export function emptyDB(): Database { const c = emptyContest(); return { version: 6, activeId: c.id, contests: [c], archives: [], updatedAt: '' }; }
 export function cycle(c: Contest, now = today()) {
     const week = monday(now), weekly = c.daily.reduce((a, b) => a + b, 0), active = c.subjects.filter(s => s.active);
@@ -193,16 +207,16 @@ export function reviewDue(c: Contest, t: Topic) {
             latest.set(key, a);
     }
     const practice = [...latest.values()].filter(a => !manual || a.date >= manual.date).map(a => ({ date: plus(a.date, a.interval), interval: a.interval })).sort((a, b) => a.date.localeCompare(b.date));
-    if (t.reviewAnchor === '' && !practice.length)
+    if (t.reviewAnchor === '' && !practice.length && !manual)
         return null;
     const studied = t.reviewAnchor || c.logs.filter(l => l.topicId === t.id).map(l => l.date).sort()[0] || t.started;
-    if (!studied && !practice.length)
+    if (!studied && !practice.length && !manual)
         return null;
     const interval = practice[0]?.interval || manual?.interval || t.initialInterval || c.reviewDays;
-    const due = practice[0]?.date || plus(manual?.date || studied, interval);
-    if (t.reviewAnchor !== undefined && c.examDate && due >= c.examDate)
-        return null;
-    return { date: due, interval, topic: t };
+    const anchor = practice[0] ? plus(practice[0].date, -interval) : manual?.date || studied;
+    const due = nextReviewDate(c, anchor, interval);
+    if (!due) return null;
+    return { date: due, interval: Math.round((Date.parse(due) - Date.parse(anchor)) / 86400000), topic: t };
 }
 export function registerReview(c: Contest, topicId: string, date: string, rating: number, questions = 0, correct = 0): Review {
     if (!c.topics.some(t => t.id === topicId) || !validDate(date) || date > today() || ![0, 1, 2, 3].includes(rating) || !Number.isInteger(questions) || questions < 0 || !Number.isInteger(correct) || correct < 0 || correct > questions)
@@ -210,11 +224,14 @@ export function registerReview(c: Contest, topicId: string, date: string, rating
     const hist = c.reviews.filter(r => r.topicId === topicId).sort((a, b) => a.date.localeCompare(b.date));
     if (hist.length && hist.at(-1)!.date >= date)
         throw Error('Registre a revisão após a última data registrada para este assunto.');
-    // Um resultado objetivo totalmente incorreto prevalece sobre a avaliação subjetiva.
-    if (questions > 0 && correct === 0)
-        rating = 0;
+    // Acertos objetivos limitam a avaliação subjetiva nas próximas sugestões.
+    if (questions > 0) {
+        const accuracy = correct / questions;
+        // O resultado objetivo limita a autoavaliação; os limiares são heurísticas explícitas.
+        rating = Math.min(rating, accuracy < .5 ? 0 : accuracy < .8 ? 1 : 3);
+    }
     const previous = reviewDue(c, c.topics.find(t => t.id === topicId)!)?.interval || c.reviewDays;
-    const interval = rating === 0 ? c.reviewDays : Math.min(c.reviewMax, Math.max(c.reviewDays, Math.round(previous * (rating === 1 ? 1 : rating === 2 ? c.reviewGrowth : c.reviewGrowth * 1.3))));
+    const interval = boundedReviewInterval(c, date, rating === 0 ? c.reviewDays : previous * (rating === 1 ? 1 : rating === 2 ? c.reviewGrowth : c.reviewGrowth * 1.3));
     return { id: uid(), topicId, date, rating, interval, questions, correct };
 }
 export function recordStudy(c: Contest, l: Omit<Log, 'id'>): Contest {
@@ -238,20 +255,25 @@ export type PlanDay = {
     }[];
 };
 export function schedule(c: Contest, now = today()) {
-    const end = c.deadline || plus(now, 27), start = c.startDate > now ? c.startDate : now;
+    const end = c.examDate ? plus(c.examDate, -1) : c.deadline || plus(now, 27), start = c.startDate > now ? c.startDate : now;
     const weights = cycle(c, now), share = new Map(weights.map(s => [s.id, s.share]));
     const remaining = new Map(c.topics.filter(t => !t.done && share.has(t.subjectId)).map(t => [t.id, Math.max(0, t.hours * 60 - c.logs.filter(l => l.topicId === t.id && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))]));
     const due = c.topics.filter(t => share.has(t.subjectId)).map(t => reviewDue(c, t)).filter(x => x !== null).sort((a, b) => a.date.localeCompare(b.date));
     const customCycle = c.cycleMode === 'manual' || c.subjects.some(s => (s.minimumMinutes ?? 0) > 0 || s.extra);
-    const assigned = new Map<string, number>();
+    const assigned = new Map<string, number>(), recorded = new Map<string, number>();
+    for (const log of c.logs) {
+        const key = monday(log.date) + '|' + log.subjectId;
+        recorded.set(key, (recorded.get(key) || 0) + log.minutes);
+    }
     const allowance = (subjectId: string, date: string) => {
         if (!customCycle)
             return Infinity;
         const key = monday(date) + '|' + subjectId;
-        return Math.max(0, (weights.find(s => s.id === subjectId)?.target ?? 0) - (assigned.get(key) ?? 0) - c.logs.filter(l => l.subjectId === subjectId && l.date >= monday(date) && l.date <= plus(monday(date), 6)).reduce((n, l) => n + l.minutes, 0));
+        return Math.max(0, (weights.find(s => s.id === subjectId)?.target ?? 0) - (assigned.get(key) ?? 0) - (recorded.get(key) || 0));
     };
     const count = (id: string, date: string, minutes: number) => { const key = monday(date) + '|' + id; assigned.set(key, (assigned.get(key) ?? 0) + minutes); };
-    const plannedReviews = new Set<string>(), allocated = new Map<string, number>(), days: PlanDay[] = [];
+    const plannedReviews = new Set<string>(), days: PlanDay[] = [];
+    const weeklyEffort = (id: string, date: string) => (assigned.get(monday(date) + '|' + id) || 0) + (recorded.get(monday(date) + '|' + id) || 0);
     for (let date = start; date <= end && days.length < 730; date = plus(date, 1)) {
         const capacity = c.daily[dayIndex(date)], used = c.logs.filter(l => l.date === date).reduce((a, l) => a + l.minutes, 0);
         let available = Math.max(0, capacity - used);
@@ -264,9 +286,9 @@ export function schedule(c: Contest, now = today()) {
             plannedReviews.add(r.topic.id);
             available -= 15;
         }
-        let content = Math.floor(Math.min(available, Math.max(0, capacity * c.contentShare - c.logs.filter(l => l.date === date && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))));
+        let content = c.deadline && date > c.deadline ? 0 : Math.floor(Math.min(available, Math.max(0, capacity * c.contentShare - c.logs.filter(l => l.date === date && !['Revisão', 'Questões', 'Flashcards'].includes(l.method)).reduce((a, l) => a + l.minutes, 0))));
         while (content >= 1) {
-            const candidates = c.topics.filter(t => (remaining.get(t.id) || 0) >= 1 && allowance(t.subjectId, date) >= 1).sort((a, b) => ((allocated.get(a.subjectId) || 0) / (share.get(a.subjectId) || 1)) - ((allocated.get(b.subjectId) || 0) / (share.get(b.subjectId) || 1)));
+            const candidates = c.topics.filter(t => (remaining.get(t.id) || 0) >= 1 && allowance(t.subjectId, date) >= 1).sort((a, b) => (weeklyEffort(a.subjectId, date) / (share.get(a.subjectId) || 1)) - (weeklyEffort(b.subjectId, date) / (share.get(b.subjectId) || 1)));
             const t = candidates[0];
             if (!t)
                 break;
@@ -274,7 +296,6 @@ export function schedule(c: Contest, now = today()) {
             tasks.push({ topicId: t.id, title: t.title, subjectId: t.subjectId, minutes, review: false });
             count(t.subjectId, date, minutes);
             remaining.set(t.id, Math.max(0, (remaining.get(t.id) || 0) - minutes));
-            allocated.set(t.subjectId, (allocated.get(t.subjectId) || 0) + minutes);
             content -= minutes;
         }
         days.push({ date, capacity, used, tasks });
@@ -315,6 +336,7 @@ export function validateDB(v: unknown): asserts v is Database {
                 seen.add(x.id);
             }
         }
+        if (c.reviewMode !== undefined && !['automatic', 'custom'].includes(c.reviewMode)) throw Error('Modo de revisão inválido.');
         if (!Number.isFinite(c.contentShare) || c.contentShare < 0 || c.contentShare > 1 || !Number.isFinite(c.reviewDays) || c.reviewDays < 1 || !Number.isFinite(c.reviewGrowth) || c.reviewGrowth < 1 || !Number.isFinite(c.reviewMax) || c.reviewMax < c.reviewDays)
             throw Error('Parâmetros inválidos.');
         if (c.planOrigin !== undefined && (!c.planOrigin || typeof c.planOrigin.catalogId !== 'string' || typeof c.planOrigin.edition !== 'string' || !Array.isArray(c.planOrigin.sources) || c.planOrigin.sources.some(s => typeof s !== 'string') || typeof c.planOrigin.createdAt !== 'string'))
@@ -391,6 +413,7 @@ export function migrate(input: unknown, seed: SeedUnit[] = []): Database {
         const learningCore = active && Array.isArray(source.questions) ? source : core;
         const data = active && source.gcm ? obj(source.gcm) : g;
         const config = active && source.gcm ? obj(data.settings) : settings;
+        c.reviewMode = 'custom';
         c.id = `legacy-${hash}-${index}`;
         c.examDate = date(config.examDate) || date(obj(core.profile).deadline);
         c.deadline = date(config.planningDeadline) || c.examDate;
@@ -512,7 +535,7 @@ export function saveQuestion(c: Contest, q: Question) {
     validateQuestion(c, q);
     return { ...c, questions: c.questions.some(x => x.id === q.id) ? c.questions.map(x => x.id === q.id ? q : x) : [...c.questions, q] };
 }
-export function questionDue(c: Contest, q: Question) { const last = c.attempts.filter(a => a.questionId === q.id).sort((a, b) => a.at.localeCompare(b.at)).at(-1); return { last, date: last ? plus(last.date, last.interval) : '', interval: last?.interval || c.reviewDays }; }
+export function questionDue(c: Contest, q: Question) { const last = c.attempts.filter(a => a.questionId === q.id).sort((a, b) => a.at.localeCompare(b.at)).at(-1); return { last, date: last ? nextReviewDate(c, last.date, last.interval) || '' : '', interval: last?.interval || c.reviewDays }; }
 export function practiceQueue(c: Contest, { topicId = '', subjectId = '', mode = 'all', limit = 10, now = today() }: {
     topicId?: string;
     subjectId?: string;
@@ -572,7 +595,7 @@ export function applyPractice(c: Contest, input: PracticeInput): Contest {
         throw Error('A tentativa não pode ser anterior à última desta pergunta.');
     const previous = prev?.interval || c.reviewDays;
     const proposed = result === 'wrong' ? c.reviewDays : result === 'assisted' ? Math.round(previous * .75) : prev && prev.date === dateValue ? previous : prev ? Math.round(previous * c.reviewGrowth) : c.reviewDays;
-    const interval = Math.min(c.reviewMax, Math.max(c.reviewDays, proposed));
+    const interval = boundedReviewInterval(c, dateValue, proposed);
     const a: Attempt = { ...(input.declaredUnknown === undefined ? {} : { declaredUnknown: input.declaredUnknown }), id: input.id, sessionId: input.sessionId, questionId: q.id, topicId: t.id, at, date: dateValue, result, firstResponse: input.response.trim(), choice: input.choice, usedHint: input.usedHint, confidence: input.confidence, correctionMade: input.correctionMade, selfExplanation: input.selfExplanation.trim(), errorTag: result === 'wrong' ? input.errorTag : '', notes: input.notes.trim(), minutes: input.minutes, source: 'Recuperação ativa', origin: 'practice', interval, snapshot: { prompt: q.prompt, answer: q.answer } };
     return { ...c, attempts: [...c.attempts, a], logs: [...c.logs, { id: 'practice-' + a.id, subjectId: t.subjectId, topicId: t.id, date: dateValue, minutes: a.minutes, method: 'Questões', notes: 'Recuperação ativa · tentativa ' + a.id }], topics: c.topics.map(x => x.id === t.id ? { ...x, started: !x.started || dateValue < x.started ? dateValue : x.started } : x) };
 }
