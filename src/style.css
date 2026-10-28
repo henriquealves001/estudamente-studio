@@ -55,3 +55,37 @@ aside nav{min-height:0;overflow-y:auto;scrollbar-width:thin}aside .brand{flex-sh
 @media(max-width:760px){.timer-layout{grid-template-columns:1fr;gap:15px}.setup-days{grid-template-columns:repeat(4,minmax(0,1fr))}.setup-steps{gap:6px}.setup-steps li{font-size:10px;gap:5px}.setup-steps li span{width:23px;height:23px}.setup-modal{padding:22px!important}.header-actions>.quiet{font-size:10px;padding:7px}.timer-digits{font-size:43px}.preview-table th,.preview-table td{padding:10px 6px}.timer-controls .form-grid{grid-template-columns:1fr}}
 header{height:auto;min-height:82px;padding-top:12px;padding-bottom:12px}.breadcrumb{white-space:nowrap}.header-actions{justify-content:flex-end;gap:8px}.header-actions>.quiet{font-size:11px;white-space:nowrap}.header-actions>select{max-width:230px}
 @media(max-width:580px){header{min-height:100px}.header-actions{justify-content:flex-start}.header-actions>.quiet{flex:1}.header-actions>select{max-width:none;flex-basis:130px}.timer-digits{font-size:36px}.timer-layout{grid-template-columns:minmax(0,1fr)}.setup-days{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+/* Paleta aprovada E1 — grafite/preto e roxo, com cor reservada à ação. */
+:root{--bg:#f5f5f7;--surface:#ffffff;--panel:#ffffff;--soft:#eeedf2;--text:#23212b;--muted:#625e70;--line:#dcdbe2;--purple:#7022df;--focus:#6824c8;--selection:#eee5fc;--field:#faf9fc;color:var(--text);background:var(--bg)}
+html[data-theme=dark]{--bg:#111116;--surface:#18181f;--panel:#202028;--soft:#292331;--text:#f6f5f8;--muted:#b2b0bd;--line:#383841;--purple:#7525e8;--focus:#c3a6ff;--selection:#322447;--field:#141419;color:var(--text);background:var(--bg)}
+body,html[data-theme=dark] body{background:var(--bg);color:var(--text)}
+aside,header,.card,.modal,html[data-theme=dark] aside,html[data-theme=dark] header,html[data-theme=dark] .card,html[data-theme=dark] .modal{background:var(--surface);border-color:var(--line)}
+aside{color:var(--muted);border-right:1px solid var(--line)}
+h1,h2,h3,strong,b,.brand,.brand .light,.stats strong{color:var(--text)}
+p,label,small,.breadcrumb,.eyebrow,.nav-caption,.sidebar-footer,.sidebar-footer button,.brand small,.stats label,.muted,.cycle-values,.list-row,.notes{color:var(--muted)}
+nav button,nav button>span,html[data-theme=dark] nav button{color:var(--muted)}
+nav button.selected,html[data-theme=dark] nav button.selected{background:var(--selection);color:var(--focus);box-shadow:inset 3px 0 var(--focus)}
+nav button.selected>span,.brand-icon{color:var(--focus)}
+button,.button,.file-button,.primary,html[data-theme=dark] .community .primary,html[data-theme=dark] .community .file-button{background:var(--purple);color:#fff;box-shadow:none}
+.secondary,.quiet,.icon-button,.text-link,.hero-link,html[data-theme=dark] .secondary,html[data-theme=dark] .quiet,html[data-theme=dark] .icon-button,html[data-theme=dark] .community .secondary{background:transparent;color:var(--text);box-shadow:none}
+.secondary,.icon-button{border:1px solid var(--line)}
+.hero-panel,.science-hero,.community-hero,html[data-theme=dark] .hero-panel,html[data-theme=dark] .science-hero{background:var(--panel);border-color:var(--line);box-shadow:none}
+.hero-panel h2,.deadline strong,html[data-theme=dark] .hero-panel h2,html[data-theme=dark] .deadline strong{color:var(--text)}
+.hero-panel p,.hero-panel .eyebrow,.deadline>span,.deadline small,html[data-theme=dark] .hero-panel p,html[data-theme=dark] .hero-panel .eyebrow,html[data-theme=dark] .deadline>span,html[data-theme=dark] .deadline small{color:var(--muted)}
+.deadline,html[data-theme=dark] .deadline{border-color:var(--line)}
+input,select,textarea,.header-actions select,html[data-theme=dark] input,html[data-theme=dark] select,html[data-theme=dark] textarea{background:var(--field);color:var(--text);border-color:var(--line)}
+input::placeholder{color:var(--muted)}
+button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,a:focus-visible{outline-color:var(--focus)}
+.avatar,.purple,html[data-theme=dark] .purple{background:var(--selection);color:var(--focus)}
+.banner,.pill,.modal-notice,html[data-theme=dark] .banner,html[data-theme=dark] .pill,html[data-theme=dark] .modal-notice{background:var(--surface);color:var(--text);border-color:var(--line)}
+.banner strong{color:var(--text)}
+.daily>div,.study-panel,.answer-options label,.result-options label,.attempt-row>.notes,html[data-theme=dark] .daily>div,html[data-theme=dark] .study-panel,html[data-theme=dark] .answer-options label,html[data-theme=dark] .result-options label,html[data-theme=dark] .attempt-row>.notes{background:var(--field);border-color:var(--line)}
+.daily strong,.daily span{color:var(--muted)}
+.priority-row,.list-row,.cycle-row,.allocation-input{border-color:var(--line)}
+.priority-row button{background:transparent;color:var(--text);border:1px solid var(--line)}
+.chart-choices button.selected,html[data-theme=dark] .chart-choices button.selected{background:var(--selection);color:var(--focus);border-color:var(--focus)}
+progress,progress::-webkit-progress-bar,html[data-theme=dark] progress,html[data-theme=dark] progress::-webkit-progress-bar{background:var(--line)}
+progress::-webkit-progress-value,html[data-theme=dark] progress::-webkit-progress-value{background:var(--focus)}
+progress::-moz-progress-bar{background:var(--focus)}
+.science a,.science .book-author,html[data-theme=dark] .science a,html[data-theme=dark] .science .book-author{color:var(--focus)}
