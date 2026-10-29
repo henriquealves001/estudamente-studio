@@ -1,3 +1,10 @@
+## 6.9.1 — Clareza visual e estados iniciais
+
+- Exibir os primeiros passos somente em Hoje, evitando repetir o mesmo cartão em outras áreas.
+- Reservar o destaque de data para Hoje e mostrar “Registrar estudo” apenas nas áreas de estudo.
+- Incluir orientação quando ciclo, progresso ou desempenho ainda não têm disciplinas e registros.
+- Preservar o tema preto/grafite e roxo, os dados, cálculos e históricos. A revisão visual geral continua em andamento.
+
 ## 6.7 — Rotina flexível
 
 - Revisões estimadas de 5–15 minutos, respeitando capacidade e metas manuais.
@@ -64,3 +71,12 @@ Simulados completos antigos, módulos específicos de redação e bem-estar aind
 - Adaptação do cabeçalho e formulários responsivos; foco de teclado contido nos novos diálogos.
 - 115 testes, lint e build aprovados; sem mudança de formato do banco, migrações sociais ou dependências.
 - Limites e pendências explícitos em PLANEJAMENTO_6.8.md.
+
+## 6.9 — gráficos e clareza (27/10/2026)
+
+- Escolha de colunas, linhas e área compartilhada entre painel e progresso.
+- Pizza, barras e faixa para distribuição do ciclo; reserva e excesso de metas explícitos.
+- Preferências locais independentes do banco, recarga e atualização entre abas.
+- Tabela semanal e lista de horas/percentuais, temas e gráficos sem animação.
+- Ajuda avançada do ciclo e histórico de registros recolhidos.
+- 121 testes, lint e build; nenhuma alteração de dependências ou formato de dados.
