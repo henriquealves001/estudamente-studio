@@ -1,5 +1,13 @@
 # EstudaMente 6.9 — gráficos à sua escolha
 
+## Acompanhamento do plano mestre — 28/10/2026
+
+- Documento oficial: [Plano detalhado de implementação no Google Docs](https://docs.google.com/document/d/1IrKBPTsY_gXtOM-svndxmoLOD7k1HrsDCu0PbEEmI4o/edit).
+- Etapa 1 (estrutura, dados e direção visual): concluída e aceita conforme o documento.
+- **E5.1 — Aplicar a navegação e o sistema visual: em desenvolvimento.** O trabalho visual foi antecipado por prioridade do responsável; a integração final da etapa 5 continua dependente das bases E2 a E4.
+- A etapa 5 não está concluída. A revisão visual completa do site precisa ser aplicada e validada antes de iniciar E2.1, conforme orientação do responsável.
+- Este registro acompanha o estado do plano. Não representa uma nova versão do aplicativo nem uma publicação do site.
+
 ## Atualização visual 6.9.1
 
 - O cartão de primeiros passos fica somente em Hoje; outras telas preservam suas ações próprias sem repetir o convite inicial.
