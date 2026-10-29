@@ -8,6 +8,7 @@ export function QuestionProgress({c}:{c:Contest}) {
     return <section className="card"><h2>Desempenho registrado</h2>
         <p>{total.total} questões registradas · {total.correct} acertos informados · {total.assisted} com ajuda na prática</p>
         {rows.map(s=><div className="list-row" key={s.id}><div><strong>{s.name}</strong><small>{s.total} questões · {s.correct} acertos</small>{s.alone+s.assisted>0&&<small>Prática: {s.alone} sem ajuda · {s.assisted} com ajuda</small>}</div><strong>{s.total?fmt(s.correct/s.total*100)+'%':'Sem dados'}</strong></div>)}
+        {!rows.length&&<p className="empty">Seu desempenho aparece aqui depois dos primeiros registros de questões ou prática.</p>}
         <details><summary>Como os totais são calculados?</summary><p>Somamos tentativas da prática, questões de revisões e registros de questões ou simulados, incluindo disciplinas arquivadas. Acertos com ajuda entram nos acertos informados e aparecem separados na prática. Perguntas abertas são autoavaliadas. Repetir uma pergunta conta como nova tentativa, sem comprovar domínio.</p><p>O ranking usa essas mesmas origens para contar questões, em seu período e conjunto de concursos. Ele não mede acertos. Registros agregados podem descrever as mesmas questões de outra aba; não temos informação suficiente para identificá-las. Confira antes de registrar novamente.</p></details>
     </section>;
 }
