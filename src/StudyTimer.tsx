@@ -5,9 +5,9 @@ import { TIMER_KEY, parseTimer, pauseTimer, resumeTimer, timerElapsed, saveTimer
 import type { StudyTimerDraft } from './studyTimer';
 function loadTimer() { try { const raw = localStorage.getItem(TIMER_KEY); return { raw, draft: parseTimer(raw), error: '' }; } catch (e) { return { raw: null, draft: null, error: (e as Error).message }; } }
 const clock = (ms: number) => { const seconds = Math.floor(ms / 1000); return [Math.floor(seconds / 3600), Math.floor(seconds / 60) % 60, seconds % 60].map(n => String(n).padStart(2, '0')).join(':'); };
-export default function StudyTimer({ c, db, onSave, onSwitch }: { c: Contest; db: Database; onSave: (c: Contest) => boolean; onSwitch: (id: string) => void }) {
+export default function StudyTimer({ c, db, onSave, onSwitch, suggestion }: { c: Contest; db: Database; suggestion?: { subjectId: string; topicId: string; method: string } | null; onSave: (c: Contest) => boolean; onSwitch: (id: string) => void }) {
     const [initial] = useState(loadTimer), [draft, setDraft] = useState(initial.draft), [error, setError] = useState(initial.error), expected = useRef(initial.raw);
-    const [now, setNow] = useState(Date.now), [subjectId, setSubject] = useState(c.subjects.find(s => s.active)?.id || ''), [topicId, setTopic] = useState(''), [method, setMethod] = useState('Teoria');
+    const [now, setNow] = useState(Date.now), [subjectId, setSubject] = useState(suggestion?.subjectId || c.subjects.find(s => s.active)?.id || ''), [topicId, setTopic] = useState(suggestion?.topicId || ''), [method, setMethod] = useState(suggestion?.method || 'Teoria');
     const [finishing, setFinishing] = useState(false), [minutes, setMinutes] = useState(1), [date, setDate] = useState(today()), [notes, setNotes] = useState('');
     useEffect(() => { const id = window.setInterval(() => setNow(Date.now()), 1000); return () => clearInterval(id); }, []);
     useEffect(() => { function sync(e: StorageEvent) { if (e.key !== TIMER_KEY) return; try { setDraft(parseTimer(e.newValue)); expected.current = e.newValue; setFinishing(false); setError('Cronômetro atualizado em outra aba.'); } catch (e) { setError((e as Error).message); } } window.addEventListener('storage', sync); return () => window.removeEventListener('storage', sync); }, []);

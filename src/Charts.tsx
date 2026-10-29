@@ -1,14 +1,12 @@
-import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area } from 'recharts';
-const fmt = (n: number) => new Intl.NumberFormat('pt-BR', { maximumFractionDigits: 1 }).format(n);
-export default function Charts({ data, kind }: {
-    data: {
-        dia: string;
-        horas: number;
-        meta: number;
-    }[];
-    kind: 'bar' | 'area';
-}) {
-    if (kind === 'bar')
-        return <ResponsiveContainer><BarChart data={data}><CartesianGrid strokeDasharray="3 3" vertical={false}/><XAxis dataKey="dia"/><YAxis /><Tooltip formatter={v => Number(v) > 0 && Number(v) < 1 ? `${fmt(Number(v) * 60)} min` : `${fmt(Number(v))} h`}/><Bar dataKey="meta" name="Disponível" fill="#e1def9" radius={[4, 4, 0, 0]}/><Bar dataKey="horas" name="Estudado" fill="#8275ef" radius={[4, 4, 0, 0]}/></BarChart></ResponsiveContainer>;
-    return <ResponsiveContainer><AreaChart data={data}><defs><linearGradient id="study" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#8275ef" stopOpacity={.35}/><stop offset="100%" stopColor="#8275ef" stopOpacity={0}/></linearGradient></defs><CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#edf0f4"/><XAxis dataKey="dia" axisLine={false} tickLine={false}/><YAxis axisLine={false} tickLine={false} width={30}/><Tooltip formatter={v => Number(v) > 0 && Number(v) < 1 ? `${fmt(Number(v) * 60)} min` : `${fmt(Number(v))} h`}/><Area type="monotone" dataKey="horas" name="Estudado" stroke="#8275ef" strokeWidth={3} fill="url(#study)"/></AreaChart></ResponsiveContainer>;
+import { useId } from 'react';
+import { ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, AreaChart, Area, LineChart, Line } from 'recharts';
+import { timeLabel } from './chartPreferences';
+import type { TimeChartType } from './chartPreferences';
+export type TimeChartRow = { dia: string; horas: number; meta: number };
+export default function Charts({ data, kind }: { data: TimeChartRow[]; kind: TimeChartType }) {
+    const gradient = useId().replace(/:/g, '');
+    const axes = <><CartesianGrid strokeDasharray="3 3" vertical={false} stroke="var(--line)"/><XAxis dataKey="dia" axisLine={false} tickLine={false} tick={{ fill: 'var(--muted)', fontSize: 11 }}/><YAxis axisLine={false} tickLine={false} width={58} tickFormatter={n => timeLabel(Number(n))} tick={{ fill: 'var(--muted)', fontSize: 10 }}/><Tooltip formatter={v => timeLabel(Number(v))} contentStyle={{ background: 'var(--surface)', borderColor: 'var(--line)', color: 'var(--text)', borderRadius: 8 }} labelStyle={{ color: 'var(--text)' }}/></>;
+    if (kind === 'bar') return <ResponsiveContainer width="100%" height="100%"><BarChart data={data} accessibilityLayer>{axes}<Bar dataKey="meta" name="Disponível" fill="#aba5d6" radius={[4,4,0,0]} isAnimationActive={false}/><Bar dataKey="horas" name="Estudado" fill="#8275ef" radius={[4,4,0,0]} isAnimationActive={false}/></BarChart></ResponsiveContainer>;
+    if (kind === 'line') return <ResponsiveContainer width="100%" height="100%"><LineChart data={data} accessibilityLayer>{axes}<Line type="linear" dataKey="meta" name="Disponível" stroke="#aba5d6" strokeWidth={2} strokeDasharray="5 4" dot={false} isAnimationActive={false}/><Line type="linear" dataKey="horas" name="Estudado" stroke="#8275ef" strokeWidth={3} dot={{r:3}} isAnimationActive={false}/></LineChart></ResponsiveContainer>;
+    return <ResponsiveContainer width="100%" height="100%"><AreaChart data={data} accessibilityLayer><defs><linearGradient id={gradient} x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#8275ef" stopOpacity={.35}/><stop offset="100%" stopColor="#8275ef" stopOpacity={0}/></linearGradient></defs>{axes}<Area type="linear" dataKey="meta" name="Disponível" fill="none" stroke="#aba5d6" strokeWidth={2} strokeDasharray="5 4" isAnimationActive={false}/><Area type="linear" dataKey="horas" name="Estudado" stroke="#8275ef" strokeWidth={3} fill={`url(#${gradient})`} isAnimationActive={false}/></AreaChart></ResponsiveContainer>;
 }
