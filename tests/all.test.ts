@@ -10,3 +10,5 @@ import './metrics.test.ts';
 import './routine.test.ts';
 
 import './setup-timer.test.ts';
+
+import './chart-preferences.test.ts';
