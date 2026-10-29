@@ -1,5 +1,13 @@
 # EstudaMente 6.9 — gráficos à sua escolha
 
+## Atualização visual 6.9.1
+
+- O cartão de primeiros passos fica somente em Hoje; outras telas preservam suas ações próprias sem repetir o convite inicial.
+- A data de referência aparece em Hoje, e “Registrar estudo” fica restrito às áreas relacionadas ao estudo.
+- Estados iniciais de ciclo, progresso e desempenho explicam como os dados aparecerão, sem painéis vazios.
+- Dados, cálculos, preferências, histórico e armazenamento não foram alterados por esses ajustes.
+- A auditoria de todas as áreas em telas grandes e pequenas permanece pendente; esta versão não declara o visual como concluído.
+
 ## O que mudou
 
 - Gráficos semanais do painel e de Meu progresso permitem escolher colunas, linhas ou área. A escolha é compartilhada entre essas duas telas. Os três formatos mostram estudado e disponível, com legenda, resumo e tabela consultável.
