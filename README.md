@@ -1,4 +1,10 @@
-# EstudaMente Studio 6.8
+# EstudaMente Studio 6.9
+
+**Revisão visual em andamento:** navegação agrupada em cinco áreas, início com a próxima tarefa e acesso ao cronômetro. O trabalho de simplificação ainda não foi concluído nem publicado integralmente; o histórico de estudo permanece local.
+
+Escolha gráficos de tempo e distribuição de horas, com preferências por navegador e valores acessíveis em tabelas/listas. Ajuda avançada e histórico recolhidos para reduzir o texto inicial. Veja [PLANEJAMENTO_6.9.md](PLANEJAMENTO_6.9.md).
+
+# Histórico da entrega 6.8
 
 Primeiros passos guiados, cronômetro recuperável no painel e prévia de distribuição de horas com confirmação e desfazer. Veja [PLANEJAMENTO_6.8.md](PLANEJAMENTO_6.8.md) para comportamento, validação e limites.
 
@@ -282,3 +288,11 @@ A aba é informativa: não lê nem modifica históricos de estudo. Oferece busca
 A aba científica agora explicita 10 verificações com status de aplicação e limites, e distingue fontes relacionadas em uso, aplicação parcial e contexto. O relatório está em `public/references/auditoria-metodo.md`. Não há adoção integral de todos os livros nem validação de eficácia do aplicativo.
 
 Corrigidos: não resposta convertida em acerto numa pergunta aberta, expansão de intervalo com zero acertos objetivos e teto ignorado após reduzir o máximo de revisão. As mudanças afetam novos registros; preservam o histórico e acrescentam somente um marcador opcional de não resposta. Total atual: 62 testes.
+
+### Paleta aprovada após a etapa 1
+
+Aplicada a direção preto/grafite e roxo: superfícies neutras, ação principal roxa,
+seleção e foco em lavanda, ações secundárias discretas e campos com contraste.
+Tema claro correspondente preservado, assim como a preferência já salva pelo aluno.
+Esta alteração é visual: não modifica dados, cálculos ou o armazenamento de estudos.
+A reorganização completa das categorias continua no planejamento por etapas.
