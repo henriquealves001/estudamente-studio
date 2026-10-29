@@ -1,6 +1,6 @@
-# EstudaMente Studio 6.9
+# EstudaMente Studio 6.9.1
 
-**Revisão visual em andamento:** navegação agrupada em cinco áreas, início com a próxima tarefa e acesso ao cronômetro. O trabalho de simplificação ainda não foi concluído nem publicado integralmente; o histórico de estudo permanece local.
+**Revisão visual em andamento:** cinco áreas principais, paleta preto/grafite e roxo, e primeiros passos concentrados em Hoje. Estados sem dados agora indicam o próximo passo. O trabalho de simplificação ainda não foi concluído nem aprovado integralmente; o histórico de estudo permanece local.
 
 Escolha gráficos de tempo e distribuição de horas, com preferências por navegador e valores acessíveis em tabelas/listas. Ajuda avançada e histórico recolhidos para reduzir o texto inicial. Veja [PLANEJAMENTO_6.9.md](PLANEJAMENTO_6.9.md).
 
