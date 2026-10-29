@@ -1,4 +1,14 @@
 import { sqliteTable, text, integer, primaryKey, uniqueIndex } from 'drizzle-orm/sqlite-core';
+export const accounts = sqliteTable('accounts', {
+ id:text('id').primaryKey(), email:text('email').notNull().default(''), name:text('name').notNull().default(''), bio:text('bio').notNull().default(''), avatarKey:text('avatar_key'), created:text('created_at').notNull()
+});
+export const accountIdentities = sqliteTable('account_identities', {
+ provider:text('provider').notNull(), subject:text('subject').notNull(), accountId:text('account_id').notNull()
+}, t=>[primaryKey({columns:[t.provider,t.subject]}),uniqueIndex('account_provider_owner_unique').on(t.provider,t.accountId)]);
+export const accountSessions = sqliteTable('account_sessions', {
+ tokenHash:text('token_hash').primaryKey(), accountId:text('account_id').notNull(), providerSession:text('provider_session').notNull(), expires:integer('expires_at').notNull()
+});
+export const revokedSessions = sqliteTable('account_revoked_sessions', { providerSession:text('provider_session').primaryKey(), created:text('created_at').notNull() });
 export const profiles = sqliteTable('community_profiles', {
  userId:text('user_id').primaryKey(), publicId:text('public_id').notNull().unique(), name:text('name').notNull(), bio:text('bio').notNull().default(''), avatarKey:text('avatar_key'), ranking:integer('ranking').notNull().default(0), updated:text('updated_at').notNull()
 });

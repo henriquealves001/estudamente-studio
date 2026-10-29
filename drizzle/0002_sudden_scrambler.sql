@@ -1,0 +1,1 @@
+CREATE UNIQUE INDEX `account_provider_owner_unique` ON `account_identities` (`provider`,`account_id`);

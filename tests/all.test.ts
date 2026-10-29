@@ -12,3 +12,4 @@ import './routine.test.ts';
 import './setup-timer.test.ts';
 
 import './chart-preferences.test.ts';
+import './accounts.test.ts';

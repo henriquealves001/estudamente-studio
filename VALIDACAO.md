@@ -102,3 +102,11 @@ Dependências do starter foram atualizadas para remover achados altos/críticos.
 - Metas manuais de sete horas numa semana de cinco: aplicação inicialmente bloqueada, alternativas apresentadas, redução explícita com soma exata de 300 minutos, diferenças visíveis e confirmação. Desfazer restaura o ciclo anterior mantendo o registro sintético.
 - Os dados usados na prévia são sintéticos e não foram publicados na comunidade.
 - Sem alteração de dependências, versão do banco de estudo ou migração do banco social.
+# Validação da implementação local de E2 — 29/10/2026
+
+- Suíte completa: 132 testes passaram, incluindo 11 novos testes de contas com SQLite real e autenticação externa simulada.
+- Lint, TypeScript e build de produção passaram. O build emite avisos do Vinext/Vite sobre sourcemaps, módulos e CSS, sem falhar.
+- Cadastro/Google, entrega de e-mail, recuperação entre navegadores e vínculo real com o gateway não foram homologados: ainda não há projeto Supabase configurado.
+- Conferência visual pendente: o acesso automatizado ao navegador expirou. Não houve nova publicação.
+- Migrações 0000–0002 aplicadas ao D1 local inicialmente vazio. Respostas HTTP 200 conferidas em `/`, `/api/account/config`, `/api/account/me` e `/api/community/me`, sem provedor configurado e sem usuário de demonstração inserido.
+- Configuração, matriz por subetapa e reversão: [CONTAS_E2.md](CONTAS_E2.md).

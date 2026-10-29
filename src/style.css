@@ -108,3 +108,11 @@ aside>nav button .desktop-section{width:auto;font-size:inherit;color:inherit}
 /* Leitura confortável, com hierarquia consistente em todas as áreas. */
 aside nav button{font-size:14px}.section-nav button{font-size:13px}.list-row{font-size:13px}.list-row strong{font-size:14px}.list-row small,.section-head p{font-size:12px}.list-row button,.pill{font-size:11px}.breadcrumb,.header-actions>.quiet,.header-menu>summary{font-size:12px}.today-focus p{font-size:14px}.home-details>summary{font-size:14px}.home-details>summary:focus-visible,.header-menu>summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:4px}
 @media(max-width:760px){aside nav button{font-size:11px}}
+.account-modal { max-width: 640px; }
+.account-modal details { margin: 16px 0; }
+.account-modal form { margin: 14px 0; }
+.account-modal .actions { flex-wrap: wrap; }
+.account-button { display: inline-flex; align-items: center; gap: 8px; }
+.account-button .community-avatar { width: 30px; height: 30px; }
+.account-preview { padding: 12px; border: 1px solid var(--border, #555); border-radius: 12px; margin: 12px 0; overflow-wrap: anywhere; }
+.account-preview > * { margin-right: 10px; }

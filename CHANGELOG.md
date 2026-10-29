@@ -80,3 +80,10 @@ Simulados completos antigos, módulos específicos de redação e bem-estar aind
 - Tabela semanal e lista de horas/percentuais, temas e gráficos sem animação.
 - Ajuda avançada do ciclo e histórico de registros recolhidos.
 - 121 testes, lint e build; nenhuma alteração de dependências ou formato de dados.
+# Em desenvolvimento — E2 (29/10/2026)
+
+- Integração Supabase Auth para e-mail/senha, Google, confirmação, recuperação e alteração de e-mail; ativação externa ainda pendente.
+- Identidade interna e vínculo comprovado com o ChatGPT, preservando autoria antiga; sessão revogável e autorização nas APIs.
+- Perfil básico privado por padrão, foto estática, prévia, consentimentos sociais e nome/foto no cabeçalho.
+- Namespace por conta para estudos, cronômetro, prática, gráficos e cache de agenda; modo visitante e dados anteriores preservados.
+- 11 testes de contas adicionados; detalhes, limites e pendências em `CONTAS_E2.md`. Sem publicação nesta entrega.

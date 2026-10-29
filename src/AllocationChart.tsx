@@ -1,7 +1,7 @@
 import { ResponsiveContainer, PieChart, Pie, Cell, Tooltip, BarChart, Bar, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { allocationChartData } from './chartPreferences';
 import type { AllocationInput } from './chartPreferences';
-import { ChartChoices, useChartPreferences } from './ChartPreferences';
+import { ChartChoices, useChartPreferences } from './ChartPreferencesContext';
 const fmt = (n:number)=>new Intl.NumberFormat('pt-BR',{maximumFractionDigits:2}).format(n);
 export default function AllocationChart({ rows, capacity }: { rows: AllocationInput[]; capacity: number }) {
     const {preferences,setPreference,notice}=useChartPreferences(), model=allocationChartData(rows,capacity), positive=model.rows.filter(r=>r.minutes>0);

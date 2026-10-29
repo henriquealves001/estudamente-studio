@@ -1,6 +1,6 @@
 import Charts from './Charts';
 import type { TimeChartRow } from './Charts';
-import { ChartChoices, useChartPreferences } from './ChartPreferences';
+import { ChartChoices, useChartPreferences } from './ChartPreferencesContext';
 import { timeChartSummary, timeLabel } from './chartPreferences';
 export default function TimeChart({ data }: { data: TimeChartRow[] }) {
     const { preferences, setPreference, notice } = useChartPreferences(), summary = timeChartSummary(data);

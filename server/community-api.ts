@@ -1,16 +1,17 @@
 import { periodStart, plain, saoPauloDate, validatePlan, validateTotals } from '../src/social.ts';
 import type { PublicProfile } from '../src/social.ts';
+import { currentAccount, checkAccountDestination, AccountError } from './account-auth.ts';
+import type { AccountEnv } from './account-auth.ts';
 
-export type CommunityEnv = { DB?: D1Database; BUCKET?: R2Bucket };
+export type CommunityEnv = AccountEnv;
 type Row = Record<string, string | number | null>;
 class HttpError extends Error { status:number; constructor(status:number,message:string){super(message);this.status=status;} }
 const fail=(status:number,message:string):never=>{throw new HttpError(status,message);};
 const json=(data:unknown,status=200)=>new Response(JSON.stringify(data),{status,headers:{'content-type':'application/json; charset=utf-8','cache-control':'no-store','x-content-type-options':'nosniff'}});
 const id=()=>crypto.randomUUID();
-export function mutationIdentity(request:Request):string {
+export function mutationIdentity(request:Request,user:string|null):string {
  const origin=request.headers.get('origin');
  if (origin!==new URL(request.url).origin) fail(403,'Origem da solicitação inválida. Reabra o site.');
- const user=request.headers.get('oai-authenticated-user-id');
  if (!user) fail(401,'Entre com sua conta para continuar.');
  return user!;
 }
@@ -34,7 +35,8 @@ export async function communityAPI(request:Request,env:CommunityEnv):Promise<Res
  try{
   const url=new URL(request.url), parts=url.pathname.replace(/^\/api\/community\/?/,'').split('/').filter(Boolean), path=parts[0]||'me', key=parts[1]||'';
   if(!env.DB) return json({error:'A comunidade precisa do servidor com banco de dados. Seus estudos locais continuam disponíveis.'},503);
-  const db=env.DB, read=request.method==='GET', user=read?request.headers.get('oai-authenticated-user-id'):mutationIdentity(request);
+  const db=env.DB, read=request.method==='GET', account=await currentAccount(request,env), user=read?(account?.id||null):mutationIdentity(request,account?.id||null);
+  if(!read||request.headers.has('x-em-account'))checkAccountDestination(request,user);
   const first=(sql:string,...args: (string|number|null)[])=>db.prepare(sql).bind(...args).first<Row>();
   const rows=async(sql:string,...args:(string|number|null)[])=>(await db.prepare(sql).bind(...args).all<Row>()).results;
   const me=user?await first('SELECT * FROM community_profiles WHERE user_id=?',user):null;
@@ -42,6 +44,7 @@ export async function communityAPI(request:Request,env:CommunityEnv):Promise<Res
   if(path==='profile'&&request.method==='PUT'){
    const b=await body(request);if(!me&&b.consent!==true)fail(400,'Confirme a criação do seu perfil público.');const name=plain(b.name,40,2),bio=plain(b.bio??'',220);if(typeof b.ranking!=='boolean')fail(400,'Escolha se deseja participar dos rankings.');
    await db.prepare('INSERT INTO community_profiles(user_id,public_id,name,bio,ranking,updated_at) VALUES(?,?,?,?,?,?) ON CONFLICT(user_id) DO UPDATE SET name=excluded.name,bio=excluded.bio,ranking=excluded.ranking,updated_at=excluded.updated_at').bind(user,id(),name,bio,b.ranking?1:0,new Date().toISOString()).run();
+   await db.prepare('UPDATE accounts SET name=?,bio=? WHERE id=?').bind(name,bio,user).run();
    if(!b.ranking)await db.prepare('DELETE FROM community_daily WHERE user_id=?').bind(user).run();
    return json({ok:true});
   }
@@ -49,11 +52,11 @@ export async function communityAPI(request:Request,env:CommunityEnv):Promise<Res
   if(path==='avatar'&&request.method==='PUT'){
    if(!me)fail(409,'Crie seu perfil antes de enviar a foto.');if(!env.BUCKET)fail(503,'Upload indisponível.');const bytes=await limitedBody(request,300000),type=checkFile(bytes,'avatar'),file='avatars/'+me!.public_id+'/'+id();
    await env.BUCKET!.put(file,bytes,{httpMetadata:{contentType:type}});
-   try{await db.prepare('UPDATE community_profiles SET avatar_key=?,updated_at=? WHERE user_id=?').bind(file,new Date().toISOString(),user).run();}catch(e){await env.BUCKET!.delete(file);throw e;}
+   try{await db.batch([db.prepare('UPDATE community_profiles SET avatar_key=?,updated_at=? WHERE user_id=?').bind(file,new Date().toISOString(),user),db.prepare('UPDATE accounts SET avatar_key=? WHERE id=?').bind(file,user)]);}catch(e){await env.BUCKET!.delete(file);throw e;}
    if(me!.avatar_key)await env.BUCKET!.delete(String(me!.avatar_key));return json({ok:true});
   }
   if(path==='avatar'&&request.method==='DELETE'){
-   if(me?.avatar_key){await db.prepare('UPDATE community_profiles SET avatar_key=NULL WHERE user_id=?').bind(user).run();await env.BUCKET?.delete(String(me.avatar_key));}return json({ok:true});
+   if(me?.avatar_key){await db.batch([db.prepare('UPDATE community_profiles SET avatar_key=NULL WHERE user_id=?').bind(user),db.prepare('UPDATE accounts SET avatar_key=NULL WHERE id=?').bind(user)]);await env.BUCKET?.delete(String(me.avatar_key));}return json({ok:true});
   }
   if(path==='plans'&&read){
    const term=(url.searchParams.get('q')||'').slice(0,100), result=await rows(`SELECT e.*,p.public_id,p.name,p.bio,p.avatar_key,p.ranking FROM community_plans e JOIN community_profiles p ON e.owner=p.user_id WHERE e.removed=0 ${key?'AND e.id=?':"AND (instr(lower(e.title||' '||e.organization||' '||e.edition),lower(?))>0)"} ORDER BY e.created_at DESC LIMIT 100`,key||term);
@@ -101,6 +104,6 @@ export async function communityAPI(request:Request,env:CommunityEnv):Promise<Res
   if(path==='leave'&&request.method==='POST'){await db.prepare('DELETE FROM community_members WHERE group_id=? AND user_id=?').bind(key,user).run();return json({ok:true});}
   if(path==='rotate-invite'&&request.method==='POST'){const next=id()+id(),result=await db.prepare('UPDATE community_groups SET invite=? WHERE id=? AND owner=?').bind(next,key,user).run();if(!result.meta.changes)fail(404,'Grupo não encontrado.');return json({ok:true});}
   return json({error:'Operação não encontrada.'},404);
- }catch(e){if(e instanceof HttpError)return json({error:e.message},e.status);if(e instanceof Error&&/Texto inválido|caracteres|plano|Quantidade|Data |Período|dias por|limite/i.test(e.message))return json({error:e.message},400);console.error('community operation failed',e instanceof Error?e.message:'unknown');return json({error:'Não foi possível concluir. Nenhum estudo local foi substituído.'},500);}
+ }catch(e){if(e instanceof HttpError||e instanceof AccountError)return json({error:e.message},e.status);if(e instanceof Error&&/Texto inválido|caracteres|plano|Quantidade|Data |Período|dias por|limite/i.test(e.message))return json({error:e.message},400);console.error('community operation failed',e instanceof Error?e.message:'unknown');return json({error:'Não foi possível concluir. Nenhum estudo local foi substituído.'},500);}
 }
 

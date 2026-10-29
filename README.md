@@ -1,5 +1,7 @@
 # EstudaMente Studio 6.9.1
 
+**Etapa 2 — implementação local de contas (29/10/2026):** estrutura de identidade, sessões, formulários de acesso/recuperação, perfil privado e separação dos dados por conta. Supabase escolhido; projeto, Google/SMTP, homologação real e publicação ainda pendentes. Configuração, testes e reversão em [CONTAS_E2.md](CONTAS_E2.md). Esta entrega não sincroniza o histórico na nuvem.
+
 **Revisão visual em andamento:** cinco áreas principais, paleta preto/grafite e roxo, e primeiros passos concentrados em Hoje. Estados sem dados agora indicam o próximo passo. O trabalho de simplificação ainda não foi concluído nem aprovado integralmente; o histórico de estudo permanece local.
 
 Escolha gráficos de tempo e distribuição de horas, com preferências por navegador e valores acessíveis em tabelas/listas. Ajuda avançada e histórico recolhidos para reduzir o texto inicial. Veja [PLANEJAMENTO_6.9.md](PLANEJAMENTO_6.9.md).

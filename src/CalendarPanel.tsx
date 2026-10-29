@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import type { FormEvent } from 'react';
 import type { Contest } from './domain';
+import { useStudyStorage } from './StudyStorageContext';
 import { defaultOptions, validateCalendarOptions, revisionEvents, calendarICS, googleCalendarLink, loadGoogleIdentity, authorizeGoogle, ensureAppCalendar, syncRevisionEvents, CalendarApiError } from './calendar';
 const clientId = String(import.meta.env.VITE_GOOGLE_CLIENT_ID || '').trim();
 const cacheKey = 'estudamente-google-calendars-' + clientId;
@@ -9,6 +10,7 @@ export default function CalendarPanel({ c, onChange }: {
     c: Contest;
     onChange: (c: Contest) => boolean;
 }) {
+    const localStorage = useStudyStorage();
     const [options, setOptions] = useState(c.calendarOptions || defaultOptions()), [message, setMessage] = useState(''), [ready, setReady] = useState(false), [connected, setConnected] = useState(false), [busy, setBusy] = useState(false);
     const token = useRef<{
         token: string;

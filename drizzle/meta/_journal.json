@@ -8,6 +8,20 @@
       "when": 1793042506296,
       "tag": "0000_clear_pandemic",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1793246927594,
+      "tag": "0001_marvelous_agent_zero",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1793247296469,
+      "tag": "0002_sudden_scrambler",
+      "breakpoints": true
     }
   ]
 }

@@ -2,14 +2,17 @@ import { createContext, useContext, useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 import { CHART_PREFERENCES_KEY, parseChartPreferences } from './chartPreferences';
 import type { ChartPreferences } from './chartPreferences';
-function load() { try { return parseChartPreferences(localStorage.getItem(CHART_PREFERENCES_KEY)); } catch { return parseChartPreferences(null); } }
+import { useStudyStorage } from './StudyStorageContext';
+import type { StudyStorage } from './accountStorage';
+function load(localStorage: StudyStorage) { try { return parseChartPreferences(localStorage.getItem(CHART_PREFERENCES_KEY)); } catch { return parseChartPreferences(null); } }
 const Context = createContext<{ preferences: ChartPreferences; setPreference: <K extends 'time' | 'allocation'>(key: K, value: ChartPreferences[K]) => void; notice: string } | null>(null);
 export function ChartPreferencesProvider({ children }: { children: ReactNode }) {
-    const [preferences, setPreferences] = useState(load), [notice, setNotice] = useState('');
+    const localStorage = useStudyStorage();
+    const [preferences, setPreferences] = useState(() => load(localStorage)), [notice, setNotice] = useState('');
     useEffect(() => {
-        function sync(event: StorageEvent) { if (event.key === CHART_PREFERENCES_KEY || event.key === null) { setPreferences(load()); setNotice(''); } }
+        function sync(event: StorageEvent) { if (event.key === localStorage.keyFor(CHART_PREFERENCES_KEY) || event.key === null) { setPreferences(load(localStorage)); setNotice(''); } }
         window.addEventListener('storage', sync); return () => window.removeEventListener('storage', sync);
-    }, []);
+    }, [localStorage]);
     function setPreference<K extends 'time' | 'allocation'>(key: K, value: ChartPreferences[K]) {
         let next = { ...preferences, [key]: value };
         try {

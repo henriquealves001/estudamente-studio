@@ -2,6 +2,8 @@ import { useState } from 'react';
 import type { FormEvent } from 'react';
 import { uid, today, emptyQuestion, saveQuestion, practiceQueue, questionDue, applyPractice, isDeclaredUnknown } from './domain';
 import type { Contest, Question, AttemptResult } from './domain';
+import { useStudyStorage } from './StudyStorageContext';
+import type { StudyStorage } from './accountStorage';
 type Session = {
     declaredUnknown?: boolean;
     id: string;
@@ -28,7 +30,7 @@ const names = { alone: 'Sem ajuda', assisted: 'Com ajuda', wrong: 'Não lembrei 
 const nice = (d: string) => d ? d.split('-').reverse().join('/') : 'Nova';
 function phase(q: Question): Session['phase'] { return q.example ? 'example' : q.guidedPrompt && q.guidedAnswer ? 'guided' : 'prompt'; }
 function nextFields(q: Question) { return { phase: phase(q), response: '', declaredUnknown: false, choice: null, guidedResponse: '', guidedRevealed: false, usedHint: false, confidence: '', result: '' as AttemptResult | '', selfExplanation: '', errorTag: '', correctionMade: false, notes: '', minutes: '', started: Date.now() }; }
-function readDraft(c: Contest): {
+function readDraft(c: Contest, sessionStorage: StudyStorage): {
     session: Session | null;
     error: string;
 } {
@@ -60,7 +62,8 @@ export default function Learning({ c, onChange, onNewTopic }: {
     onChange: (next: Contest) => boolean;
     onNewTopic: () => void;
 }) {
-    const [restored] = useState(() => readDraft(c)), [session, setSession] = useState<Session | null>(restored.session), [error, setError] = useState(restored.error);
+    const sessionStorage = useStudyStorage('session');
+    const [restored] = useState(() => readDraft(c, sessionStorage)), [session, setSession] = useState<Session | null>(restored.session), [error, setError] = useState(restored.error);
     const [search, setSearch] = useState(''), [subjectId, setSubjectId] = useState(''), [topicId, setTopicId] = useState(''), [mode, setMode] = useState('all'), [limit, setLimit] = useState(10), [archived, setArchived] = useState(false), [editing, setEditing] = useState<Question | null>(null);
     const activeTopics = c.topics.filter(t => c.subjects.some(s => s.id === t.subjectId && s.active)), filtered = c.questions.filter(q => { const t = c.topics.find(t => t.id === q.topicId); return (archived || !q.archived) && (!subjectId || t?.subjectId === subjectId) && (!topicId || q.topicId === topicId) && q.prompt.toLocaleLowerCase().includes(search.toLocaleLowerCase()); });
     const subject = (q: Question) => c.subjects.find(s => s.id === c.topics.find(t => t.id === q.topicId)?.subjectId)?.name || 'Disciplina arquivada';
